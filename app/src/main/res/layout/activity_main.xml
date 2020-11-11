@@ -11,8 +11,8 @@
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="128dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="64dp"
         android:fontFamily="@font/mukta_vaani_light"
         android:letterSpacing="0.3"
         android:text="HELLO"
@@ -65,8 +65,9 @@
         android:layout_height="60dp"
         android:layout_marginTop="32dp"
         android:background="@drawable/round_button"
-        android:src="@android:drawable/ic_media_play"
         android:backgroundTint="@android:color/holo_blue_dark"
+        android:src="@android:drawable/ic_media_play"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword" />
