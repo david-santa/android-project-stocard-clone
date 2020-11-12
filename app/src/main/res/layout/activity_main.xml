@@ -16,9 +16,9 @@
         android:layout_marginTop="64dp"
         android:fontFamily="@font/mukta_vaani_light"
         android:letterSpacing="0.3"
-        android:text="HELLO"
+        android:text="@string/hello"
         android:textColor="@color/white"
-        android:textSize="32dp"
+        android:textSize="32sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -29,10 +29,11 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="128dp"
         android:alpha="0.5"
+        android:autofillHints=""
         android:backgroundTint="@android:color/holo_blue_light"
         android:ems="10"
         android:fontFamily="@font/mukta_vaani_light"
-        android:hint="username"
+        android:hint="@string/username"
         android:inputType="textPersonName"
         android:textAlignment="center"
         android:textColor="@color/white"
@@ -43,13 +44,14 @@
 
     <EditText
         android:id="@+id/etPassword"
+        android:autofillHints=""
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/mukta_vaani_light"
         android:layout_marginTop="32dp"
         android:backgroundTint="@android:color/holo_blue_light"
         android:ems="10"
-        android:hint="password"
+        android:hint="@string/password"
         android:textAlignment="center"
         android:alpha="0.5"
         android:inputType="textPassword"
@@ -71,6 +73,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
+        android:contentDescription="@string/add"
         app:layout_constraintTop_toBottomOf="@+id/etPassword" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

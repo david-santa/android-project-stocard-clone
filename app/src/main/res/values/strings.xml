@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Proiect Echipa Racheta</string>
+    <string name="hello">HELLO</string>
+    <string name="username">username</string>
+    <string name="password">password</string>
+    <string name="add">ADD</string>
 </resources>
