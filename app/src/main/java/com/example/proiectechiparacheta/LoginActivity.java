@@ -12,6 +12,13 @@ import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.Toast;
 
+import com.clearbit.ApiException;
+import com.clearbit.client.api.CombinedApi;
+import com.clearbit.client.model.PersonCompany;
+import com.fasterxml.jackson.core.JsonProcessingException;
+import com.fasterxml.jackson.databind.ObjectMapper;
+
+
 public class LoginActivity extends AppCompatActivity {
 
     @Override
