@@ -22,7 +22,7 @@ public class LoginActivity extends AppCompatActivity {
         ConstraintLayout constraintLayout = findViewById(R.id.loginLayout);
         AnimationDrawable animationDrawable = (AnimationDrawable) constraintLayout.getBackground();
         animationDrawable.setEnterFadeDuration(2000);
-        animationDrawable.setExitFadeDuration(4000);
+        animationDrawable.setExitFadeDuration(3000);
         animationDrawable.start();
 
         EditText etUsername = findViewById(R.id.etUsername);
