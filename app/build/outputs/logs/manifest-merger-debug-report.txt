@@ -1,0 +1,294 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /Users/bogdantatu/Desktop/Facultate/Dispozitive si Aplicatii mobile/android-project/app/src/main/AndroidManifest.xml:2:1-33:12
+INJECTED from /Users/bogdantatu/Desktop/Facultate/Dispozitive si Aplicatii mobile/android-project/app/src/main/AndroidManifest.xml:2:1-33:12
+INJECTED from /Users/bogdantatu/Desktop/Facultate/Dispozitive si Aplicatii mobile/android-project/app/src/main/AndroidManifest.xml:2:1-33:12
+INJECTED from /Users/bogdantatu/Desktop/Facultate/Dispozitive si Aplicatii mobile/android-project/app/src/main/AndroidManifest.xml:2:1-33:12
+MERGED from [com.google.android.material:material:1.2.1] /Users/bogdantatu/.gradle/caches/transforms-2/files-2.1/1c961529b3ea5531dcb73d785089b74d/material-1.2.1/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.constraintlayout:constraintlayout:2.0.4] /Users/bogdantatu/.gradle/caches/transforms-2/files-2.1/e300f960b28eaf88f8bca16955732592/constraintlayout-2.0.4/AndroidManifest.xml:2:1-11:12
+MERGED from [androidx.appcompat:appcompat:1.2.0] /Users/bogdantatu/.gradle/caches/transforms-2/files-2.1/b0f78253426e641fb17cc514cc292ff6/appcompat-1.2.0/AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.android.gms:play-services-vision:20.1.2] /Users/bogdantatu/.gradle/caches/transforms-2/files-2.1/7dd1ff641d7424d9a358f2b0c394c7b1/jetified-play-services-vision-20.1.2/AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.firebase:firebase-database:19.5.1] /Users/bogdantatu/.gradle/caches/transforms-2/files-2.1/04f51318126f0f9d5e41ed7055037126/jetified-firebase-database-19.5.1/AndroidManifest.xml:15:1-38:12
+MERGED from [com.google.firebase:firebase-auth-interop:18.0.0] /Users/bogdantatu/.gradle/caches/transforms-2/files-2.1/87648ee3a015671b47e89d45f8ee2fcd/jetified-firebase-auth-interop-18.0.0/AndroidManifest.xml:2:1-10:12
+MERGED from [com.google.firebase:firebase-common:19.4.0] /Users/bogdantatu/.gradle/caches/transforms-2/files-2.1/fd8b72c91ba24cce2c6f4e94eb66a716/jetified-firebase-common-19.4.0/AndroidManifest.xml:15:1-40:12
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/bogdantatu/.gradle/caches/transforms-2/files-2.1/48570c8fc186a136d7dba7ad9b8448b3/cursoradapter-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.viewpager2:viewpager2:1.0.0] /Users/bogdantatu/.gradle/caches/transforms-2/files-2.1/926fd2620ffe6fe7e6a82976f55d8567/jetified-viewpager2-1.0.0/AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.android.gms:play-services-vision-common:19.1.2] /Users/bogdantatu/.gradle/caches/transforms-2/files-2.1/986004874a4a04c654b7e7fb651c23eb/jetified-play-services-vision-common-19.1.2/AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.firebase:firebase-database-collection:17.0.1] /Users/bogdantatu/.gradle/caches/transforms-2/files-2.1/a953146501960f001af40c9f9e144137/jetified-firebase-database-collection-17.0.1/AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.android.gms:play-services-clearcut:17.0.0] /Users/bogdantatu/.gradle/caches/transforms-2/files-2.1/1f419e8427d6f8732d3e7712132a3e8b/jetified-play-services-clearcut-17.0.0/AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.android.gms:play-services-flags:17.0.0] /Users/bogdantatu/.gradle/caches/transforms-2/files-2.1/453434332e979cff5cf57f5bafecad18/jetified-play-services-flags-17.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [com.google.android.gms:play-services-phenotype:17.0.0] /Users/bogdantatu/.gradle/caches/transforms-2/files-2.1/8e25862c9a1611d84b3cf525a79a59a4/jetified-play-services-phenotype-17.0.0/AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.android.gms:play-services-base:17.0.0] /Users/bogdantatu/.gradle/caches/transforms-2/files-2.1/b45eba7dabb9107df58ebf78f5314a91/jetified-play-services-base-17.0.0/AndroidManifest.xml:17:1-29:12
+MERGED from [com.google.android.gms:play-services-tasks:17.0.0] /Users/bogdantatu/.gradle/caches/transforms-2/files-2.1/50390227c7e0afc923ba7fa2765cd3cb/jetified-play-services-tasks-17.0.0/AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.android.gms:play-services-basement:17.0.0] /Users/bogdantatu/.gradle/caches/transforms-2/files-2.1/38714cf4c648cff5a6d6cdbe1d638909/jetified-play-services-basement-17.0.0/AndroidManifest.xml:17:1-28:12
+MERGED from [androidx.fragment:fragment:1.1.0] /Users/bogdantatu/.gradle/caches/transforms-2/files-2.1/fb146c33c7bf0c1615a7cbda4e8ffe4d/fragment-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.appcompat:appcompat-resources:1.2.0] /Users/bogdantatu/.gradle/caches/transforms-2/files-2.1/2835dc2399b749ef70b74fd2336acfca/jetified-appcompat-resources-1.2.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /Users/bogdantatu/.gradle/caches/transforms-2/files-2.1/a8f9ac6ac19d197a8483f7b3410acf32/drawerlayout-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.cardview:cardview:1.0.0] /Users/bogdantatu/.gradle/caches/transforms-2/files-2.1/cc077c9ccf2d3daee350c75f7cc45ba2/cardview-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] /Users/bogdantatu/.gradle/caches/transforms-2/files-2.1/17b899e9330ea09df5720ccb53665c95/coordinatorlayout-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.transition:transition:1.2.0] /Users/bogdantatu/.gradle/caches/transforms-2/files-2.1/82f67766708b78e08165d37e368f77b1/transition-1.2.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /Users/bogdantatu/.gradle/caches/transforms-2/files-2.1/958a2a44045914233034114dc1ba0a91/vectordrawable-animated-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /Users/bogdantatu/.gradle/caches/transforms-2/files-2.1/31c6d1f169cf8ab46aef08eac6eb8a63/vectordrawable-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/bogdantatu/.gradle/caches/transforms-2/files-2.1/615b20be014b065af4133808d402474c/viewpager-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.loader:loader:1.0.0] /Users/bogdantatu/.gradle/caches/transforms-2/files-2.1/14a9674870447e9e8535e39a99d74eb0/loader-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.activity:activity:1.0.0] /Users/bogdantatu/.gradle/caches/transforms-2/files-2.1/4f346bebf3252230986bfbd24d296f6f/jetified-activity-1.0.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.recyclerview:recyclerview:1.1.0] /Users/bogdantatu/.gradle/caches/transforms-2/files-2.1/a3b0065834fd74501463784558904da5/recyclerview-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.customview:customview:1.0.0] /Users/bogdantatu/.gradle/caches/transforms-2/files-2.1/97b8413d3600ed3addcf3c45edd5db6a/customview-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.core:core:1.3.1] /Users/bogdantatu/.gradle/caches/transforms-2/files-2.1/1453d1fa79a03c9c5de2a1111f88b173/core-1.3.1/AndroidManifest.xml:17:1-26:12
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /Users/bogdantatu/.gradle/caches/transforms-2/files-2.1/578e426be70197aeeb7f004cc3d47d57/versionedparcelable-1.1.0/AndroidManifest.xml:17:1-27:12
+MERGED from [com.google.firebase:firebase-components:16.0.1] /Users/bogdantatu/.gradle/caches/transforms-2/files-2.1/4913a0f288c343d7f42ad2ec5ffc1439/jetified-firebase-components-16.0.1/AndroidManifest.xml:15:1-23:12
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.1.0] /Users/bogdantatu/.gradle/caches/transforms-2/files-2.1/fdb1a31366e4b6e814c7f7562de44958/lifecycle-runtime-2.1.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] /Users/bogdantatu/.gradle/caches/transforms-2/files-2.1/aa2e3452b9734361c1d8243ef7614699/lifecycle-viewmodel-2.1.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.savedstate:savedstate:1.0.0] /Users/bogdantatu/.gradle/caches/transforms-2/files-2.1/f0afaf9e70a3a33f05447d96f7b4bfc4/jetified-savedstate-1.0.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/bogdantatu/.gradle/caches/transforms-2/files-2.1/f93fe8bc89cf1bca2a5067f3c28b3acf/interpolator-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /Users/bogdantatu/.gradle/caches/transforms-2/files-2.1/e4e027d008ac14439350826337d8ed12/lifecycle-livedata-2.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] /Users/bogdantatu/.gradle/caches/transforms-2/files-2.1/110c45c32cd1270521d986eb2d469731/lifecycle-livedata-core-2.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.arch.core:core-runtime:2.0.0] /Users/bogdantatu/.gradle/caches/transforms-2/files-2.1/9b0de12448de0c93fb8f1104bdc1914b/core-runtime-2.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.annotation:annotation-experimental:1.0.0] /Users/bogdantatu/.gradle/caches/transforms-2/files-2.1/8494da40e588b403567d35fcde644201/jetified-annotation-experimental-1.0.0/AndroidManifest.xml:17:1-24:12
+INJECTED from /Users/bogdantatu/Desktop/Facultate/Dispozitive si Aplicatii mobile/android-project/app/src/main/AndroidManifest.xml:2:1-33:12
+INJECTED from /Users/bogdantatu/Desktop/Facultate/Dispozitive si Aplicatii mobile/android-project/app/src/main/AndroidManifest.xml:2:1-33:12
+INJECTED from /Users/bogdantatu/Desktop/Facultate/Dispozitive si Aplicatii mobile/android-project/app/src/main/AndroidManifest.xml:2:1-33:12
+	package
+		ADDED from /Users/bogdantatu/Desktop/Facultate/Dispozitive si Aplicatii mobile/android-project/app/src/main/AndroidManifest.xml:3:5-47
+		INJECTED from /Users/bogdantatu/Desktop/Facultate/Dispozitive si Aplicatii mobile/android-project/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/bogdantatu/Desktop/Facultate/Dispozitive si Aplicatii mobile/android-project/app/src/main/AndroidManifest.xml
+	android:versionName
+		INJECTED from /Users/bogdantatu/Desktop/Facultate/Dispozitive si Aplicatii mobile/android-project/app/src/main/AndroidManifest.xml
+		ADDED from /Users/bogdantatu/Desktop/Facultate/Dispozitive si Aplicatii mobile/android-project/app/src/main/AndroidManifest.xml:2:1-33:12
+		INJECTED from /Users/bogdantatu/Desktop/Facultate/Dispozitive si Aplicatii mobile/android-project/app/src/main/AndroidManifest.xml
+	android:versionCode
+		INJECTED from /Users/bogdantatu/Desktop/Facultate/Dispozitive si Aplicatii mobile/android-project/app/src/main/AndroidManifest.xml
+		ADDED from /Users/bogdantatu/Desktop/Facultate/Dispozitive si Aplicatii mobile/android-project/app/src/main/AndroidManifest.xml:2:1-33:12
+		INJECTED from /Users/bogdantatu/Desktop/Facultate/Dispozitive si Aplicatii mobile/android-project/app/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /Users/bogdantatu/Desktop/Facultate/Dispozitive si Aplicatii mobile/android-project/app/src/main/AndroidManifest.xml:2:11-69
+uses-permission#android.permission.CAMERA
+ADDED from /Users/bogdantatu/Desktop/Facultate/Dispozitive si Aplicatii mobile/android-project/app/src/main/AndroidManifest.xml:5:5-65
+	android:name
+		ADDED from /Users/bogdantatu/Desktop/Facultate/Dispozitive si Aplicatii mobile/android-project/app/src/main/AndroidManifest.xml:5:22-62
+application
+ADDED from /Users/bogdantatu/Desktop/Facultate/Dispozitive si Aplicatii mobile/android-project/app/src/main/AndroidManifest.xml:6:5-31:19
+MERGED from [com.google.android.material:material:1.2.1] /Users/bogdantatu/.gradle/caches/transforms-2/files-2.1/1c961529b3ea5531dcb73d785089b74d/material-1.2.1/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.material:material:1.2.1] /Users/bogdantatu/.gradle/caches/transforms-2/files-2.1/1c961529b3ea5531dcb73d785089b74d/material-1.2.1/AndroidManifest.xml:22:5-20
+MERGED from [androidx.constraintlayout:constraintlayout:2.0.4] /Users/bogdantatu/.gradle/caches/transforms-2/files-2.1/e300f960b28eaf88f8bca16955732592/constraintlayout-2.0.4/AndroidManifest.xml:9:5-20
+MERGED from [androidx.constraintlayout:constraintlayout:2.0.4] /Users/bogdantatu/.gradle/caches/transforms-2/files-2.1/e300f960b28eaf88f8bca16955732592/constraintlayout-2.0.4/AndroidManifest.xml:9:5-20
+MERGED from [com.google.android.gms:play-services-vision:20.1.2] /Users/bogdantatu/.gradle/caches/transforms-2/files-2.1/7dd1ff641d7424d9a358f2b0c394c7b1/jetified-play-services-vision-20.1.2/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-vision:20.1.2] /Users/bogdantatu/.gradle/caches/transforms-2/files-2.1/7dd1ff641d7424d9a358f2b0c394c7b1/jetified-play-services-vision-20.1.2/AndroidManifest.xml:7:5-20
+MERGED from [com.google.firebase:firebase-database:19.5.1] /Users/bogdantatu/.gradle/caches/transforms-2/files-2.1/04f51318126f0f9d5e41ed7055037126/jetified-firebase-database-19.5.1/AndroidManifest.xml:28:5-36:19
+MERGED from [com.google.firebase:firebase-database:19.5.1] /Users/bogdantatu/.gradle/caches/transforms-2/files-2.1/04f51318126f0f9d5e41ed7055037126/jetified-firebase-database-19.5.1/AndroidManifest.xml:28:5-36:19
+MERGED from [com.google.firebase:firebase-auth-interop:18.0.0] /Users/bogdantatu/.gradle/caches/transforms-2/files-2.1/87648ee3a015671b47e89d45f8ee2fcd/jetified-firebase-auth-interop-18.0.0/AndroidManifest.xml:7:5-8:19
+MERGED from [com.google.firebase:firebase-auth-interop:18.0.0] /Users/bogdantatu/.gradle/caches/transforms-2/files-2.1/87648ee3a015671b47e89d45f8ee2fcd/jetified-firebase-auth-interop-18.0.0/AndroidManifest.xml:7:5-8:19
+MERGED from [com.google.firebase:firebase-common:19.4.0] /Users/bogdantatu/.gradle/caches/transforms-2/files-2.1/fd8b72c91ba24cce2c6f4e94eb66a716/jetified-firebase-common-19.4.0/AndroidManifest.xml:25:5-38:19
+MERGED from [com.google.firebase:firebase-common:19.4.0] /Users/bogdantatu/.gradle/caches/transforms-2/files-2.1/fd8b72c91ba24cce2c6f4e94eb66a716/jetified-firebase-common-19.4.0/AndroidManifest.xml:25:5-38:19
+MERGED from [com.google.android.gms:play-services-vision-common:19.1.2] /Users/bogdantatu/.gradle/caches/transforms-2/files-2.1/986004874a4a04c654b7e7fb651c23eb/jetified-play-services-vision-common-19.1.2/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-vision-common:19.1.2] /Users/bogdantatu/.gradle/caches/transforms-2/files-2.1/986004874a4a04c654b7e7fb651c23eb/jetified-play-services-vision-common-19.1.2/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-clearcut:17.0.0] /Users/bogdantatu/.gradle/caches/transforms-2/files-2.1/1f419e8427d6f8732d3e7712132a3e8b/jetified-play-services-clearcut-17.0.0/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-clearcut:17.0.0] /Users/bogdantatu/.gradle/caches/transforms-2/files-2.1/1f419e8427d6f8732d3e7712132a3e8b/jetified-play-services-clearcut-17.0.0/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-phenotype:17.0.0] /Users/bogdantatu/.gradle/caches/transforms-2/files-2.1/8e25862c9a1611d84b3cf525a79a59a4/jetified-play-services-phenotype-17.0.0/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-phenotype:17.0.0] /Users/bogdantatu/.gradle/caches/transforms-2/files-2.1/8e25862c9a1611d84b3cf525a79a59a4/jetified-play-services-phenotype-17.0.0/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-base:17.0.0] /Users/bogdantatu/.gradle/caches/transforms-2/files-2.1/b45eba7dabb9107df58ebf78f5314a91/jetified-play-services-base-17.0.0/AndroidManifest.xml:22:5-27:19
+MERGED from [com.google.android.gms:play-services-base:17.0.0] /Users/bogdantatu/.gradle/caches/transforms-2/files-2.1/b45eba7dabb9107df58ebf78f5314a91/jetified-play-services-base-17.0.0/AndroidManifest.xml:22:5-27:19
+MERGED from [com.google.android.gms:play-services-tasks:17.0.0] /Users/bogdantatu/.gradle/caches/transforms-2/files-2.1/50390227c7e0afc923ba7fa2765cd3cb/jetified-play-services-tasks-17.0.0/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-tasks:17.0.0] /Users/bogdantatu/.gradle/caches/transforms-2/files-2.1/50390227c7e0afc923ba7fa2765cd3cb/jetified-play-services-tasks-17.0.0/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-basement:17.0.0] /Users/bogdantatu/.gradle/caches/transforms-2/files-2.1/38714cf4c648cff5a6d6cdbe1d638909/jetified-play-services-basement-17.0.0/AndroidManifest.xml:22:5-26:19
+MERGED from [com.google.android.gms:play-services-basement:17.0.0] /Users/bogdantatu/.gradle/caches/transforms-2/files-2.1/38714cf4c648cff5a6d6cdbe1d638909/jetified-play-services-basement-17.0.0/AndroidManifest.xml:22:5-26:19
+MERGED from [androidx.core:core:1.3.1] /Users/bogdantatu/.gradle/caches/transforms-2/files-2.1/1453d1fa79a03c9c5de2a1111f88b173/core-1.3.1/AndroidManifest.xml:24:5-89
+MERGED from [androidx.core:core:1.3.1] /Users/bogdantatu/.gradle/caches/transforms-2/files-2.1/1453d1fa79a03c9c5de2a1111f88b173/core-1.3.1/AndroidManifest.xml:24:5-89
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /Users/bogdantatu/.gradle/caches/transforms-2/files-2.1/578e426be70197aeeb7f004cc3d47d57/versionedparcelable-1.1.0/AndroidManifest.xml:24:5-25:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /Users/bogdantatu/.gradle/caches/transforms-2/files-2.1/578e426be70197aeeb7f004cc3d47d57/versionedparcelable-1.1.0/AndroidManifest.xml:24:5-25:19
+	android:appComponentFactory
+		ADDED from [androidx.core:core:1.3.1] /Users/bogdantatu/.gradle/caches/transforms-2/files-2.1/1453d1fa79a03c9c5de2a1111f88b173/core-1.3.1/AndroidManifest.xml:24:18-86
+	android:supportsRtl
+		ADDED from /Users/bogdantatu/Desktop/Facultate/Dispozitive si Aplicatii mobile/android-project/app/src/main/AndroidManifest.xml:11:9-35
+	android:label
+		ADDED from /Users/bogdantatu/Desktop/Facultate/Dispozitive si Aplicatii mobile/android-project/app/src/main/AndroidManifest.xml:9:9-41
+	android:roundIcon
+		ADDED from /Users/bogdantatu/Desktop/Facultate/Dispozitive si Aplicatii mobile/android-project/app/src/main/AndroidManifest.xml:10:9-54
+	android:icon
+		ADDED from /Users/bogdantatu/Desktop/Facultate/Dispozitive si Aplicatii mobile/android-project/app/src/main/AndroidManifest.xml:8:9-43
+	android:allowBackup
+		ADDED from /Users/bogdantatu/Desktop/Facultate/Dispozitive si Aplicatii mobile/android-project/app/src/main/AndroidManifest.xml:7:9-35
+	android:theme
+		ADDED from /Users/bogdantatu/Desktop/Facultate/Dispozitive si Aplicatii mobile/android-project/app/src/main/AndroidManifest.xml:12:9-58
+activity#com.example.proiectechiparacheta.AddByCamera
+ADDED from /Users/bogdantatu/Desktop/Facultate/Dispozitive si Aplicatii mobile/android-project/app/src/main/AndroidManifest.xml:13:9-58
+	android:name
+		ADDED from /Users/bogdantatu/Desktop/Facultate/Dispozitive si Aplicatii mobile/android-project/app/src/main/AndroidManifest.xml:13:19-46
+meta-data#com.google.android.gms.version
+ADDED from /Users/bogdantatu/Desktop/Facultate/Dispozitive si Aplicatii mobile/android-project/app/src/main/AndroidManifest.xml:15:9-17:79
+MERGED from [com.google.android.gms:play-services-basement:17.0.0] /Users/bogdantatu/.gradle/caches/transforms-2/files-2.1/38714cf4c648cff5a6d6cdbe1d638909/jetified-play-services-basement-17.0.0/AndroidManifest.xml:23:9-25:69
+MERGED from [com.google.android.gms:play-services-basement:17.0.0] /Users/bogdantatu/.gradle/caches/transforms-2/files-2.1/38714cf4c648cff5a6d6cdbe1d638909/jetified-play-services-basement-17.0.0/AndroidManifest.xml:23:9-25:69
+	android:value
+		ADDED from /Users/bogdantatu/Desktop/Facultate/Dispozitive si Aplicatii mobile/android-project/app/src/main/AndroidManifest.xml:17:13-66
+	android:name
+		ADDED from /Users/bogdantatu/Desktop/Facultate/Dispozitive si Aplicatii mobile/android-project/app/src/main/AndroidManifest.xml:16:13-58
+meta-data#com.google.android.gms.vision.DEPENDENCIES
+ADDED from /Users/bogdantatu/Desktop/Facultate/Dispozitive si Aplicatii mobile/android-project/app/src/main/AndroidManifest.xml:18:9-20:39
+	android:value
+		ADDED from /Users/bogdantatu/Desktop/Facultate/Dispozitive si Aplicatii mobile/android-project/app/src/main/AndroidManifest.xml:20:13-36
+	android:name
+		ADDED from /Users/bogdantatu/Desktop/Facultate/Dispozitive si Aplicatii mobile/android-project/app/src/main/AndroidManifest.xml:19:13-70
+activity#com.example.proiectechiparacheta.AddByForm
+ADDED from /Users/bogdantatu/Desktop/Facultate/Dispozitive si Aplicatii mobile/android-project/app/src/main/AndroidManifest.xml:22:9-47
+	android:name
+		ADDED from /Users/bogdantatu/Desktop/Facultate/Dispozitive si Aplicatii mobile/android-project/app/src/main/AndroidManifest.xml:22:19-44
+activity#com.example.proiectechiparacheta.DashboardActivity
+ADDED from /Users/bogdantatu/Desktop/Facultate/Dispozitive si Aplicatii mobile/android-project/app/src/main/AndroidManifest.xml:23:9-55
+	android:name
+		ADDED from /Users/bogdantatu/Desktop/Facultate/Dispozitive si Aplicatii mobile/android-project/app/src/main/AndroidManifest.xml:23:19-52
+activity#com.example.proiectechiparacheta.LoginActivity
+ADDED from /Users/bogdantatu/Desktop/Facultate/Dispozitive si Aplicatii mobile/android-project/app/src/main/AndroidManifest.xml:24:9-30:20
+	android:name
+		ADDED from /Users/bogdantatu/Desktop/Facultate/Dispozitive si Aplicatii mobile/android-project/app/src/main/AndroidManifest.xml:24:19-48
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from /Users/bogdantatu/Desktop/Facultate/Dispozitive si Aplicatii mobile/android-project/app/src/main/AndroidManifest.xml:25:13-29:29
+action#android.intent.action.MAIN
+ADDED from /Users/bogdantatu/Desktop/Facultate/Dispozitive si Aplicatii mobile/android-project/app/src/main/AndroidManifest.xml:26:17-69
+	android:name
+		ADDED from /Users/bogdantatu/Desktop/Facultate/Dispozitive si Aplicatii mobile/android-project/app/src/main/AndroidManifest.xml:26:25-66
+category#android.intent.category.LAUNCHER
+ADDED from /Users/bogdantatu/Desktop/Facultate/Dispozitive si Aplicatii mobile/android-project/app/src/main/AndroidManifest.xml:28:17-77
+	android:name
+		ADDED from /Users/bogdantatu/Desktop/Facultate/Dispozitive si Aplicatii mobile/android-project/app/src/main/AndroidManifest.xml:28:27-74
+uses-sdk
+INJECTED from /Users/bogdantatu/Desktop/Facultate/Dispozitive si Aplicatii mobile/android-project/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/bogdantatu/Desktop/Facultate/Dispozitive si Aplicatii mobile/android-project/app/src/main/AndroidManifest.xml
+INJECTED from /Users/bogdantatu/Desktop/Facultate/Dispozitive si Aplicatii mobile/android-project/app/src/main/AndroidManifest.xml
+MERGED from [com.google.android.material:material:1.2.1] /Users/bogdantatu/.gradle/caches/transforms-2/files-2.1/1c961529b3ea5531dcb73d785089b74d/material-1.2.1/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.material:material:1.2.1] /Users/bogdantatu/.gradle/caches/transforms-2/files-2.1/1c961529b3ea5531dcb73d785089b74d/material-1.2.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.constraintlayout:constraintlayout:2.0.4] /Users/bogdantatu/.gradle/caches/transforms-2/files-2.1/e300f960b28eaf88f8bca16955732592/constraintlayout-2.0.4/AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.constraintlayout:constraintlayout:2.0.4] /Users/bogdantatu/.gradle/caches/transforms-2/files-2.1/e300f960b28eaf88f8bca16955732592/constraintlayout-2.0.4/AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.appcompat:appcompat:1.2.0] /Users/bogdantatu/.gradle/caches/transforms-2/files-2.1/b0f78253426e641fb17cc514cc292ff6/appcompat-1.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat:1.2.0] /Users/bogdantatu/.gradle/caches/transforms-2/files-2.1/b0f78253426e641fb17cc514cc292ff6/appcompat-1.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.android.gms:play-services-vision:20.1.2] /Users/bogdantatu/.gradle/caches/transforms-2/files-2.1/7dd1ff641d7424d9a358f2b0c394c7b1/jetified-play-services-vision-20.1.2/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-vision:20.1.2] /Users/bogdantatu/.gradle/caches/transforms-2/files-2.1/7dd1ff641d7424d9a358f2b0c394c7b1/jetified-play-services-vision-20.1.2/AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-database:19.5.1] /Users/bogdantatu/.gradle/caches/transforms-2/files-2.1/04f51318126f0f9d5e41ed7055037126/jetified-firebase-database-19.5.1/AndroidManifest.xml:19:5-21:41
+MERGED from [com.google.firebase:firebase-database:19.5.1] /Users/bogdantatu/.gradle/caches/transforms-2/files-2.1/04f51318126f0f9d5e41ed7055037126/jetified-firebase-database-19.5.1/AndroidManifest.xml:19:5-21:41
+MERGED from [com.google.firebase:firebase-auth-interop:18.0.0] /Users/bogdantatu/.gradle/caches/transforms-2/files-2.1/87648ee3a015671b47e89d45f8ee2fcd/jetified-firebase-auth-interop-18.0.0/AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-auth-interop:18.0.0] /Users/bogdantatu/.gradle/caches/transforms-2/files-2.1/87648ee3a015671b47e89d45f8ee2fcd/jetified-firebase-auth-interop-18.0.0/AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-common:19.4.0] /Users/bogdantatu/.gradle/caches/transforms-2/files-2.1/fd8b72c91ba24cce2c6f4e94eb66a716/jetified-firebase-common-19.4.0/AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.firebase:firebase-common:19.4.0] /Users/bogdantatu/.gradle/caches/transforms-2/files-2.1/fd8b72c91ba24cce2c6f4e94eb66a716/jetified-firebase-common-19.4.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/bogdantatu/.gradle/caches/transforms-2/files-2.1/48570c8fc186a136d7dba7ad9b8448b3/cursoradapter-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/bogdantatu/.gradle/caches/transforms-2/files-2.1/48570c8fc186a136d7dba7ad9b8448b3/cursoradapter-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager2:viewpager2:1.0.0] /Users/bogdantatu/.gradle/caches/transforms-2/files-2.1/926fd2620ffe6fe7e6a82976f55d8567/jetified-viewpager2-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.viewpager2:viewpager2:1.0.0] /Users/bogdantatu/.gradle/caches/transforms-2/files-2.1/926fd2620ffe6fe7e6a82976f55d8567/jetified-viewpager2-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.android.gms:play-services-vision-common:19.1.2] /Users/bogdantatu/.gradle/caches/transforms-2/files-2.1/986004874a4a04c654b7e7fb651c23eb/jetified-play-services-vision-common-19.1.2/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-vision-common:19.1.2] /Users/bogdantatu/.gradle/caches/transforms-2/files-2.1/986004874a4a04c654b7e7fb651c23eb/jetified-play-services-vision-common-19.1.2/AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-database-collection:17.0.1] /Users/bogdantatu/.gradle/caches/transforms-2/files-2.1/a953146501960f001af40c9f9e144137/jetified-firebase-database-collection-17.0.1/AndroidManifest.xml:5:5-7:41
+MERGED from [com.google.firebase:firebase-database-collection:17.0.1] /Users/bogdantatu/.gradle/caches/transforms-2/files-2.1/a953146501960f001af40c9f9e144137/jetified-firebase-database-collection-17.0.1/AndroidManifest.xml:5:5-7:41
+MERGED from [com.google.android.gms:play-services-clearcut:17.0.0] /Users/bogdantatu/.gradle/caches/transforms-2/files-2.1/1f419e8427d6f8732d3e7712132a3e8b/jetified-play-services-clearcut-17.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-clearcut:17.0.0] /Users/bogdantatu/.gradle/caches/transforms-2/files-2.1/1f419e8427d6f8732d3e7712132a3e8b/jetified-play-services-clearcut-17.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-flags:17.0.0] /Users/bogdantatu/.gradle/caches/transforms-2/files-2.1/453434332e979cff5cf57f5bafecad18/jetified-play-services-flags-17.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-flags:17.0.0] /Users/bogdantatu/.gradle/caches/transforms-2/files-2.1/453434332e979cff5cf57f5bafecad18/jetified-play-services-flags-17.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-phenotype:17.0.0] /Users/bogdantatu/.gradle/caches/transforms-2/files-2.1/8e25862c9a1611d84b3cf525a79a59a4/jetified-play-services-phenotype-17.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-phenotype:17.0.0] /Users/bogdantatu/.gradle/caches/transforms-2/files-2.1/8e25862c9a1611d84b3cf525a79a59a4/jetified-play-services-phenotype-17.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-base:17.0.0] /Users/bogdantatu/.gradle/caches/transforms-2/files-2.1/b45eba7dabb9107df58ebf78f5314a91/jetified-play-services-base-17.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-base:17.0.0] /Users/bogdantatu/.gradle/caches/transforms-2/files-2.1/b45eba7dabb9107df58ebf78f5314a91/jetified-play-services-base-17.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-tasks:17.0.0] /Users/bogdantatu/.gradle/caches/transforms-2/files-2.1/50390227c7e0afc923ba7fa2765cd3cb/jetified-play-services-tasks-17.0.0/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-tasks:17.0.0] /Users/bogdantatu/.gradle/caches/transforms-2/files-2.1/50390227c7e0afc923ba7fa2765cd3cb/jetified-play-services-tasks-17.0.0/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-basement:17.0.0] /Users/bogdantatu/.gradle/caches/transforms-2/files-2.1/38714cf4c648cff5a6d6cdbe1d638909/jetified-play-services-basement-17.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-basement:17.0.0] /Users/bogdantatu/.gradle/caches/transforms-2/files-2.1/38714cf4c648cff5a6d6cdbe1d638909/jetified-play-services-basement-17.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.fragment:fragment:1.1.0] /Users/bogdantatu/.gradle/caches/transforms-2/files-2.1/fb146c33c7bf0c1615a7cbda4e8ffe4d/fragment-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.fragment:fragment:1.1.0] /Users/bogdantatu/.gradle/caches/transforms-2/files-2.1/fb146c33c7bf0c1615a7cbda4e8ffe4d/fragment-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat-resources:1.2.0] /Users/bogdantatu/.gradle/caches/transforms-2/files-2.1/2835dc2399b749ef70b74fd2336acfca/jetified-appcompat-resources-1.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat-resources:1.2.0] /Users/bogdantatu/.gradle/caches/transforms-2/files-2.1/2835dc2399b749ef70b74fd2336acfca/jetified-appcompat-resources-1.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /Users/bogdantatu/.gradle/caches/transforms-2/files-2.1/a8f9ac6ac19d197a8483f7b3410acf32/drawerlayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /Users/bogdantatu/.gradle/caches/transforms-2/files-2.1/a8f9ac6ac19d197a8483f7b3410acf32/drawerlayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cardview:cardview:1.0.0] /Users/bogdantatu/.gradle/caches/transforms-2/files-2.1/cc077c9ccf2d3daee350c75f7cc45ba2/cardview-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cardview:cardview:1.0.0] /Users/bogdantatu/.gradle/caches/transforms-2/files-2.1/cc077c9ccf2d3daee350c75f7cc45ba2/cardview-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] /Users/bogdantatu/.gradle/caches/transforms-2/files-2.1/17b899e9330ea09df5720ccb53665c95/coordinatorlayout-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] /Users/bogdantatu/.gradle/caches/transforms-2/files-2.1/17b899e9330ea09df5720ccb53665c95/coordinatorlayout-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.transition:transition:1.2.0] /Users/bogdantatu/.gradle/caches/transforms-2/files-2.1/82f67766708b78e08165d37e368f77b1/transition-1.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.transition:transition:1.2.0] /Users/bogdantatu/.gradle/caches/transforms-2/files-2.1/82f67766708b78e08165d37e368f77b1/transition-1.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /Users/bogdantatu/.gradle/caches/transforms-2/files-2.1/958a2a44045914233034114dc1ba0a91/vectordrawable-animated-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /Users/bogdantatu/.gradle/caches/transforms-2/files-2.1/958a2a44045914233034114dc1ba0a91/vectordrawable-animated-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /Users/bogdantatu/.gradle/caches/transforms-2/files-2.1/31c6d1f169cf8ab46aef08eac6eb8a63/vectordrawable-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /Users/bogdantatu/.gradle/caches/transforms-2/files-2.1/31c6d1f169cf8ab46aef08eac6eb8a63/vectordrawable-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/bogdantatu/.gradle/caches/transforms-2/files-2.1/615b20be014b065af4133808d402474c/viewpager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/bogdantatu/.gradle/caches/transforms-2/files-2.1/615b20be014b065af4133808d402474c/viewpager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] /Users/bogdantatu/.gradle/caches/transforms-2/files-2.1/14a9674870447e9e8535e39a99d74eb0/loader-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] /Users/bogdantatu/.gradle/caches/transforms-2/files-2.1/14a9674870447e9e8535e39a99d74eb0/loader-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.activity:activity:1.0.0] /Users/bogdantatu/.gradle/caches/transforms-2/files-2.1/4f346bebf3252230986bfbd24d296f6f/jetified-activity-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.activity:activity:1.0.0] /Users/bogdantatu/.gradle/caches/transforms-2/files-2.1/4f346bebf3252230986bfbd24d296f6f/jetified-activity-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.recyclerview:recyclerview:1.1.0] /Users/bogdantatu/.gradle/caches/transforms-2/files-2.1/a3b0065834fd74501463784558904da5/recyclerview-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.recyclerview:recyclerview:1.1.0] /Users/bogdantatu/.gradle/caches/transforms-2/files-2.1/a3b0065834fd74501463784558904da5/recyclerview-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.customview:customview:1.0.0] /Users/bogdantatu/.gradle/caches/transforms-2/files-2.1/97b8413d3600ed3addcf3c45edd5db6a/customview-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] /Users/bogdantatu/.gradle/caches/transforms-2/files-2.1/97b8413d3600ed3addcf3c45edd5db6a/customview-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core:1.3.1] /Users/bogdantatu/.gradle/caches/transforms-2/files-2.1/1453d1fa79a03c9c5de2a1111f88b173/core-1.3.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.core:core:1.3.1] /Users/bogdantatu/.gradle/caches/transforms-2/files-2.1/1453d1fa79a03c9c5de2a1111f88b173/core-1.3.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /Users/bogdantatu/.gradle/caches/transforms-2/files-2.1/578e426be70197aeeb7f004cc3d47d57/versionedparcelable-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /Users/bogdantatu/.gradle/caches/transforms-2/files-2.1/578e426be70197aeeb7f004cc3d47d57/versionedparcelable-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.firebase:firebase-components:16.0.1] /Users/bogdantatu/.gradle/caches/transforms-2/files-2.1/4913a0f288c343d7f42ad2ec5ffc1439/jetified-firebase-components-16.0.1/AndroidManifest.xml:19:5-21:41
+MERGED from [com.google.firebase:firebase-components:16.0.1] /Users/bogdantatu/.gradle/caches/transforms-2/files-2.1/4913a0f288c343d7f42ad2ec5ffc1439/jetified-firebase-components-16.0.1/AndroidManifest.xml:19:5-21:41
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.1.0] /Users/bogdantatu/.gradle/caches/transforms-2/files-2.1/fdb1a31366e4b6e814c7f7562de44958/lifecycle-runtime-2.1.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.1.0] /Users/bogdantatu/.gradle/caches/transforms-2/files-2.1/fdb1a31366e4b6e814c7f7562de44958/lifecycle-runtime-2.1.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] /Users/bogdantatu/.gradle/caches/transforms-2/files-2.1/aa2e3452b9734361c1d8243ef7614699/lifecycle-viewmodel-2.1.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] /Users/bogdantatu/.gradle/caches/transforms-2/files-2.1/aa2e3452b9734361c1d8243ef7614699/lifecycle-viewmodel-2.1.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.savedstate:savedstate:1.0.0] /Users/bogdantatu/.gradle/caches/transforms-2/files-2.1/f0afaf9e70a3a33f05447d96f7b4bfc4/jetified-savedstate-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.savedstate:savedstate:1.0.0] /Users/bogdantatu/.gradle/caches/transforms-2/files-2.1/f0afaf9e70a3a33f05447d96f7b4bfc4/jetified-savedstate-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/bogdantatu/.gradle/caches/transforms-2/files-2.1/f93fe8bc89cf1bca2a5067f3c28b3acf/interpolator-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/bogdantatu/.gradle/caches/transforms-2/files-2.1/f93fe8bc89cf1bca2a5067f3c28b3acf/interpolator-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /Users/bogdantatu/.gradle/caches/transforms-2/files-2.1/e4e027d008ac14439350826337d8ed12/lifecycle-livedata-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /Users/bogdantatu/.gradle/caches/transforms-2/files-2.1/e4e027d008ac14439350826337d8ed12/lifecycle-livedata-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] /Users/bogdantatu/.gradle/caches/transforms-2/files-2.1/110c45c32cd1270521d986eb2d469731/lifecycle-livedata-core-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] /Users/bogdantatu/.gradle/caches/transforms-2/files-2.1/110c45c32cd1270521d986eb2d469731/lifecycle-livedata-core-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.0.0] /Users/bogdantatu/.gradle/caches/transforms-2/files-2.1/9b0de12448de0c93fb8f1104bdc1914b/core-runtime-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.0.0] /Users/bogdantatu/.gradle/caches/transforms-2/files-2.1/9b0de12448de0c93fb8f1104bdc1914b/core-runtime-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.annotation:annotation-experimental:1.0.0] /Users/bogdantatu/.gradle/caches/transforms-2/files-2.1/8494da40e588b403567d35fcde644201/jetified-annotation-experimental-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.annotation:annotation-experimental:1.0.0] /Users/bogdantatu/.gradle/caches/transforms-2/files-2.1/8494da40e588b403567d35fcde644201/jetified-annotation-experimental-1.0.0/AndroidManifest.xml:20:5-22:41
+INJECTED from /Users/bogdantatu/Desktop/Facultate/Dispozitive si Aplicatii mobile/android-project/app/src/main/AndroidManifest.xml
+INJECTED from /Users/bogdantatu/Desktop/Facultate/Dispozitive si Aplicatii mobile/android-project/app/src/main/AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from /Users/bogdantatu/Desktop/Facultate/Dispozitive si Aplicatii mobile/android-project/app/src/main/AndroidManifest.xml
+		ADDED from /Users/bogdantatu/Desktop/Facultate/Dispozitive si Aplicatii mobile/android-project/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/bogdantatu/Desktop/Facultate/Dispozitive si Aplicatii mobile/android-project/app/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /Users/bogdantatu/Desktop/Facultate/Dispozitive si Aplicatii mobile/android-project/app/src/main/AndroidManifest.xml
+		ADDED from /Users/bogdantatu/Desktop/Facultate/Dispozitive si Aplicatii mobile/android-project/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/bogdantatu/Desktop/Facultate/Dispozitive si Aplicatii mobile/android-project/app/src/main/AndroidManifest.xml
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from [com.google.firebase:firebase-database:19.5.1] /Users/bogdantatu/.gradle/caches/transforms-2/files-2.1/04f51318126f0f9d5e41ed7055037126/jetified-firebase-database-19.5.1/AndroidManifest.xml:25:5-79
+	android:name
+		ADDED from [com.google.firebase:firebase-database:19.5.1] /Users/bogdantatu/.gradle/caches/transforms-2/files-2.1/04f51318126f0f9d5e41ed7055037126/jetified-firebase-database-19.5.1/AndroidManifest.xml:25:22-76
+uses-permission#android.permission.INTERNET
+ADDED from [com.google.firebase:firebase-database:19.5.1] /Users/bogdantatu/.gradle/caches/transforms-2/files-2.1/04f51318126f0f9d5e41ed7055037126/jetified-firebase-database-19.5.1/AndroidManifest.xml:26:5-67
+	android:name
+		ADDED from [com.google.firebase:firebase-database:19.5.1] /Users/bogdantatu/.gradle/caches/transforms-2/files-2.1/04f51318126f0f9d5e41ed7055037126/jetified-firebase-database-19.5.1/AndroidManifest.xml:26:22-64
+service#com.google.firebase.components.ComponentDiscoveryService
+ADDED from [com.google.firebase:firebase-database:19.5.1] /Users/bogdantatu/.gradle/caches/transforms-2/files-2.1/04f51318126f0f9d5e41ed7055037126/jetified-firebase-database-19.5.1/AndroidManifest.xml:29:9-35:19
+MERGED from [com.google.firebase:firebase-common:19.4.0] /Users/bogdantatu/.gradle/caches/transforms-2/files-2.1/fd8b72c91ba24cce2c6f4e94eb66a716/jetified-firebase-common-19.4.0/AndroidManifest.xml:33:9-37:35
+MERGED from [com.google.firebase:firebase-common:19.4.0] /Users/bogdantatu/.gradle/caches/transforms-2/files-2.1/fd8b72c91ba24cce2c6f4e94eb66a716/jetified-firebase-common-19.4.0/AndroidManifest.xml:33:9-37:35
+	android:exported
+		ADDED from [com.google.firebase:firebase-database:19.5.1] /Users/bogdantatu/.gradle/caches/transforms-2/files-2.1/04f51318126f0f9d5e41ed7055037126/jetified-firebase-database-19.5.1/AndroidManifest.xml:31:13-37
+	tools:targetApi
+		ADDED from [com.google.firebase:firebase-common:19.4.0] /Users/bogdantatu/.gradle/caches/transforms-2/files-2.1/fd8b72c91ba24cce2c6f4e94eb66a716/jetified-firebase-common-19.4.0/AndroidManifest.xml:37:13-32
+	android:directBootAware
+		ADDED from [com.google.firebase:firebase-common:19.4.0] /Users/bogdantatu/.gradle/caches/transforms-2/files-2.1/fd8b72c91ba24cce2c6f4e94eb66a716/jetified-firebase-common-19.4.0/AndroidManifest.xml:35:13-43
+	android:name
+		ADDED from [com.google.firebase:firebase-database:19.5.1] /Users/bogdantatu/.gradle/caches/transforms-2/files-2.1/04f51318126f0f9d5e41ed7055037126/jetified-firebase-database-19.5.1/AndroidManifest.xml:30:13-84
+meta-data#com.google.firebase.components:com.google.firebase.database.DatabaseRegistrar
+ADDED from [com.google.firebase:firebase-database:19.5.1] /Users/bogdantatu/.gradle/caches/transforms-2/files-2.1/04f51318126f0f9d5e41ed7055037126/jetified-firebase-database-19.5.1/AndroidManifest.xml:32:13-34:85
+	android:value
+		ADDED from [com.google.firebase:firebase-database:19.5.1] /Users/bogdantatu/.gradle/caches/transforms-2/files-2.1/04f51318126f0f9d5e41ed7055037126/jetified-firebase-database-19.5.1/AndroidManifest.xml:34:17-82
+	android:name
+		ADDED from [com.google.firebase:firebase-database:19.5.1] /Users/bogdantatu/.gradle/caches/transforms-2/files-2.1/04f51318126f0f9d5e41ed7055037126/jetified-firebase-database-19.5.1/AndroidManifest.xml:33:17-109
+provider#com.google.firebase.provider.FirebaseInitProvider
+ADDED from [com.google.firebase:firebase-common:19.4.0] /Users/bogdantatu/.gradle/caches/transforms-2/files-2.1/fd8b72c91ba24cce2c6f4e94eb66a716/jetified-firebase-common-19.4.0/AndroidManifest.xml:26:9-31:39
+	android:authorities
+		ADDED from [com.google.firebase:firebase-common:19.4.0] /Users/bogdantatu/.gradle/caches/transforms-2/files-2.1/fd8b72c91ba24cce2c6f4e94eb66a716/jetified-firebase-common-19.4.0/AndroidManifest.xml:28:13-72
+	android:exported
+		ADDED from [com.google.firebase:firebase-common:19.4.0] /Users/bogdantatu/.gradle/caches/transforms-2/files-2.1/fd8b72c91ba24cce2c6f4e94eb66a716/jetified-firebase-common-19.4.0/AndroidManifest.xml:30:13-37
+	android:directBootAware
+		ADDED from [com.google.firebase:firebase-common:19.4.0] /Users/bogdantatu/.gradle/caches/transforms-2/files-2.1/fd8b72c91ba24cce2c6f4e94eb66a716/jetified-firebase-common-19.4.0/AndroidManifest.xml:29:13-43
+	android:initOrder
+		ADDED from [com.google.firebase:firebase-common:19.4.0] /Users/bogdantatu/.gradle/caches/transforms-2/files-2.1/fd8b72c91ba24cce2c6f4e94eb66a716/jetified-firebase-common-19.4.0/AndroidManifest.xml:31:13-36
+	android:name
+		ADDED from [com.google.firebase:firebase-common:19.4.0] /Users/bogdantatu/.gradle/caches/transforms-2/files-2.1/fd8b72c91ba24cce2c6f4e94eb66a716/jetified-firebase-common-19.4.0/AndroidManifest.xml:27:13-77
+activity#com.google.android.gms.common.api.GoogleApiActivity
+ADDED from [com.google.android.gms:play-services-base:17.0.0] /Users/bogdantatu/.gradle/caches/transforms-2/files-2.1/b45eba7dabb9107df58ebf78f5314a91/jetified-play-services-base-17.0.0/AndroidManifest.xml:23:9-26:75
+	android:exported
+		ADDED from [com.google.android.gms:play-services-base:17.0.0] /Users/bogdantatu/.gradle/caches/transforms-2/files-2.1/b45eba7dabb9107df58ebf78f5314a91/jetified-play-services-base-17.0.0/AndroidManifest.xml:25:13-37
+	android:theme
+		ADDED from [com.google.android.gms:play-services-base:17.0.0] /Users/bogdantatu/.gradle/caches/transforms-2/files-2.1/b45eba7dabb9107df58ebf78f5314a91/jetified-play-services-base-17.0.0/AndroidManifest.xml:26:13-72
+	android:name
+		ADDED from [com.google.android.gms:play-services-base:17.0.0] /Users/bogdantatu/.gradle/caches/transforms-2/files-2.1/b45eba7dabb9107df58ebf78f5314a91/jetified-play-services-base-17.0.0/AndroidManifest.xml:24:13-79
