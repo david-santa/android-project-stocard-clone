@@ -6,6 +6,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.ContextMenu;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.Button;
@@ -45,6 +46,7 @@ public class DashboardActivity extends AppCompatActivity {
                 //for addByCamera
                 //scanBarcode(v);
                 Intent intent = new Intent(DashboardActivity.this,AddByForm.class);
+                intent.putExtra("requestCode",1);
                 startActivityForResult(intent,1);
             }
         });
@@ -59,16 +61,27 @@ public class DashboardActivity extends AppCompatActivity {
             AdapterView.AdapterContextMenuInfo acmi = (AdapterView.AdapterContextMenuInfo) menuInfo;
             FidelityCard card = (FidelityCard) lv.getItemAtPosition(acmi.position);
 
-            menu.add("One");
-            menu.add("Two");
-            menu.add("Three");
-            menu.add(card.name);
+            menu.add("Edit").setOnMenuItemClickListener(new MenuItem.OnMenuItemClickListener() {
+                @Override
+                public boolean onMenuItemClick(MenuItem item) {
+                    Intent intent = new Intent(DashboardActivity.this,AddByForm.class);
+                    intent.putExtra("requestCode",2);
+                    intent.putExtra("id",card.getId());
+                    intent.putExtra("name",card.getName().toString());
+                    intent.putExtra("cardHolderName",card.cardHolderName.toString());
+                    intent.putExtra("barcode",card.getBarCode().toString());
+                    startActivityForResult(intent,2);
+                    return false;
+                }
+            });
+            menu.add("Delete");
         }
     }
 
     public void scanBarcode(View v){
         Intent intent = new Intent(this,AddByCamera.class);
-        startActivityForResult(intent,1);
+        intent.putExtra("requestCode",3);
+        startActivityForResult(intent,3);
     }
 
     @Override
@@ -92,6 +105,17 @@ public class DashboardActivity extends AppCompatActivity {
             String barcode = data.getStringExtra("barcode");
         arrayList.add(new FidelityCard(55,name,cardHolderName,barcode));
         adapter.notifyDataSetChanged();
+        }
+        if(requestCode==2){
+            int id = data.getIntExtra("id",-1);
+            String name = data.getStringExtra("name");
+            String cardHolderName = data.getStringExtra("cardHolderName");
+            String barcode = data.getStringExtra("barcode");
+            if(id!=-1)
+            arrayList.get(id-1).setName(name);
+            arrayList.get(id-1).setCardHolderName(cardHolderName);
+            arrayList.get(id-1).setBarCode(barcode);
+            adapter.notifyDataSetChanged();
         }
     }
 }
