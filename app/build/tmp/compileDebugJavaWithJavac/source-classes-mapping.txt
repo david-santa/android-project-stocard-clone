@@ -19,3 +19,5 @@ com/example/proiectechiparacheta/DashboardActivity.java
  com.example.proiectechiparacheta.DashboardActivity$1
 com/example/proiectechiparacheta/AddByForm.java
  com.example.proiectechiparacheta.AddByForm
+ com.example.proiectechiparacheta.AddByForm$1
+ com.example.proiectechiparacheta.AddByForm$2

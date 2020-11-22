@@ -1715,6 +1715,7 @@ id beginning
 id blocking
 id bottom
 id bounce
+id btnAdd
 id btnCancel
 id btnLogin
 id btnRegister
@@ -1753,6 +1754,7 @@ id customListView
 id customPanel
 id cut
 id dark
+id dashboardActivity
 id date_picker_actions
 id decelerate
 id decelerateAndComplete
@@ -1787,6 +1789,9 @@ id edit_query
 id end
 id enterAlways
 id enterAlwaysCollapsed
+id etBarcodeValue
+id etCardHolderName
+id etName
 id etPassword
 id etUsername
 id exitUntilCollapsed
@@ -1822,7 +1827,6 @@ id ifRoom
 id ignore
 id ignoreRequest
 id image
-id imageButton
 id imageClick
 id info
 id invisible
@@ -2188,7 +2192,10 @@ string abc_toolbar_collapse_description
 string add
 string app_name
 string appbar_scrolling_view_behavior
+string barcode_value
 string bottom_sheet_behavior
+string cancel
+string card_holder_name
 string character_counter_content_description
 string character_counter_overflowed_content_description
 string character_counter_pattern
@@ -2264,6 +2271,7 @@ string mtrl_picker_toggle_to_calendar_input_mode
 string mtrl_picker_toggle_to_day_selection
 string mtrl_picker_toggle_to_text_input_mode
 string mtrl_picker_toggle_to_year_selection
+string name
 string password
 string password_toggle_content_description
 string path_password_eye
@@ -2272,6 +2280,7 @@ string path_password_eye_mask_visible
 string path_password_strike_through
 string project_id
 string register_now
+string save
 string search_menu_title
 string status_bar_notification_info_overflow
 string username

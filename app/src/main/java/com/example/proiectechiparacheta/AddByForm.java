@@ -3,6 +3,7 @@ package com.example.proiectechiparacheta;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.constraintlayout.widget.ConstraintLayout;
 
+import android.content.Intent;
 import android.graphics.drawable.AnimationDrawable;
 import android.os.Bundle;
 import android.view.View;
@@ -32,7 +33,15 @@ public class AddByForm extends AppCompatActivity {
         btnSave.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v) {
-
+                String name = etName.getText().toString();
+                String cardHolderName = etCardHolderName.getText().toString();
+                String barcode = etBarcodeValue.getText().toString();
+                Intent intent = new Intent();
+                intent.putExtra("name",name);
+                intent.putExtra("cardHolderName",cardHolderName);
+                intent.putExtra("barcode",barcode);
+                setResult(1,intent);
+                finish();
             }
         });
     }
