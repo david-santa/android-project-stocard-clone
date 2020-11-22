@@ -1715,8 +1715,10 @@ id beginning
 id blocking
 id bottom
 id bounce
+id btnCancel
 id btnLogin
 id btnRegister
+id btnSave
 id buttonPanel
 id cache_measures
 id camera_preview
