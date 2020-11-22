@@ -52,7 +52,7 @@ public class LoginActivity extends AppCompatActivity {
                 // whenever data at this location is updated.
                 String value = dataSnapshot.getValue(String.class);
                 Log.d(TAG, "Value is: " + value);
-
+//test
             }
 
             @Override
