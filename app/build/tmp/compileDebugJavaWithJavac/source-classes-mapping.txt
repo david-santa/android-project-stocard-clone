@@ -1,7 +1,5 @@
 com/example/proiectechiparacheta/FidelityCard.java
  com.example.proiectechiparacheta.FidelityCard
-com/example/proiectechiparacheta/BuildConfig.java
- com.example.proiectechiparacheta.BuildConfig
 com/example/proiectechiparacheta/CustomAdapter.java
  com.example.proiectechiparacheta.CustomAdapter
  com.example.proiectechiparacheta.CustomAdapter$1
@@ -14,6 +12,8 @@ com/example/proiectechiparacheta/LoginActivity.java
  com.example.proiectechiparacheta.LoginActivity
  com.example.proiectechiparacheta.LoginActivity$1
  com.example.proiectechiparacheta.LoginActivity$2
+com/example/proiectechiparacheta/BuildConfig.java
+ com.example.proiectechiparacheta.BuildConfig
 com/example/proiectechiparacheta/DashboardActivity.java
  com.example.proiectechiparacheta.DashboardActivity
  com.example.proiectechiparacheta.DashboardActivity$1
