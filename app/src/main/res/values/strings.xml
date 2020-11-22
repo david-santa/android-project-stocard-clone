@@ -5,4 +5,9 @@
     <string name="password">password</string>
     <string name="add">ADD</string>
     <string name="register_now">Register now</string>
+    <string name="barcode_value">Barcode Value</string>
+    <string name="card_holder_name">Card Holder Name</string>
+    <string name="name">Name</string>
+    <string name="cancel">Cancel</string>
+    <string name="save">Save</string>
 </resources>
