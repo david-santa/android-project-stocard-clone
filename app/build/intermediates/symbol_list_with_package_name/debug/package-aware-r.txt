@@ -1827,7 +1827,6 @@ id ifRoom
 id ignore
 id ignoreRequest
 id image
-id imageClick
 id info
 id invisible
 id italic

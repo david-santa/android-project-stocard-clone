@@ -48,40 +48,11 @@ public class CustomAdapter extends BaseAdapter {
         TextView tvName = convertView.findViewById(R.id.cardName);
         TextView tvHolder = convertView.findViewById(R.id.cardHolderName);
         TextView tvBarCode = convertView.findViewById(R.id.barCode);
-        ImageView imageClick = convertView.findViewById(R.id.imageClick);
 
         tvId.setText(String.valueOf(arr.get(position).getId()));
         tvName.setText(arr.get(position).getName());
         tvHolder.setText(arr.get(position).getCardHolderName());
         tvBarCode.setText(arr.get(position).getBarCode());
-
-        imageClick.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                PopupMenu popupMenu = new PopupMenu(context,v);
-                popupMenu.getMenuInflater().inflate(R.menu.popup, popupMenu.getMenu());
-                popupMenu.show();
-                popupMenu.setOnMenuItemClickListener(new PopupMenu.OnMenuItemClickListener(){
-
-                    @Override
-                    public boolean onMenuItemClick(MenuItem item) {
-                        switch(item.getItemId()){
-                            case R.id.edit:
-                                Toast.makeText(context,"EDIT", Toast.LENGTH_LONG).show();
-
-                                break;
-                            case R.id.delete:
-                                Toast.makeText(context,"DELETE", Toast.LENGTH_LONG).show();
-                                break;
-
-                            default:
-                                break;
-                        }
-                        return true;
-                    }
-                });
-            }
-        });
 
         return convertView;
     }
