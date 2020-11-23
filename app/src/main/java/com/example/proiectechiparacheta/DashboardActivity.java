@@ -15,9 +15,13 @@ import android.widget.ImageButton;
 import android.widget.ListView;
 import android.widget.Toast;
 
+import com.clearbit.JSON;
 import com.google.android.gms.common.api.CommonStatusCodes;
 import com.google.android.gms.vision.barcode.Barcode;
 import com.google.android.material.snackbar.Snackbar;
+
+import org.json.JSONException;
+import org.json.JSONObject;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -87,6 +91,24 @@ public class DashboardActivity extends AppCompatActivity {
                 @Override
                 public boolean onMenuItemClick(MenuItem item) {
                     getImageForCard(card);
+                    return false;
+                }
+            });
+            menu.add("Export JSON").setOnMenuItemClickListener(new MenuItem.OnMenuItemClickListener() {
+                @Override
+                public boolean onMenuItemClick(MenuItem item) {
+                    JSONObject json = new JSONObject();
+                    try {
+                        json.put("id",card.getId());
+                        JSONObject attributes = new JSONObject();
+                        attributes.put("cardHolderName",card.getCardHolderName());
+                        attributes.put("barcodeValue",card.getBarCode());
+                        attributes.put("username","username");
+                        json.put("attributes",attributes);
+                        Toast.makeText(getApplicationContext(),json.toString(),Toast.LENGTH_LONG).show();
+                    } catch (JSONException e) {
+                        e.printStackTrace();
+                    }
                     return false;
                 }
             });
