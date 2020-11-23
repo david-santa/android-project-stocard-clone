@@ -34,3 +34,4 @@ com/example/proiectechiparacheta/DashboardActivity.java
  com.example.proiectechiparacheta.DashboardActivity$2
  com.example.proiectechiparacheta.DashboardActivity$3
  com.example.proiectechiparacheta.DashboardActivity$4
+ com.example.proiectechiparacheta.DashboardActivity$5

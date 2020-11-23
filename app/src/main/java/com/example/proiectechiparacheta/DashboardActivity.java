@@ -53,6 +53,13 @@ public class DashboardActivity extends AppCompatActivity {
             }
         });
 
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                getImageForCard((FidelityCard) listView.getItemAtPosition(position));
+            }
+        });
+
 
     }
     @Override
@@ -79,15 +86,19 @@ public class DashboardActivity extends AppCompatActivity {
             menu.add("Show").setOnMenuItemClickListener(new MenuItem.OnMenuItemClickListener() {
                 @Override
                 public boolean onMenuItemClick(MenuItem item) {
-                    String url = buildUrlFromBarcodeValue(card.getBarCode().toString());
-                    Callable<Bitmap> asyncOperation = new HttpManager(url);
-                    Callback<Bitmap> mainThreadOperation = getMainThreadOperation();
-                    AsyncTaskRunner.executeAsync(asyncOperation,mainThreadOperation);
+                    getImageForCard(card);
                     return false;
                 }
             });
             menu.add("Delete");
         }
+    }
+
+    private void getImageForCard(FidelityCard card) {
+        String url = buildUrlFromBarcodeValue(card.getBarCode().toString());
+        Callable<Bitmap> asyncOperation = new HttpManager(url);
+        Callback<Bitmap> mainThreadOperation = getMainThreadOperation();
+        AsyncTaskRunner.executeAsync(asyncOperation,mainThreadOperation);
     }
 
     private String buildUrlFromBarcodeValue(String barcodeValue) {
