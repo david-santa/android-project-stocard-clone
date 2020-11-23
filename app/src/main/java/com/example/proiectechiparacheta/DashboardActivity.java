@@ -4,6 +4,7 @@ import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.graphics.Bitmap;
 import android.os.Bundle;
 import android.view.ContextMenu;
 import android.view.MenuItem;
@@ -20,6 +21,7 @@ import com.google.android.material.snackbar.Snackbar;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.concurrent.Callable;
 
 public class DashboardActivity extends AppCompatActivity {
     public ArrayList<FidelityCard> arrayList = new ArrayList<FidelityCard>();
@@ -74,8 +76,34 @@ public class DashboardActivity extends AppCompatActivity {
                     return false;
                 }
             });
+            menu.add("Show").setOnMenuItemClickListener(new MenuItem.OnMenuItemClickListener() {
+                @Override
+                public boolean onMenuItemClick(MenuItem item) {
+                    String url = buildUrlFromBarcodeValue(card.getBarCode().toString());
+                    Callable<Bitmap> asyncOperation = new HttpManager(url);
+                    Callback<Bitmap> mainThreadOperation = getMainThreadOperation();
+                    AsyncTaskRunner.executeAsync(asyncOperation,mainThreadOperation);
+                    return false;
+                }
+            });
             menu.add("Delete");
         }
+    }
+
+    private String buildUrlFromBarcodeValue(String barcodeValue) {
+        String s = "https://barcodes4.me/barcode/c39/" + barcodeValue +".png";
+        return s;
+    }
+
+    private Callback<Bitmap> getMainThreadOperation(){
+        return new Callback<Bitmap>(){
+
+            @Override
+            public void runResultOnUiThread(Bitmap result) {
+                Popup_Barcode popup_barcode = new Popup_Barcode(result);
+                popup_barcode.show(getSupportFragmentManager(),"popupBarcode");
+            }
+        };
     }
 
     public void scanBarcode(View v){

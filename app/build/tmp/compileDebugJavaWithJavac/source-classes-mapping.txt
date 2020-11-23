@@ -1,5 +1,3 @@
-com/example/proiectechiparacheta/FidelityCard.java
- com.example.proiectechiparacheta.FidelityCard
 com/example/proiectechiparacheta/CustomAdapter.java
  com.example.proiectechiparacheta.CustomAdapter
 com/example/proiectechiparacheta/HttpManager.java
@@ -8,19 +6,31 @@ com/example/proiectechiparacheta/AddByCamera.java
  com.example.proiectechiparacheta.AddByCamera
  com.example.proiectechiparacheta.AddByCamera$1
  com.example.proiectechiparacheta.AddByCamera$1$1
-com/example/proiectechiparacheta/LoginActivity.java
- com.example.proiectechiparacheta.LoginActivity
- com.example.proiectechiparacheta.LoginActivity$1
- com.example.proiectechiparacheta.LoginActivity$2
+com/example/proiectechiparacheta/Popup_Barcode.java
+ com.example.proiectechiparacheta.Popup_Barcode
+com/example/proiectechiparacheta/RunnableTask.java
+ com.example.proiectechiparacheta.RunnableTask
+com/example/proiectechiparacheta/AsyncTaskRunner.java
+ com.example.proiectechiparacheta.AsyncTaskRunner
+com/example/proiectechiparacheta/Callback.java
+ com.example.proiectechiparacheta.Callback
+com/example/proiectechiparacheta/HandlerMessage.java
+ com.example.proiectechiparacheta.HandlerMessage
+com/example/proiectechiparacheta/FidelityCard.java
+ com.example.proiectechiparacheta.FidelityCard
 com/example/proiectechiparacheta/BuildConfig.java
  com.example.proiectechiparacheta.BuildConfig
-com/example/proiectechiparacheta/DashboardActivity.java
- com.example.proiectechiparacheta.DashboardActivity
- com.example.proiectechiparacheta.DashboardActivity$1
- com.example.proiectechiparacheta.DashboardActivity$2
 com/example/proiectechiparacheta/AddByForm.java
  com.example.proiectechiparacheta.AddByForm
  com.example.proiectechiparacheta.AddByForm$1
  com.example.proiectechiparacheta.AddByForm$2
-com/example/proiectechiparacheta/Callback.java
- com.example.proiectechiparacheta.Callback
+com/example/proiectechiparacheta/LoginActivity.java
+ com.example.proiectechiparacheta.LoginActivity
+ com.example.proiectechiparacheta.LoginActivity$1
+ com.example.proiectechiparacheta.LoginActivity$2
+com/example/proiectechiparacheta/DashboardActivity.java
+ com.example.proiectechiparacheta.DashboardActivity
+ com.example.proiectechiparacheta.DashboardActivity$1
+ com.example.proiectechiparacheta.DashboardActivity$2
+ com.example.proiectechiparacheta.DashboardActivity$3
+ com.example.proiectechiparacheta.DashboardActivity$4

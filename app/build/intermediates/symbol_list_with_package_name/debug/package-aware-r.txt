@@ -1832,6 +1832,7 @@ id info
 id invisible
 id italic
 id item_touch_helper_previous_elevation
+id ivBarcode
 id jumpToEnd
 id jumpToStart
 id labeled
@@ -2139,6 +2140,7 @@ layout notification_template_custom_big
 layout notification_template_icon_group
 layout notification_template_part_chronometer
 layout notification_template_part_time
+layout popup_barcode
 layout rowdesign
 layout select_dialog_item_material
 layout select_dialog_multichoice_material
