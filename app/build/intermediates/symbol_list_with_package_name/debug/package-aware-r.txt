@@ -1721,6 +1721,7 @@ id btnCancel
 id btnLogin
 id btnRegister
 id btnSave
+id btnSignOut
 id buttonPanel
 id cache_measures
 id camera_preview
@@ -1792,9 +1793,11 @@ id enterAlways
 id enterAlwaysCollapsed
 id etBarcodeValue
 id etCardHolderName
+id etEmail
+id etEmailReg
 id etName
 id etPassword
-id etUsername
+id etPasswordReg
 id exitUntilCollapsed
 id expand_activities_button
 id expanded_menu
@@ -1904,11 +1907,13 @@ id percent
 id pin
 id position
 id postLayout
+id progressBar
 id progress_circular
 id progress_horizontal
 id radio
 id ratio
 id rectangles
+id registerLayout
 id reverseSawtooth
 id right
 id right_icon
@@ -1941,6 +1946,8 @@ id shortcut
 id showCustom
 id showHome
 id showTitle
+id sign_in_button
+id sign_up_button
 id sin
 id skipCollapsed
 id slide
@@ -2090,6 +2097,7 @@ layout activity_add_by_camera
 layout activity_add_by_form
 layout activity_dashboard
 layout activity_main
+layout activity_register
 layout custom_dialog
 layout design_bottom_navigation_item
 layout design_bottom_sheet_dialog
@@ -2196,6 +2204,7 @@ string app_name
 string appbar_scrolling_view_behavior
 string barcode_value
 string bottom_sheet_behavior
+string btnSignOut
 string cancel
 string card_holder_name
 string character_counter_content_description
@@ -2221,11 +2230,15 @@ string common_google_play_services_wear_update_text
 string common_open_on_phone
 string common_signin_button_text
 string common_signin_button_text_long
+string createuserwithEmail
 string default_web_client_id
+string email
+string email_login
 string error_icon_content_description
 string exposed_dropdown_menu_content_description
 string fab_transformation_scrim_behavior
 string fab_transformation_sheet_behavior
+string failed_register
 string firebase_database_url
 string gcm_defaultSenderId
 string google_api_key
@@ -2234,8 +2247,10 @@ string google_crash_reporting_api_key
 string google_storage_bucket
 string hello
 string hide_bottom_view_on_scroll_behavior
+string hint_password
 string icon_content_description
 string item_view_role_description
+string login_screen
 string material_slider_range_end
 string material_slider_range_start
 string mtrl_badge_numberless_content_description
@@ -2274,6 +2289,7 @@ string mtrl_picker_toggle_to_day_selection
 string mtrl_picker_toggle_to_text_input_mode
 string mtrl_picker_toggle_to_year_selection
 string name
+string pass_login
 string password
 string password_toggle_content_description
 string path_password_eye
@@ -2284,7 +2300,11 @@ string project_id
 string register_now
 string save
 string search_menu_title
+string sign_up
 string status_bar_notification_info_overflow
+string text_check_parola
+string text_email
+string text_parola
 string username
 style AlertDialog_AppCompat
 style AlertDialog_AppCompat_Light

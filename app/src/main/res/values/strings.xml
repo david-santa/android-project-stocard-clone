@@ -10,4 +10,16 @@
     <string name="name">Name</string>
     <string name="cancel">Cancel</string>
     <string name="save">Save</string>
+    <string name="sign_up">Sign up</string>
+    <string name="email">email</string>
+    <string name="hint_password">hint_password</string>
+    <string name="login_screen">Login</string>
+    <string name="text_email">Introduceti o adresa de email!</string>
+    <string name="text_parola">Introduceti o parola!</string>
+    <string name="text_check_parola">Parola trebuie sa aiba cel putin 6 caractere</string>
+    <string name="createuserwithEmail">createUserWithEmail:onComplete:</string>
+    <string name="failed_register">Inregistrarea a esuat.</string>
+    <string name="email_login">Introduceti adresa de email!</string>
+    <string name="pass_login">Introduceti parola!</string>
+    <string name="btnSignOut">Sign Out</string>
 </resources>

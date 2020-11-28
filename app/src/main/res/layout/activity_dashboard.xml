@@ -16,6 +16,7 @@
         app:layout_constraintLeft_toLeftOf="parent">
 
 
+
     </ListView>
 
     <ImageButton
@@ -32,4 +33,17 @@
         app:layout_constraintHorizontal_bias="0.08"
         app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@android:drawable/ic_input_add" />
+    <Button
+        android:id="@+id/btnSignOut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/btnSignOut"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/round_button"
+        android:backgroundTint="@android:color/holo_blue_bright"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.08"
+        app:srcCompat="@android:drawable/ic_input_add"
+        android:layout_marginRight="60dp"/>
 </androidx.constraintlayout.widget.ConstraintLayout>

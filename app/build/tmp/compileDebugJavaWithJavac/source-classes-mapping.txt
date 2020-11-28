@@ -10,6 +10,10 @@ com/example/proiectechiparacheta/Popup_Barcode.java
  com.example.proiectechiparacheta.Popup_Barcode
 com/example/proiectechiparacheta/RunnableTask.java
  com.example.proiectechiparacheta.RunnableTask
+com/example/proiectechiparacheta/AddByForm.java
+ com.example.proiectechiparacheta.AddByForm
+ com.example.proiectechiparacheta.AddByForm$1
+ com.example.proiectechiparacheta.AddByForm$2
 com/example/proiectechiparacheta/AsyncTaskRunner.java
  com.example.proiectechiparacheta.AsyncTaskRunner
 com/example/proiectechiparacheta/Callback.java
@@ -20,14 +24,12 @@ com/example/proiectechiparacheta/FidelityCard.java
  com.example.proiectechiparacheta.FidelityCard
 com/example/proiectechiparacheta/BuildConfig.java
  com.example.proiectechiparacheta.BuildConfig
-com/example/proiectechiparacheta/AddByForm.java
- com.example.proiectechiparacheta.AddByForm
- com.example.proiectechiparacheta.AddByForm$1
- com.example.proiectechiparacheta.AddByForm$2
 com/example/proiectechiparacheta/LoginActivity.java
  com.example.proiectechiparacheta.LoginActivity
  com.example.proiectechiparacheta.LoginActivity$1
  com.example.proiectechiparacheta.LoginActivity$2
+ com.example.proiectechiparacheta.LoginActivity$2$1
+ com.example.proiectechiparacheta.LoginActivity$3
 com/example/proiectechiparacheta/DashboardActivity.java
  com.example.proiectechiparacheta.DashboardActivity
  com.example.proiectechiparacheta.DashboardActivity$1
@@ -36,3 +38,10 @@ com/example/proiectechiparacheta/DashboardActivity.java
  com.example.proiectechiparacheta.DashboardActivity$4
  com.example.proiectechiparacheta.DashboardActivity$5
  com.example.proiectechiparacheta.DashboardActivity$6
+ com.example.proiectechiparacheta.DashboardActivity$7
+ com.example.proiectechiparacheta.DashboardActivity$8
+com/example/proiectechiparacheta/RegisterActivity.java
+ com.example.proiectechiparacheta.RegisterActivity
+ com.example.proiectechiparacheta.RegisterActivity$1
+ com.example.proiectechiparacheta.RegisterActivity$2
+ com.example.proiectechiparacheta.RegisterActivity$2$1
