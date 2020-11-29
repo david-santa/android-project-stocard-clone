@@ -12,12 +12,12 @@
         "source": "/Users/bogdantatu/Desktop/Facultate/Dispozitive si Aplicatii mobile/android-project/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml"
     },
     {
-        "merged": "/Users/bogdantatu/Desktop/Facultate/Dispozitive si Aplicatii mobile/android-project/app/build/intermediates/res/merged/debug/layout_activity_add_by_form.xml.flat",
-        "source": "/Users/bogdantatu/Desktop/Facultate/Dispozitive si Aplicatii mobile/android-project/app/src/main/res/layout/activity_add_by_form.xml"
-    },
-    {
         "merged": "/Users/bogdantatu/Desktop/Facultate/Dispozitive si Aplicatii mobile/android-project/app/build/intermediates/res/merged/debug/drawable_round_button.xml.flat",
         "source": "/Users/bogdantatu/Desktop/Facultate/Dispozitive si Aplicatii mobile/android-project/app/src/main/res/drawable/round_button.xml"
+    },
+    {
+        "merged": "/Users/bogdantatu/Desktop/Facultate/Dispozitive si Aplicatii mobile/android-project/app/build/intermediates/res/merged/debug/layout_activity_add_by_form.xml.flat",
+        "source": "/Users/bogdantatu/Desktop/Facultate/Dispozitive si Aplicatii mobile/android-project/app/src/main/res/layout/activity_add_by_form.xml"
     },
     {
         "merged": "/Users/bogdantatu/Desktop/Facultate/Dispozitive si Aplicatii mobile/android-project/app/build/intermediates/res/merged/debug/drawable_background.png.flat",
@@ -28,16 +28,16 @@
         "source": "/Users/bogdantatu/Desktop/Facultate/Dispozitive si Aplicatii mobile/android-project/app/src/main/res/mipmap-mdpi/ic_launcher_round.png"
     },
     {
-        "merged": "/Users/bogdantatu/Desktop/Facultate/Dispozitive si Aplicatii mobile/android-project/app/build/intermediates/res/merged/debug/layout_activity_register.xml.flat",
-        "source": "/Users/bogdantatu/Desktop/Facultate/Dispozitive si Aplicatii mobile/android-project/app/src/main/res/layout/activity_register.xml"
+        "merged": "/Users/bogdantatu/Desktop/Facultate/Dispozitive si Aplicatii mobile/android-project/app/build/intermediates/res/merged/debug/drawable_gradient_3.xml.flat",
+        "source": "/Users/bogdantatu/Desktop/Facultate/Dispozitive si Aplicatii mobile/android-project/app/src/main/res/drawable/gradient_3.xml"
     },
     {
         "merged": "/Users/bogdantatu/Desktop/Facultate/Dispozitive si Aplicatii mobile/android-project/app/build/intermediates/res/merged/debug/drawable_gradient_list.xml.flat",
         "source": "/Users/bogdantatu/Desktop/Facultate/Dispozitive si Aplicatii mobile/android-project/app/src/main/res/drawable/gradient_list.xml"
     },
     {
-        "merged": "/Users/bogdantatu/Desktop/Facultate/Dispozitive si Aplicatii mobile/android-project/app/build/intermediates/res/merged/debug/drawable_gradient_3.xml.flat",
-        "source": "/Users/bogdantatu/Desktop/Facultate/Dispozitive si Aplicatii mobile/android-project/app/src/main/res/drawable/gradient_3.xml"
+        "merged": "/Users/bogdantatu/Desktop/Facultate/Dispozitive si Aplicatii mobile/android-project/app/build/intermediates/res/merged/debug/layout_activity_register.xml.flat",
+        "source": "/Users/bogdantatu/Desktop/Facultate/Dispozitive si Aplicatii mobile/android-project/app/src/main/res/layout/activity_register.xml"
     },
     {
         "merged": "/Users/bogdantatu/Desktop/Facultate/Dispozitive si Aplicatii mobile/android-project/app/build/intermediates/res/merged/debug/layout_activity_main.xml.flat",
