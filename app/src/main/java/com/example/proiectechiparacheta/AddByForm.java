@@ -33,7 +33,10 @@ public class AddByForm extends AppCompatActivity {
         btnCancel.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
                 finish();
+                Intent intent = new Intent(AddByForm.this, DashboardActivity.class);
+                startActivity(intent);
             }
         });
 
