@@ -27,9 +27,8 @@ com/example/proiectechiparacheta/BuildConfig.java
 com/example/proiectechiparacheta/LoginActivity.java
  com.example.proiectechiparacheta.LoginActivity
  com.example.proiectechiparacheta.LoginActivity$1
+ com.example.proiectechiparacheta.LoginActivity$1$1
  com.example.proiectechiparacheta.LoginActivity$2
- com.example.proiectechiparacheta.LoginActivity$2$1
- com.example.proiectechiparacheta.LoginActivity$3
 com/example/proiectechiparacheta/DashboardActivity.java
  com.example.proiectechiparacheta.DashboardActivity
  com.example.proiectechiparacheta.DashboardActivity$1

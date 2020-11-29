@@ -8,6 +8,7 @@ MERGED from [com.google.android.material:material:1.2.1] /Users/bogdantatu/.grad
 MERGED from [androidx.constraintlayout:constraintlayout:2.0.4] /Users/bogdantatu/.gradle/caches/transforms-2/files-2.1/e300f960b28eaf88f8bca16955732592/constraintlayout-2.0.4/AndroidManifest.xml:2:1-11:12
 MERGED from [androidx.appcompat:appcompat:1.2.0] /Users/bogdantatu/.gradle/caches/transforms-2/files-2.1/b0f78253426e641fb17cc514cc292ff6/appcompat-1.2.0/AndroidManifest.xml:17:1-24:12
 MERGED from [com.google.firebase:firebase-auth:20.0.1] /Users/bogdantatu/.gradle/caches/transforms-2/files-2.1/89d1365828fa736c6ca0ebfb33761576/jetified-firebase-auth-20.0.1/AndroidManifest.xml:17:1-83:12
+MERGED from [com.google.firebase:firebase-firestore:22.0.0] /Users/bogdantatu/.gradle/caches/transforms-2/files-2.1/78b35f044a8063435346febc0daae5a8/jetified-firebase-firestore-22.0.0/AndroidManifest.xml:2:1-26:12
 MERGED from [com.google.android.gms:play-services-vision:20.1.2] /Users/bogdantatu/.gradle/caches/transforms-2/files-2.1/7dd1ff641d7424d9a358f2b0c394c7b1/jetified-play-services-vision-20.1.2/AndroidManifest.xml:2:1-9:12
 MERGED from [com.google.firebase:firebase-database:19.5.1] /Users/bogdantatu/.gradle/caches/transforms-2/files-2.1/04f51318126f0f9d5e41ed7055037126/jetified-firebase-database-19.5.1/AndroidManifest.xml:15:1-38:12
 MERGED from [com.google.firebase:firebase-auth-interop:19.0.0] /Users/bogdantatu/.gradle/caches/transforms-2/files-2.1/cc0d8c1f016f559c0dd7641f5eaf3bf3/jetified-firebase-auth-interop-19.0.0/AndroidManifest.xml:2:1-10:12
@@ -49,6 +50,8 @@ MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /Users/bogdantatu/.gra
 MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] /Users/bogdantatu/.gradle/caches/transforms-2/files-2.1/110c45c32cd1270521d986eb2d469731/lifecycle-livedata-core-2.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.arch.core:core-runtime:2.0.0] /Users/bogdantatu/.gradle/caches/transforms-2/files-2.1/9b0de12448de0c93fb8f1104bdc1914b/core-runtime-2.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.annotation:annotation-experimental:1.0.0] /Users/bogdantatu/.gradle/caches/transforms-2/files-2.1/8494da40e588b403567d35fcde644201/jetified-annotation-experimental-1.0.0/AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.firebase:protolite-well-known-types:17.1.0] /Users/bogdantatu/.gradle/caches/transforms-2/files-2.1/dfa504ff5b15e25f5ff3846e70cd9e2d/jetified-protolite-well-known-types-17.1.0/AndroidManifest.xml:2:1-11:12
+MERGED from [io.grpc:grpc-android:1.28.0] /Users/bogdantatu/.gradle/caches/transforms-2/files-2.1/670bd10df567588160bf5f241d03518f/jetified-grpc-android-1.28.0/AndroidManifest.xml:2:1-13:12
 INJECTED from /Users/bogdantatu/Desktop/Facultate/Dispozitive si Aplicatii mobile/android-project/app/src/main/AndroidManifest.xml:2:1-35:12
 INJECTED from /Users/bogdantatu/Desktop/Facultate/Dispozitive si Aplicatii mobile/android-project/app/src/main/AndroidManifest.xml:2:1-35:12
 INJECTED from /Users/bogdantatu/Desktop/Facultate/Dispozitive si Aplicatii mobile/android-project/app/src/main/AndroidManifest.xml:2:1-35:12
@@ -78,6 +81,8 @@ MERGED from [androidx.constraintlayout:constraintlayout:2.0.4] /Users/bogdantatu
 MERGED from [androidx.constraintlayout:constraintlayout:2.0.4] /Users/bogdantatu/.gradle/caches/transforms-2/files-2.1/e300f960b28eaf88f8bca16955732592/constraintlayout-2.0.4/AndroidManifest.xml:9:5-20
 MERGED from [com.google.firebase:firebase-auth:20.0.1] /Users/bogdantatu/.gradle/caches/transforms-2/files-2.1/89d1365828fa736c6ca0ebfb33761576/jetified-firebase-auth-20.0.1/AndroidManifest.xml:26:5-81:19
 MERGED from [com.google.firebase:firebase-auth:20.0.1] /Users/bogdantatu/.gradle/caches/transforms-2/files-2.1/89d1365828fa736c6ca0ebfb33761576/jetified-firebase-auth-20.0.1/AndroidManifest.xml:26:5-81:19
+MERGED from [com.google.firebase:firebase-firestore:22.0.0] /Users/bogdantatu/.gradle/caches/transforms-2/files-2.1/78b35f044a8063435346febc0daae5a8/jetified-firebase-firestore-22.0.0/AndroidManifest.xml:16:5-24:19
+MERGED from [com.google.firebase:firebase-firestore:22.0.0] /Users/bogdantatu/.gradle/caches/transforms-2/files-2.1/78b35f044a8063435346febc0daae5a8/jetified-firebase-firestore-22.0.0/AndroidManifest.xml:16:5-24:19
 MERGED from [com.google.android.gms:play-services-vision:20.1.2] /Users/bogdantatu/.gradle/caches/transforms-2/files-2.1/7dd1ff641d7424d9a358f2b0c394c7b1/jetified-play-services-vision-20.1.2/AndroidManifest.xml:7:5-20
 MERGED from [com.google.android.gms:play-services-vision:20.1.2] /Users/bogdantatu/.gradle/caches/transforms-2/files-2.1/7dd1ff641d7424d9a358f2b0c394c7b1/jetified-play-services-vision-20.1.2/AndroidManifest.xml:7:5-20
 MERGED from [com.google.firebase:firebase-database:19.5.1] /Users/bogdantatu/.gradle/caches/transforms-2/files-2.1/04f51318126f0f9d5e41ed7055037126/jetified-firebase-database-19.5.1/AndroidManifest.xml:28:5-36:19
@@ -174,6 +179,8 @@ MERGED from [androidx.appcompat:appcompat:1.2.0] /Users/bogdantatu/.gradle/cache
 MERGED from [androidx.appcompat:appcompat:1.2.0] /Users/bogdantatu/.gradle/caches/transforms-2/files-2.1/b0f78253426e641fb17cc514cc292ff6/appcompat-1.2.0/AndroidManifest.xml:20:5-22:41
 MERGED from [com.google.firebase:firebase-auth:20.0.1] /Users/bogdantatu/.gradle/caches/transforms-2/files-2.1/89d1365828fa736c6ca0ebfb33761576/jetified-firebase-auth-20.0.1/AndroidManifest.xml:21:5-44
 MERGED from [com.google.firebase:firebase-auth:20.0.1] /Users/bogdantatu/.gradle/caches/transforms-2/files-2.1/89d1365828fa736c6ca0ebfb33761576/jetified-firebase-auth-20.0.1/AndroidManifest.xml:21:5-44
+MERGED from [com.google.firebase:firebase-firestore:22.0.0] /Users/bogdantatu/.gradle/caches/transforms-2/files-2.1/78b35f044a8063435346febc0daae5a8/jetified-firebase-firestore-22.0.0/AndroidManifest.xml:7:5-9:41
+MERGED from [com.google.firebase:firebase-firestore:22.0.0] /Users/bogdantatu/.gradle/caches/transforms-2/files-2.1/78b35f044a8063435346febc0daae5a8/jetified-firebase-firestore-22.0.0/AndroidManifest.xml:7:5-9:41
 MERGED from [com.google.android.gms:play-services-vision:20.1.2] /Users/bogdantatu/.gradle/caches/transforms-2/files-2.1/7dd1ff641d7424d9a358f2b0c394c7b1/jetified-play-services-vision-20.1.2/AndroidManifest.xml:5:5-44
 MERGED from [com.google.android.gms:play-services-vision:20.1.2] /Users/bogdantatu/.gradle/caches/transforms-2/files-2.1/7dd1ff641d7424d9a358f2b0c394c7b1/jetified-play-services-vision-20.1.2/AndroidManifest.xml:5:5-44
 MERGED from [com.google.firebase:firebase-database:19.5.1] /Users/bogdantatu/.gradle/caches/transforms-2/files-2.1/04f51318126f0f9d5e41ed7055037126/jetified-firebase-database-19.5.1/AndroidManifest.xml:19:5-21:41
@@ -256,6 +263,10 @@ MERGED from [androidx.arch.core:core-runtime:2.0.0] /Users/bogdantatu/.gradle/ca
 MERGED from [androidx.arch.core:core-runtime:2.0.0] /Users/bogdantatu/.gradle/caches/transforms-2/files-2.1/9b0de12448de0c93fb8f1104bdc1914b/core-runtime-2.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.annotation:annotation-experimental:1.0.0] /Users/bogdantatu/.gradle/caches/transforms-2/files-2.1/8494da40e588b403567d35fcde644201/jetified-annotation-experimental-1.0.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.annotation:annotation-experimental:1.0.0] /Users/bogdantatu/.gradle/caches/transforms-2/files-2.1/8494da40e588b403567d35fcde644201/jetified-annotation-experimental-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.firebase:protolite-well-known-types:17.1.0] /Users/bogdantatu/.gradle/caches/transforms-2/files-2.1/dfa504ff5b15e25f5ff3846e70cd9e2d/jetified-protolite-well-known-types-17.1.0/AndroidManifest.xml:7:5-9:41
+MERGED from [com.google.firebase:protolite-well-known-types:17.1.0] /Users/bogdantatu/.gradle/caches/transforms-2/files-2.1/dfa504ff5b15e25f5ff3846e70cd9e2d/jetified-protolite-well-known-types-17.1.0/AndroidManifest.xml:7:5-9:41
+MERGED from [io.grpc:grpc-android:1.28.0] /Users/bogdantatu/.gradle/caches/transforms-2/files-2.1/670bd10df567588160bf5f241d03518f/jetified-grpc-android-1.28.0/AndroidManifest.xml:7:5-9:41
+MERGED from [io.grpc:grpc-android:1.28.0] /Users/bogdantatu/.gradle/caches/transforms-2/files-2.1/670bd10df567588160bf5f241d03518f/jetified-grpc-android-1.28.0/AndroidManifest.xml:7:5-9:41
 INJECTED from /Users/bogdantatu/Desktop/Facultate/Dispozitive si Aplicatii mobile/android-project/app/src/main/AndroidManifest.xml
 INJECTED from /Users/bogdantatu/Desktop/Facultate/Dispozitive si Aplicatii mobile/android-project/app/src/main/AndroidManifest.xml
 	android:targetSdkVersion
@@ -268,14 +279,20 @@ INJECTED from /Users/bogdantatu/Desktop/Facultate/Dispozitive si Aplicatii mobil
 		INJECTED from /Users/bogdantatu/Desktop/Facultate/Dispozitive si Aplicatii mobile/android-project/app/src/main/AndroidManifest.xml
 uses-permission#android.permission.INTERNET
 ADDED from [com.google.firebase:firebase-auth:20.0.1] /Users/bogdantatu/.gradle/caches/transforms-2/files-2.1/89d1365828fa736c6ca0ebfb33761576/jetified-firebase-auth-20.0.1/AndroidManifest.xml:23:5-67
+MERGED from [com.google.firebase:firebase-firestore:22.0.0] /Users/bogdantatu/.gradle/caches/transforms-2/files-2.1/78b35f044a8063435346febc0daae5a8/jetified-firebase-firestore-22.0.0/AndroidManifest.xml:14:5-67
+MERGED from [com.google.firebase:firebase-firestore:22.0.0] /Users/bogdantatu/.gradle/caches/transforms-2/files-2.1/78b35f044a8063435346febc0daae5a8/jetified-firebase-firestore-22.0.0/AndroidManifest.xml:14:5-67
 MERGED from [com.google.firebase:firebase-database:19.5.1] /Users/bogdantatu/.gradle/caches/transforms-2/files-2.1/04f51318126f0f9d5e41ed7055037126/jetified-firebase-database-19.5.1/AndroidManifest.xml:26:5-67
 MERGED from [com.google.firebase:firebase-database:19.5.1] /Users/bogdantatu/.gradle/caches/transforms-2/files-2.1/04f51318126f0f9d5e41ed7055037126/jetified-firebase-database-19.5.1/AndroidManifest.xml:26:5-67
 	android:name
 		ADDED from [com.google.firebase:firebase-auth:20.0.1] /Users/bogdantatu/.gradle/caches/transforms-2/files-2.1/89d1365828fa736c6ca0ebfb33761576/jetified-firebase-auth-20.0.1/AndroidManifest.xml:23:22-64
 uses-permission#android.permission.ACCESS_NETWORK_STATE
 ADDED from [com.google.firebase:firebase-auth:20.0.1] /Users/bogdantatu/.gradle/caches/transforms-2/files-2.1/89d1365828fa736c6ca0ebfb33761576/jetified-firebase-auth-20.0.1/AndroidManifest.xml:24:5-79
+MERGED from [com.google.firebase:firebase-firestore:22.0.0] /Users/bogdantatu/.gradle/caches/transforms-2/files-2.1/78b35f044a8063435346febc0daae5a8/jetified-firebase-firestore-22.0.0/AndroidManifest.xml:13:5-79
+MERGED from [com.google.firebase:firebase-firestore:22.0.0] /Users/bogdantatu/.gradle/caches/transforms-2/files-2.1/78b35f044a8063435346febc0daae5a8/jetified-firebase-firestore-22.0.0/AndroidManifest.xml:13:5-79
 MERGED from [com.google.firebase:firebase-database:19.5.1] /Users/bogdantatu/.gradle/caches/transforms-2/files-2.1/04f51318126f0f9d5e41ed7055037126/jetified-firebase-database-19.5.1/AndroidManifest.xml:25:5-79
 MERGED from [com.google.firebase:firebase-database:19.5.1] /Users/bogdantatu/.gradle/caches/transforms-2/files-2.1/04f51318126f0f9d5e41ed7055037126/jetified-firebase-database-19.5.1/AndroidManifest.xml:25:5-79
+MERGED from [io.grpc:grpc-android:1.28.0] /Users/bogdantatu/.gradle/caches/transforms-2/files-2.1/670bd10df567588160bf5f241d03518f/jetified-grpc-android-1.28.0/AndroidManifest.xml:11:5-79
+MERGED from [io.grpc:grpc-android:1.28.0] /Users/bogdantatu/.gradle/caches/transforms-2/files-2.1/670bd10df567588160bf5f241d03518f/jetified-grpc-android-1.28.0/AndroidManifest.xml:11:5-79
 	android:name
 		ADDED from [com.google.firebase:firebase-auth:20.0.1] /Users/bogdantatu/.gradle/caches/transforms-2/files-2.1/89d1365828fa736c6ca0ebfb33761576/jetified-firebase-auth-20.0.1/AndroidManifest.xml:24:22-76
 activity#com.google.firebase.auth.internal.GenericIdpActivity
@@ -342,6 +359,8 @@ ADDED from [com.google.firebase:firebase-auth:20.0.1] /Users/bogdantatu/.gradle/
 		ADDED from [com.google.firebase:firebase-auth:20.0.1] /Users/bogdantatu/.gradle/caches/transforms-2/files-2.1/89d1365828fa736c6ca0ebfb33761576/jetified-firebase-auth-20.0.1/AndroidManifest.xml:69:25-86
 service#com.google.firebase.components.ComponentDiscoveryService
 ADDED from [com.google.firebase:firebase-auth:20.0.1] /Users/bogdantatu/.gradle/caches/transforms-2/files-2.1/89d1365828fa736c6ca0ebfb33761576/jetified-firebase-auth-20.0.1/AndroidManifest.xml:74:9-80:19
+MERGED from [com.google.firebase:firebase-firestore:22.0.0] /Users/bogdantatu/.gradle/caches/transforms-2/files-2.1/78b35f044a8063435346febc0daae5a8/jetified-firebase-firestore-22.0.0/AndroidManifest.xml:17:9-23:19
+MERGED from [com.google.firebase:firebase-firestore:22.0.0] /Users/bogdantatu/.gradle/caches/transforms-2/files-2.1/78b35f044a8063435346febc0daae5a8/jetified-firebase-firestore-22.0.0/AndroidManifest.xml:17:9-23:19
 MERGED from [com.google.firebase:firebase-database:19.5.1] /Users/bogdantatu/.gradle/caches/transforms-2/files-2.1/04f51318126f0f9d5e41ed7055037126/jetified-firebase-database-19.5.1/AndroidManifest.xml:29:9-35:19
 MERGED from [com.google.firebase:firebase-database:19.5.1] /Users/bogdantatu/.gradle/caches/transforms-2/files-2.1/04f51318126f0f9d5e41ed7055037126/jetified-firebase-database-19.5.1/AndroidManifest.xml:29:9-35:19
 MERGED from [com.google.firebase:firebase-common:19.4.0] /Users/bogdantatu/.gradle/caches/transforms-2/files-2.1/fd8b72c91ba24cce2c6f4e94eb66a716/jetified-firebase-common-19.4.0/AndroidManifest.xml:33:9-37:35
@@ -360,6 +379,12 @@ ADDED from [com.google.firebase:firebase-auth:20.0.1] /Users/bogdantatu/.gradle/
 		ADDED from [com.google.firebase:firebase-auth:20.0.1] /Users/bogdantatu/.gradle/caches/transforms-2/files-2.1/89d1365828fa736c6ca0ebfb33761576/jetified-firebase-auth-20.0.1/AndroidManifest.xml:79:17-82
 	android:name
 		ADDED from [com.google.firebase:firebase-auth:20.0.1] /Users/bogdantatu/.gradle/caches/transforms-2/files-2.1/89d1365828fa736c6ca0ebfb33761576/jetified-firebase-auth-20.0.1/AndroidManifest.xml:78:17-109
+meta-data#com.google.firebase.components:com.google.firebase.firestore.FirestoreRegistrar
+ADDED from [com.google.firebase:firebase-firestore:22.0.0] /Users/bogdantatu/.gradle/caches/transforms-2/files-2.1/78b35f044a8063435346febc0daae5a8/jetified-firebase-firestore-22.0.0/AndroidManifest.xml:20:13-22:85
+	android:value
+		ADDED from [com.google.firebase:firebase-firestore:22.0.0] /Users/bogdantatu/.gradle/caches/transforms-2/files-2.1/78b35f044a8063435346febc0daae5a8/jetified-firebase-firestore-22.0.0/AndroidManifest.xml:22:17-82
+	android:name
+		ADDED from [com.google.firebase:firebase-firestore:22.0.0] /Users/bogdantatu/.gradle/caches/transforms-2/files-2.1/78b35f044a8063435346febc0daae5a8/jetified-firebase-firestore-22.0.0/AndroidManifest.xml:21:17-111
 meta-data#com.google.firebase.components:com.google.firebase.database.DatabaseRegistrar
 ADDED from [com.google.firebase:firebase-database:19.5.1] /Users/bogdantatu/.gradle/caches/transforms-2/files-2.1/04f51318126f0f9d5e41ed7055037126/jetified-firebase-database-19.5.1/AndroidManifest.xml:32:13-34:85
 	android:value

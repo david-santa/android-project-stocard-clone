@@ -184,34 +184,40 @@
 98                android:value="com.google.firebase.components.ComponentRegistrar" />
 98-->[com.google.firebase:firebase-auth:20.0.1] /Users/bogdantatu/.gradle/caches/transforms-2/files-2.1/89d1365828fa736c6ca0ebfb33761576/jetified-firebase-auth-20.0.1/AndroidManifest.xml:79:17-82
 99            <meta-data
-99-->[com.google.firebase:firebase-database:19.5.1] /Users/bogdantatu/.gradle/caches/transforms-2/files-2.1/04f51318126f0f9d5e41ed7055037126/jetified-firebase-database-19.5.1/AndroidManifest.xml:32:13-34:85
-100                android:name="com.google.firebase.components:com.google.firebase.database.DatabaseRegistrar"
-100-->[com.google.firebase:firebase-database:19.5.1] /Users/bogdantatu/.gradle/caches/transforms-2/files-2.1/04f51318126f0f9d5e41ed7055037126/jetified-firebase-database-19.5.1/AndroidManifest.xml:33:17-109
+99-->[com.google.firebase:firebase-firestore:22.0.0] /Users/bogdantatu/.gradle/caches/transforms-2/files-2.1/78b35f044a8063435346febc0daae5a8/jetified-firebase-firestore-22.0.0/AndroidManifest.xml:20:13-22:85
+100                android:name="com.google.firebase.components:com.google.firebase.firestore.FirestoreRegistrar"
+100-->[com.google.firebase:firebase-firestore:22.0.0] /Users/bogdantatu/.gradle/caches/transforms-2/files-2.1/78b35f044a8063435346febc0daae5a8/jetified-firebase-firestore-22.0.0/AndroidManifest.xml:21:17-111
 101                android:value="com.google.firebase.components.ComponentRegistrar" />
-101-->[com.google.firebase:firebase-database:19.5.1] /Users/bogdantatu/.gradle/caches/transforms-2/files-2.1/04f51318126f0f9d5e41ed7055037126/jetified-firebase-database-19.5.1/AndroidManifest.xml:34:17-82
-102        </service>
-103
-104        <provider
-104-->[com.google.firebase:firebase-common:19.4.0] /Users/bogdantatu/.gradle/caches/transforms-2/files-2.1/fd8b72c91ba24cce2c6f4e94eb66a716/jetified-firebase-common-19.4.0/AndroidManifest.xml:26:9-31:39
-105            android:name="com.google.firebase.provider.FirebaseInitProvider"
-105-->[com.google.firebase:firebase-common:19.4.0] /Users/bogdantatu/.gradle/caches/transforms-2/files-2.1/fd8b72c91ba24cce2c6f4e94eb66a716/jetified-firebase-common-19.4.0/AndroidManifest.xml:27:13-77
-106            android:authorities="com.example.proiectechiparacheta.firebaseinitprovider"
-106-->[com.google.firebase:firebase-common:19.4.0] /Users/bogdantatu/.gradle/caches/transforms-2/files-2.1/fd8b72c91ba24cce2c6f4e94eb66a716/jetified-firebase-common-19.4.0/AndroidManifest.xml:28:13-72
-107            android:directBootAware="true"
-107-->[com.google.firebase:firebase-common:19.4.0] /Users/bogdantatu/.gradle/caches/transforms-2/files-2.1/fd8b72c91ba24cce2c6f4e94eb66a716/jetified-firebase-common-19.4.0/AndroidManifest.xml:29:13-43
-108            android:exported="false"
-108-->[com.google.firebase:firebase-common:19.4.0] /Users/bogdantatu/.gradle/caches/transforms-2/files-2.1/fd8b72c91ba24cce2c6f4e94eb66a716/jetified-firebase-common-19.4.0/AndroidManifest.xml:30:13-37
-109            android:initOrder="100" />
-109-->[com.google.firebase:firebase-common:19.4.0] /Users/bogdantatu/.gradle/caches/transforms-2/files-2.1/fd8b72c91ba24cce2c6f4e94eb66a716/jetified-firebase-common-19.4.0/AndroidManifest.xml:31:13-36
-110
-111        <activity
-111-->[com.google.android.gms:play-services-base:17.1.0] /Users/bogdantatu/.gradle/caches/transforms-2/files-2.1/79bfad54593477a052776c0ada50c2a4/jetified-play-services-base-17.1.0/AndroidManifest.xml:23:9-26:75
-112            android:name="com.google.android.gms.common.api.GoogleApiActivity"
-112-->[com.google.android.gms:play-services-base:17.1.0] /Users/bogdantatu/.gradle/caches/transforms-2/files-2.1/79bfad54593477a052776c0ada50c2a4/jetified-play-services-base-17.1.0/AndroidManifest.xml:24:13-79
-113            android:exported="false"
-113-->[com.google.android.gms:play-services-base:17.1.0] /Users/bogdantatu/.gradle/caches/transforms-2/files-2.1/79bfad54593477a052776c0ada50c2a4/jetified-play-services-base-17.1.0/AndroidManifest.xml:25:13-37
-114            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-114-->[com.google.android.gms:play-services-base:17.1.0] /Users/bogdantatu/.gradle/caches/transforms-2/files-2.1/79bfad54593477a052776c0ada50c2a4/jetified-play-services-base-17.1.0/AndroidManifest.xml:26:13-72
-115    </application>
-116
-117</manifest>
+101-->[com.google.firebase:firebase-firestore:22.0.0] /Users/bogdantatu/.gradle/caches/transforms-2/files-2.1/78b35f044a8063435346febc0daae5a8/jetified-firebase-firestore-22.0.0/AndroidManifest.xml:22:17-82
+102            <meta-data
+102-->[com.google.firebase:firebase-database:19.5.1] /Users/bogdantatu/.gradle/caches/transforms-2/files-2.1/04f51318126f0f9d5e41ed7055037126/jetified-firebase-database-19.5.1/AndroidManifest.xml:32:13-34:85
+103                android:name="com.google.firebase.components:com.google.firebase.database.DatabaseRegistrar"
+103-->[com.google.firebase:firebase-database:19.5.1] /Users/bogdantatu/.gradle/caches/transforms-2/files-2.1/04f51318126f0f9d5e41ed7055037126/jetified-firebase-database-19.5.1/AndroidManifest.xml:33:17-109
+104                android:value="com.google.firebase.components.ComponentRegistrar" />
+104-->[com.google.firebase:firebase-database:19.5.1] /Users/bogdantatu/.gradle/caches/transforms-2/files-2.1/04f51318126f0f9d5e41ed7055037126/jetified-firebase-database-19.5.1/AndroidManifest.xml:34:17-82
+105        </service>
+106
+107        <provider
+107-->[com.google.firebase:firebase-common:19.4.0] /Users/bogdantatu/.gradle/caches/transforms-2/files-2.1/fd8b72c91ba24cce2c6f4e94eb66a716/jetified-firebase-common-19.4.0/AndroidManifest.xml:26:9-31:39
+108            android:name="com.google.firebase.provider.FirebaseInitProvider"
+108-->[com.google.firebase:firebase-common:19.4.0] /Users/bogdantatu/.gradle/caches/transforms-2/files-2.1/fd8b72c91ba24cce2c6f4e94eb66a716/jetified-firebase-common-19.4.0/AndroidManifest.xml:27:13-77
+109            android:authorities="com.example.proiectechiparacheta.firebaseinitprovider"
+109-->[com.google.firebase:firebase-common:19.4.0] /Users/bogdantatu/.gradle/caches/transforms-2/files-2.1/fd8b72c91ba24cce2c6f4e94eb66a716/jetified-firebase-common-19.4.0/AndroidManifest.xml:28:13-72
+110            android:directBootAware="true"
+110-->[com.google.firebase:firebase-common:19.4.0] /Users/bogdantatu/.gradle/caches/transforms-2/files-2.1/fd8b72c91ba24cce2c6f4e94eb66a716/jetified-firebase-common-19.4.0/AndroidManifest.xml:29:13-43
+111            android:exported="false"
+111-->[com.google.firebase:firebase-common:19.4.0] /Users/bogdantatu/.gradle/caches/transforms-2/files-2.1/fd8b72c91ba24cce2c6f4e94eb66a716/jetified-firebase-common-19.4.0/AndroidManifest.xml:30:13-37
+112            android:initOrder="100" />
+112-->[com.google.firebase:firebase-common:19.4.0] /Users/bogdantatu/.gradle/caches/transforms-2/files-2.1/fd8b72c91ba24cce2c6f4e94eb66a716/jetified-firebase-common-19.4.0/AndroidManifest.xml:31:13-36
+113
+114        <activity
+114-->[com.google.android.gms:play-services-base:17.1.0] /Users/bogdantatu/.gradle/caches/transforms-2/files-2.1/79bfad54593477a052776c0ada50c2a4/jetified-play-services-base-17.1.0/AndroidManifest.xml:23:9-26:75
+115            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+115-->[com.google.android.gms:play-services-base:17.1.0] /Users/bogdantatu/.gradle/caches/transforms-2/files-2.1/79bfad54593477a052776c0ada50c2a4/jetified-play-services-base-17.1.0/AndroidManifest.xml:24:13-79
+116            android:exported="false"
+116-->[com.google.android.gms:play-services-base:17.1.0] /Users/bogdantatu/.gradle/caches/transforms-2/files-2.1/79bfad54593477a052776c0ada50c2a4/jetified-play-services-base-17.1.0/AndroidManifest.xml:25:13-37
+117            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+117-->[com.google.android.gms:play-services-base:17.1.0] /Users/bogdantatu/.gradle/caches/transforms-2/files-2.1/79bfad54593477a052776c0ada50c2a4/jetified-play-services-base-17.1.0/AndroidManifest.xml:26:13-72
+118    </application>
+119
+120</manifest>

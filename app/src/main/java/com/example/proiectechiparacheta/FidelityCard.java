@@ -1,5 +1,7 @@
 package com.example.proiectechiparacheta;
 import com.google.android.gms.vision.*;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 
 public class FidelityCard {
     int id;
@@ -7,12 +9,14 @@ public class FidelityCard {
     String cardHolderName;
     String barCode;
 
+
     public FidelityCard(int id, String name, String cardHolderName, String barCode) {
         this.id = id;
         this.name = name;
         this.cardHolderName = cardHolderName;
         this.barCode = barCode;
     }
+
 
     public int getId() {
         return id;
@@ -45,4 +49,7 @@ public class FidelityCard {
     public void setBarCode(String barCode) {
         this.barCode = barCode;
     }
+
+
+
 }
