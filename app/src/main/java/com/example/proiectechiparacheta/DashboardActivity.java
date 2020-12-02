@@ -19,14 +19,21 @@ import android.widget.Toast;
 
 import com.clearbit.JSON;
 import com.google.android.gms.common.api.CommonStatusCodes;
+import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
+import com.google.android.gms.tasks.Task;
 import com.google.android.gms.vision.barcode.Barcode;
 import com.google.android.material.snackbar.Snackbar;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.firestore.DocumentReference;
+import com.google.firebase.firestore.DocumentSnapshot;
+import com.google.firebase.firestore.EventListener;
 import com.google.firebase.firestore.FirebaseFirestore;
+import com.google.firebase.firestore.FirebaseFirestoreException;
+import com.google.firebase.firestore.QueryDocumentSnapshot;
+import com.google.firebase.firestore.QuerySnapshot;
 
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -42,7 +49,8 @@ public class DashboardActivity extends AppCompatActivity {
     public CustomAdapter adapter;
     private FirebaseAuth auth;
     private FirebaseAuth.AuthStateListener authListener;
-    private static final String TAG = "DashboardActivity";
+    private static final String TAG = "";
+    private FirebaseFirestore db = FirebaseFirestore.getInstance();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -81,34 +89,10 @@ public class DashboardActivity extends AppCompatActivity {
         };
 //------------------------------------Sign out method-------------------------------------------//
 
-        //Trying to add cards to database
-
-        FirebaseFirestore db = FirebaseFirestore.getInstance();
-
-
-//        Map<String, Object> cards = new HashMap<>();
-//        cards.put("CardBarcode", "43523452345234523523452345342");
-//        cards.put("CardHolderName", "Test");
-//        cards.put("CardName", "Farmacia Dona");
-//        cards.put("UserID", user.getUid());
 
 
 
-//        db.collection("users").document("users")
-//                .set(cards)
-//                .addOnSuccessListener(new OnSuccessListener<Void>() {
-//                    @Override
-//                    public void onSuccess(Void aVoid) {
-//                        Log.d(TAG, "DocumentSnapshot successfully written!");
-//                    }
-//                })
-//                .addOnFailureListener(new OnFailureListener() {
-//                    @Override
-//                    public void onFailure(@NonNull Exception e) {
-//                        Log.w(TAG, "Error writing document", e);
-//                    }
-//                });
-        //------------------------------------Adding cards to database-------------------------------------------//
+
 
         ImageButton btnAdd = findViewById(R.id.btnAdd);
         ListView listView = (ListView) findViewById(R.id.customListView);
