@@ -258,10 +258,9 @@ public class DashboardActivity extends AppCompatActivity {
             String name = data.getStringExtra("name");
             String cardHolderName = data.getStringExtra("cardHolderName");
             String barcode = data.getStringExtra("barcode");
-            if (id != -1)
-                arrayList.get(id - 1).setName(name);
-            arrayList.get(id - 1).setCardHolderName(cardHolderName);
-            arrayList.get(id - 1).setBarCode(barcode);
+            if (id != -1){
+                sqLiteHelper.updateCard(name,cardHolderName,barcode,id);
+            }
             adapter.notifyDataSetChanged();
         }
 
