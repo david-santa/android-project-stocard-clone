@@ -66,6 +66,7 @@ public class DashboardActivity extends AppCompatActivity {
     }
 
     public void getCards(){
+        arrayList = new ArrayList<FidelityCard>();
         Cursor data = sqLiteHelper.getCards();
         while(data.moveToNext()) {
             int id= Integer.parseInt(data.getString(0));
@@ -203,6 +204,8 @@ public class DashboardActivity extends AppCompatActivity {
                 @Override
                 public boolean onMenuItemClick(MenuItem item) {
                     sqLiteHelper.deleteCard(card.getId());
+                    arrayList.remove(card.getId()-1);
+                    adapter.notifyDataSetChanged();
                     return false;
                 }
             });
@@ -267,6 +270,9 @@ public class DashboardActivity extends AppCompatActivity {
             if (id != -1){
                 sqLiteHelper.updateCard(name,cardHolderName,barcode,id);
             }
+            arrayList.get(id-1).setName(name);
+            arrayList.get(id-1).setCardHolderName(cardHolderName);
+            arrayList.get(id-1).setBarCode(barcode);
             adapter.notifyDataSetChanged();
         }
     }
