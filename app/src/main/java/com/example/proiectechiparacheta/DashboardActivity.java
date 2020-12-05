@@ -5,6 +5,8 @@ import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.database.Cursor;
+import android.database.sqlite.SQLiteDatabase;
 import android.graphics.Bitmap;
 import android.os.Bundle;
 import android.util.Log;
@@ -51,17 +53,42 @@ public class DashboardActivity extends AppCompatActivity {
     private FirebaseAuth.AuthStateListener authListener;
     private static final String TAG = "";
     private FirebaseFirestore db = FirebaseFirestore.getInstance();
+    SQLiteHelper sqLiteHelper;
+
+    public void addCard(String cardName, String cardholderName, String barcodeValue){
+        boolean insertData = sqLiteHelper.addCard(cardName,cardholderName,barcodeValue);
+        if(insertData){
+            Toast.makeText(this, "Data Inserted Successfully", Toast.LENGTH_SHORT).show();
+        }
+        else{
+            Toast.makeText(this, "Something went wrong", Toast.LENGTH_SHORT).show();
+        }
+    }
+
+    public void getCards(){
+        Cursor data = sqLiteHelper.getCards();
+        while(data.moveToNext()) {
+            int id= Integer.parseInt(data.getString(0));
+            String cardName = data.getString(1);
+            String cardholderName = data.getString(2);
+            String barcodeValue = data.getString(3);
+            arrayList.add(new FidelityCard(id,cardName,cardholderName,barcodeValue));
+        }
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        sqLiteHelper = new SQLiteHelper(this);
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_dashboard);
+        getCards();
 
 
         //Sign out method
         Button btnSignOut = findViewById(R.id.btnSignOut);
         //get firebase auth instance
         auth = FirebaseAuth.getInstance();
+        //addCard("cardTest","test","testBarcode");
 
         //get current user
         final FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
@@ -98,8 +125,8 @@ public class DashboardActivity extends AppCompatActivity {
         ListView listView = (ListView) findViewById(R.id.customListView);
 
 
-        arrayList.add(new FidelityCard(1, "IKEA", "David Santa", "123123123"));
-        arrayList.add(new FidelityCard(2, "MORTIMEI", "David Santa", "32132131231"));
+//        arrayList.add(new FidelityCard(1, "IKEA", "David Santa", "123123123"));
+//        arrayList.add(new FidelityCard(2, "MORTIMEI", "David Santa", "32132131231"));
 
         adapter = new CustomAdapter(this, arrayList);
         listView.setAdapter(adapter);
