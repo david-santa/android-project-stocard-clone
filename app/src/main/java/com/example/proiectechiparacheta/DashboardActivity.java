@@ -257,12 +257,18 @@ public class DashboardActivity extends AppCompatActivity {
         }
         if (requestCode == 1) {
             //create a new FidelityCard
-            int id;
+            int id=-1;
             String name = data.getStringExtra("name");
             String cardHolderName = data.getStringExtra("cardHolderName");
             String barcode = data.getStringExtra("barcode");
             addCard(name,cardHolderName,barcode);
-            id=sqLiteHelper.getCardId(name);
+            Cursor c = sqLiteHelper.getCards();
+            while(c.moveToNext()){
+                //Log.d("ceva",c.getString(1) + " , " + name);
+                if(c.getString(1).equals(name)){
+                    id=c.getInt(0);
+                }
+            }
             arrayList.add(new FidelityCard(id, name, cardHolderName, barcode));
             adapter.notifyDataSetChanged();
         }
