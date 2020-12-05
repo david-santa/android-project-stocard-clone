@@ -199,7 +199,13 @@ public class DashboardActivity extends AppCompatActivity {
                     return false;
                 }
             });
-            menu.add("Delete");
+            menu.add("Delete").setOnMenuItemClickListener(new MenuItem.OnMenuItemClickListener() {
+                @Override
+                public boolean onMenuItemClick(MenuItem item) {
+                    sqLiteHelper.deleteCard(card.getId());
+                    return false;
+                }
+            });
         }
     }
 
@@ -263,12 +269,5 @@ public class DashboardActivity extends AppCompatActivity {
             }
             adapter.notifyDataSetChanged();
         }
-
-
-
-
-
-
-
     }
 }

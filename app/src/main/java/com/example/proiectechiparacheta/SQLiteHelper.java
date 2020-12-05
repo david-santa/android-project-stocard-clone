@@ -67,4 +67,11 @@ public class SQLiteHelper extends SQLiteOpenHelper {
         String query = "UPDATE "+ TABLE_NAME_1 + " SET " + CARD_COL2 + " = " + "'" + newName + "'" + "," + CARD_COL3 + " = " + "'"+ newCardholderName + "'" + "," + CARD_COL4 + " = " + "'" + newBarcodeValue + "'" + " WHERE "+CARD_COL1 + "=" + id;
         db.execSQL(query);
     }
+
+    public void deleteCard(int id){
+        SQLiteDatabase db = this.getWritableDatabase();
+        String query = "DELETE FROM " + TABLE_NAME_1 + " WHERE "
+                + CARD_COL1 + "=" + id;
+        db.execSQL(query);
+    }
 }
