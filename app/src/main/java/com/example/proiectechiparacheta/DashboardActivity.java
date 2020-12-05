@@ -47,6 +47,7 @@ import java.util.Map;
 import java.util.concurrent.Callable;
 
 public class DashboardActivity extends AppCompatActivity {
+    //region DECLARATION ZONE
     public ArrayList<FidelityCard> arrayList = new ArrayList<FidelityCard>();
     public CustomAdapter adapter;
     private FirebaseAuth auth;
@@ -54,7 +55,9 @@ public class DashboardActivity extends AppCompatActivity {
     private static final String TAG = "";
     private FirebaseFirestore db = FirebaseFirestore.getInstance();
     SQLiteHelper sqLiteHelper;
+    //endregion
 
+    //region SQLite
     public void addCard(String cardName, String cardholderName, String barcodeValue){
         boolean insertData = sqLiteHelper.addCard(cardName,cardholderName,barcodeValue);
         if(insertData){
@@ -76,6 +79,9 @@ public class DashboardActivity extends AppCompatActivity {
             arrayList.add(new FidelityCard(id,cardName,cardholderName,barcodeValue));
         }
     }
+    //endregion
+
+    //region ONCREATE
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -97,7 +103,7 @@ public class DashboardActivity extends AppCompatActivity {
         btnSignOut.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-               auth.signOut();
+                auth.signOut();
                 Intent intent = new Intent(getApplicationContext(),LoginActivity.class);
                 startActivity(intent);
             }
@@ -125,10 +131,6 @@ public class DashboardActivity extends AppCompatActivity {
         ImageButton btnAdd = findViewById(R.id.btnAdd);
         ListView listView = (ListView) findViewById(R.id.customListView);
 
-
-//        arrayList.add(new FidelityCard(1, "IKEA", "David Santa", "123123123"));
-//        arrayList.add(new FidelityCard(2, "MORTIMEI", "David Santa", "32132131231"));
-
         adapter = new CustomAdapter(this, arrayList);
         listView.setAdapter(adapter);
         registerForContextMenu(listView);
@@ -154,6 +156,10 @@ public class DashboardActivity extends AppCompatActivity {
 
     }
 
+    //endregion
+
+    //region CONTEXT MENU
+
     @Override
     public void onCreateContextMenu(ContextMenu menu, View v, ContextMenu.ContextMenuInfo menuInfo) {
         v.setLongClickable(true);
@@ -162,19 +168,18 @@ public class DashboardActivity extends AppCompatActivity {
             AdapterView.AdapterContextMenuInfo acmi = (AdapterView.AdapterContextMenuInfo) menuInfo;
             FidelityCard card = (FidelityCard) lv.getItemAtPosition(acmi.position);
 
+            //  ============== EDIT  ==============
+
             menu.add("Edit").setOnMenuItemClickListener(new MenuItem.OnMenuItemClickListener() {
                 @Override
                 public boolean onMenuItemClick(MenuItem item) {
-                    Intent intent = new Intent(DashboardActivity.this, AddByForm.class);
-                    intent.putExtra("requestCode", 2);
-                    intent.putExtra("id", card.getId());
-                    intent.putExtra("name", card.getName().toString());
-                    intent.putExtra("cardHolderName", card.cardHolderName.toString());
-                    intent.putExtra("barcode", card.getBarCode().toString());
-                    startActivityForResult(intent, 2);
+                    editCard(card);
                     return false;
                 }
             });
+
+            //  ============== SHOW  ==============
+
             menu.add("Show").setOnMenuItemClickListener(new MenuItem.OnMenuItemClickListener() {
                 @Override
                 public boolean onMenuItemClick(MenuItem item) {
@@ -182,37 +187,58 @@ public class DashboardActivity extends AppCompatActivity {
                     return false;
                 }
             });
+
+            //  ============== EXPORT JSON  ==============
             menu.add("Export JSON").setOnMenuItemClickListener(new MenuItem.OnMenuItemClickListener() {
                 @Override
                 public boolean onMenuItemClick(MenuItem item) {
-                    JSONObject json = new JSONObject();
-                    try {
-                        json.put("id", card.getId());
-                        JSONObject attributes = new JSONObject();
-                        attributes.put("cardHolderName", card.getCardHolderName());
-                        attributes.put("barcodeValue", card.getBarCode());
-                        attributes.put("username", "username");
-                        json.put("attributes", attributes);
-                        Toast.makeText(getApplicationContext(), json.toString(), Toast.LENGTH_LONG).show();
-                    } catch (JSONException e) {
-                        e.printStackTrace();
-                    }
+                    exportCard(card);
                     return false;
                 }
             });
+
+            //  ============== DELETE  ==============
+
             menu.add("Delete").setOnMenuItemClickListener(new MenuItem.OnMenuItemClickListener() {
                 @Override
                 public boolean onMenuItemClick(MenuItem item) {
-                    sqLiteHelper.deleteCard(card.getId());
-                    int index = getArraylistIndex(card.id);
-                    arrayList.remove(index);
-                    adapter.notifyDataSetChanged();
+                    deleteCard(card);
                     return false;
                 }
             });
         }
     }
 
+    //endregion
+
+    //region ONACTIVITYRESULT
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+        if (requestCode == 0) {
+            if (resultCode == CommonStatusCodes.SUCCESS) {
+                if (data != null) {
+                    Barcode barcode = data.getParcelableExtra("barcode");
+                    Toast.makeText(this, barcode.displayValue, Toast.LENGTH_LONG);
+                } else {
+                    Toast.makeText(this, "No barcode found!", Toast.LENGTH_SHORT).show();
+                }
+            }
+        }
+        if (requestCode == 1) {
+            //create a new FidelityCard
+            createCard(data);
+        }
+        if (requestCode == 2) {
+            //edit an existing FidelityCard
+            editCard(data);
+        }
+    }
+
+    //endregion
+
+    //region UTILITARIES
     private void getImageForCard(FidelityCard card) {
         String url = buildUrlFromBarcodeValue(card.getBarCode().toString());
         Callable<Bitmap> asyncOperation = new HttpManager(url);
@@ -236,61 +262,6 @@ public class DashboardActivity extends AppCompatActivity {
         };
     }
 
-    public void scanBarcode(View v) {
-        Intent intent = new Intent(this, AddByCamera.class);
-        intent.putExtra("requestCode", 3);
-        startActivityForResult(intent, 3);
-    }
-
-    @Override
-    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
-        super.onActivityResult(requestCode, resultCode, data);
-        if (requestCode == 0) {
-            if (resultCode == CommonStatusCodes.SUCCESS) {
-                if (data != null) {
-                    Barcode barcode = data.getParcelableExtra("barcode");
-                    Toast.makeText(this, barcode.displayValue, Toast.LENGTH_LONG);
-                } else {
-                    Toast.makeText(this, "No barcode found!", Toast.LENGTH_SHORT).show();
-                }
-            }
-        }
-        if (requestCode == 1) {
-            //create a new FidelityCard
-            int id=-1;
-            String name = data.getStringExtra("name");
-            String cardHolderName = data.getStringExtra("cardHolderName");
-            String barcode = data.getStringExtra("barcode");
-            addCard(name,cardHolderName,barcode);
-            Cursor c = sqLiteHelper.getCards();
-            while(c.moveToNext()){
-                //Log.d("ceva",c.getString(1) + " , " + name);
-                if(c.getString(1).equals(name)){
-                    id=c.getInt(0);
-                }
-            }
-            arrayList.add(new FidelityCard(id, name, cardHolderName, barcode));
-            adapter.notifyDataSetChanged();
-        }
-        if (requestCode == 2) {
-            FidelityCard card = new FidelityCard();
-            int id = data.getIntExtra("id", -1);
-            String name = data.getStringExtra("name");
-            String cardHolderName = data.getStringExtra("cardHolderName");
-            String barcode = data.getStringExtra("barcode");
-            if (id != -1){
-                sqLiteHelper.updateCard(name,cardHolderName,barcode,id);
-            }
-            int index = getArraylistIndex(id);
-            if(index!=-1){
-                arrayList.get(index).setName(name);
-                arrayList.get(index).setCardHolderName(cardHolderName);
-                arrayList.get(index).setBarCode(barcode);
-            }
-            adapter.notifyDataSetChanged();
-        }
-    }
-
     private int getArraylistIndex(int id) {
         for(int i=0;i<arrayList.size();i++){
             if(arrayList.get(i).id==id)
@@ -298,4 +269,81 @@ public class DashboardActivity extends AppCompatActivity {
         }
         return -1;
     }
+
+
+    public void scanBarcode(View v) {
+        Intent intent = new Intent(this, AddByCamera.class);
+        intent.putExtra("requestCode", 3);
+        startActivityForResult(intent, 3);
+    }
+
+    private void deleteCard(FidelityCard card) {
+        sqLiteHelper.deleteCard(card.getId());
+        int index = getArraylistIndex(card.id);
+        arrayList.remove(index);
+        adapter.notifyDataSetChanged();
+    }
+
+    private void exportCard(FidelityCard card) {
+        JSONObject json = new JSONObject();
+        try {
+            json.put("id", card.getId());
+            JSONObject attributes = new JSONObject();
+            attributes.put("cardHolderName", card.getCardHolderName());
+            attributes.put("barcodeValue", card.getBarCode());
+            attributes.put("username", "username");
+            json.put("attributes", attributes);
+            Toast.makeText(getApplicationContext(), json.toString(), Toast.LENGTH_LONG).show();
+        } catch (JSONException e) {
+            e.printStackTrace();
+        }
+    }
+
+    private void editCard(FidelityCard card) {
+        Intent intent = new Intent(DashboardActivity.this, AddByForm.class);
+        intent.putExtra("requestCode", 2);
+        intent.putExtra("id", card.getId());
+        intent.putExtra("name", card.getName().toString());
+        intent.putExtra("cardHolderName", card.cardHolderName.toString());
+        intent.putExtra("barcode", card.getBarCode().toString());
+        startActivityForResult(intent, 2);
+    }
+
+    private void editCard(Intent data) {
+        FidelityCard card = new FidelityCard();
+        int id = data.getIntExtra("id", -1);
+        String name = data.getStringExtra("name");
+        String cardHolderName = data.getStringExtra("cardHolderName");
+        String barcode = data.getStringExtra("barcode");
+        if (id != -1){
+            sqLiteHelper.updateCard(name,cardHolderName,barcode,id);
+        }
+        int index = getArraylistIndex(id);
+        if(index!=-1){
+            arrayList.get(index).setName(name);
+            arrayList.get(index).setCardHolderName(cardHolderName);
+            arrayList.get(index).setBarCode(barcode);
+        }
+        adapter.notifyDataSetChanged();
+    }
+
+    private void createCard(Intent data) {
+        int id=-1;
+        String name = data.getStringExtra("name");
+        String cardHolderName = data.getStringExtra("cardHolderName");
+        String barcode = data.getStringExtra("barcode");
+        addCard(name,cardHolderName,barcode);
+        Cursor c = sqLiteHelper.getCards();
+        while(c.moveToNext()){
+            //Log.d("ceva",c.getString(1) + " , " + name);
+            if(c.getString(1).equals(name)){
+                id=c.getInt(0);
+            }
+        }
+        arrayList.add(new FidelityCard(id, name, cardHolderName, barcode));
+        adapter.notifyDataSetChanged();
+    }
+
+    //endregion
+
 }
