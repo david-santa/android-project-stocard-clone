@@ -204,7 +204,8 @@ public class DashboardActivity extends AppCompatActivity {
                 @Override
                 public boolean onMenuItemClick(MenuItem item) {
                     sqLiteHelper.deleteCard(card.getId());
-                    arrayList.remove(card.getId()-1);
+                    int index = getArraylistIndex(card.id);
+                    arrayList.remove(index);
                     adapter.notifyDataSetChanged();
                     return false;
                 }
@@ -256,13 +257,17 @@ public class DashboardActivity extends AppCompatActivity {
         }
         if (requestCode == 1) {
             //create a new FidelityCard
+            int id;
             String name = data.getStringExtra("name");
             String cardHolderName = data.getStringExtra("cardHolderName");
             String barcode = data.getStringExtra("barcode");
-            arrayList.add(new FidelityCard(55, name, cardHolderName, barcode));
+            addCard(name,cardHolderName,barcode);
+            id=sqLiteHelper.getCardId(name);
+            arrayList.add(new FidelityCard(id, name, cardHolderName, barcode));
             adapter.notifyDataSetChanged();
         }
         if (requestCode == 2) {
+            FidelityCard card = new FidelityCard();
             int id = data.getIntExtra("id", -1);
             String name = data.getStringExtra("name");
             String cardHolderName = data.getStringExtra("cardHolderName");
@@ -270,10 +275,21 @@ public class DashboardActivity extends AppCompatActivity {
             if (id != -1){
                 sqLiteHelper.updateCard(name,cardHolderName,barcode,id);
             }
-            arrayList.get(id-1).setName(name);
-            arrayList.get(id-1).setCardHolderName(cardHolderName);
-            arrayList.get(id-1).setBarCode(barcode);
+            int index = getArraylistIndex(id);
+            if(index!=-1){
+                arrayList.get(index).setName(name);
+                arrayList.get(index).setCardHolderName(cardHolderName);
+                arrayList.get(index).setBarCode(barcode);
+            }
             adapter.notifyDataSetChanged();
         }
+    }
+
+    private int getArraylistIndex(int id) {
+        for(int i=0;i<arrayList.size();i++){
+            if(arrayList.get(i).id==id)
+                return i;
+        }
+        return -1;
     }
 }

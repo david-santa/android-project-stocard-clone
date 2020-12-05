@@ -9,6 +9,13 @@ public class FidelityCard {
     String cardHolderName;
     String barCode;
 
+    public FidelityCard(){
+        this.id = -1;
+        this.name = "Default";
+        this.cardHolderName = "Default";
+        this.barCode = "Default";
+    }
+
 
     public FidelityCard(int id, String name, String cardHolderName, String barCode) {
         this.id = id;

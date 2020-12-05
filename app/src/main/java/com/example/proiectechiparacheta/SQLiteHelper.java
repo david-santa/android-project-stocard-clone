@@ -61,6 +61,12 @@ public class SQLiteHelper extends SQLiteOpenHelper {
         Cursor data = db.rawQuery("SELECT * FROM " + TABLE_NAME_1, null);
         return data;
     }
+    public int getCardId(String name){
+        SQLiteDatabase db = this.getWritableDatabase();
+        String query = "SELECT " + CARD_COL1 + " FROM " + TABLE_NAME_1 + " WHERE " + CARD_COL2 + "='" + name + "'";
+        Cursor data = db.rawQuery(query,null);
+        return data.getInt(1);
+    }
 
     public void updateCard(String newName, String newCardholderName, String newBarcodeValue, int id){
         SQLiteDatabase db = this.getWritableDatabase();
