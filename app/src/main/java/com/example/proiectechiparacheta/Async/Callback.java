@@ -1,4 +1,4 @@
-package com.example.proiectechiparacheta;
+package com.example.proiectechiparacheta.Async;
 
 public interface Callback<R> {
 

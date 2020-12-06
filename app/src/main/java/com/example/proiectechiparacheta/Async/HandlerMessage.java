@@ -1,4 +1,6 @@
-package com.example.proiectechiparacheta;
+package com.example.proiectechiparacheta.Async;
+
+import com.example.proiectechiparacheta.Async.Callback;
 
 public class HandlerMessage<R> implements Runnable {
 

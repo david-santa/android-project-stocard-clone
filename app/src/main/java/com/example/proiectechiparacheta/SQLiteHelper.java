@@ -19,6 +19,7 @@ public class SQLiteHelper extends SQLiteOpenHelper {
     private static final String TABLE_NAME_2 = "barcode";
     private static final String BARCODE_COL1 = "ID";
     private static final String BARCODE_COL2 = "image";
+    private static final String BARCODE_COL3 = "ID_CARD";
 
     public SQLiteHelper(@Nullable Context context) {
         super(context, TABLE_NAME_1, null, 1);
@@ -55,10 +56,31 @@ public class SQLiteHelper extends SQLiteOpenHelper {
         }
     }
 
+    public boolean addImage(byte[] image, int idCard){
+        SQLiteDatabase db = this.getWritableDatabase();
+        ContentValues contentValues = new ContentValues();
+        contentValues.put(BARCODE_COL2,image);
+        contentValues.put(BARCODE_COL3,idCard);
+        int result = (int) db.insert(TABLE_NAME_2,null,contentValues);
+        if(result == -1){
+            return false;
+        }
+        else {
+            return true;
+        }
+    }
+
 
     public Cursor getCards(){
         SQLiteDatabase db = this.getWritableDatabase();
         Cursor data = db.rawQuery("SELECT * FROM " + TABLE_NAME_1, null);
+        return data;
+    }
+
+    public Cursor getImage(int id){
+        SQLiteDatabase db = this.getWritableDatabase();
+        String query = "SELECT * FROM " + TABLE_NAME_2 + " WHERE ID_CARD = " + id;
+        Cursor data = db.rawQuery(query,null);
         return data;
     }
 

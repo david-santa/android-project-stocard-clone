@@ -1,7 +1,10 @@
-package com.example.proiectechiparacheta;
+package com.example.proiectechiparacheta.Async;
 
 import android.os.Handler;
 import android.os.Looper;
+
+import com.example.proiectechiparacheta.Async.Callback;
+import com.example.proiectechiparacheta.Async.RunnableTask;
 
 import java.util.concurrent.Callable;
 import java.util.concurrent.Executor;

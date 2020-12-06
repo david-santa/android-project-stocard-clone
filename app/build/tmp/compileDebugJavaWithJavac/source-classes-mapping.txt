@@ -1,25 +1,25 @@
+com/example/proiectechiparacheta/Async/AsyncTaskRunner.java
+ com.example.proiectechiparacheta.Async.AsyncTaskRunner
 com/example/proiectechiparacheta/CustomAdapter.java
  com.example.proiectechiparacheta.CustomAdapter
-com/example/proiectechiparacheta/HttpManager.java
- com.example.proiectechiparacheta.HttpManager
 com/example/proiectechiparacheta/AddByCamera.java
  com.example.proiectechiparacheta.AddByCamera
  com.example.proiectechiparacheta.AddByCamera$1
  com.example.proiectechiparacheta.AddByCamera$1$1
-com/example/proiectechiparacheta/AsyncTaskRunner.java
- com.example.proiectechiparacheta.AsyncTaskRunner
-com/example/proiectechiparacheta/RunnableTask.java
- com.example.proiectechiparacheta.RunnableTask
-com/example/proiectechiparacheta/Popup_Barcode.java
- com.example.proiectechiparacheta.Popup_Barcode
-com/example/proiectechiparacheta/BuildConfig.java
- com.example.proiectechiparacheta.BuildConfig
-com/example/proiectechiparacheta/Callback.java
- com.example.proiectechiparacheta.Callback
-com/example/proiectechiparacheta/HandlerMessage.java
- com.example.proiectechiparacheta.HandlerMessage
+com/example/proiectechiparacheta/Async/HttpManager.java
+ com.example.proiectechiparacheta.Async.HttpManager
+com/example/proiectechiparacheta/Async/RunnableTask.java
+ com.example.proiectechiparacheta.Async.RunnableTask
+com/example/proiectechiparacheta/Async/Callback.java
+ com.example.proiectechiparacheta.Async.Callback
 com/example/proiectechiparacheta/FidelityCard.java
  com.example.proiectechiparacheta.FidelityCard
+com/example/proiectechiparacheta/Popup_Barcode.java
+ com.example.proiectechiparacheta.Popup_Barcode
+com/example/proiectechiparacheta/Async/HandlerMessage.java
+ com.example.proiectechiparacheta.Async.HandlerMessage
+com/example/proiectechiparacheta/BuildConfig.java
+ com.example.proiectechiparacheta.BuildConfig
 com/example/proiectechiparacheta/SQLiteHelper.java
  com.example.proiectechiparacheta.SQLiteHelper
 com/example/proiectechiparacheta/LoginActivity.java

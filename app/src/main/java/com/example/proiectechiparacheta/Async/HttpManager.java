@@ -1,4 +1,4 @@
-package com.example.proiectechiparacheta;
+package com.example.proiectechiparacheta.Async;
 
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
@@ -39,7 +39,7 @@ public class HttpManager implements Callable<Bitmap> {
         return null;
     }
 
-    private Bitmap getResultFromHttp() throws IOException {
+    public Bitmap getResultFromHttp() throws IOException {
         InputStream in = new java.net.URL(urlAddress).openStream();
         Bitmap result = BitmapFactory.decodeStream(in);
         in.close();

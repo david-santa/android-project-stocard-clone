@@ -1,13 +1,12 @@
 package com.example.proiectechiparacheta;
 
 import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.database.Cursor;
-import android.database.sqlite.SQLiteDatabase;
 import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.ContextMenu;
@@ -19,31 +18,21 @@ import android.widget.ImageButton;
 import android.widget.ListView;
 import android.widget.Toast;
 
-import com.clearbit.JSON;
+import com.example.proiectechiparacheta.Async.AsyncTaskRunner;
+import com.example.proiectechiparacheta.Async.Callback;
+import com.example.proiectechiparacheta.Async.HttpManager;
 import com.google.android.gms.common.api.CommonStatusCodes;
-import com.google.android.gms.tasks.OnCompleteListener;
-import com.google.android.gms.tasks.OnFailureListener;
-import com.google.android.gms.tasks.OnSuccessListener;
-import com.google.android.gms.tasks.Task;
 import com.google.android.gms.vision.barcode.Barcode;
-import com.google.android.material.snackbar.Snackbar;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
-import com.google.firebase.firestore.DocumentReference;
-import com.google.firebase.firestore.DocumentSnapshot;
-import com.google.firebase.firestore.EventListener;
 import com.google.firebase.firestore.FirebaseFirestore;
-import com.google.firebase.firestore.FirebaseFirestoreException;
-import com.google.firebase.firestore.QueryDocumentSnapshot;
-import com.google.firebase.firestore.QuerySnapshot;
 
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import java.io.ByteArrayOutputStream;
+import java.io.IOException;
 import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
 import java.util.concurrent.Callable;
 
 public class DashboardActivity extends AppCompatActivity {
@@ -149,7 +138,11 @@ public class DashboardActivity extends AppCompatActivity {
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                getImageForCard((FidelityCard) listView.getItemAtPosition(position));
+                try {
+                    getImageForCard((FidelityCard) listView.getItemAtPosition(position));
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
             }
         });
 
@@ -183,7 +176,11 @@ public class DashboardActivity extends AppCompatActivity {
             menu.add("Show").setOnMenuItemClickListener(new MenuItem.OnMenuItemClickListener() {
                 @Override
                 public boolean onMenuItemClick(MenuItem item) {
-                    getImageForCard(card);
+                    try {
+                        getImageForCard(card);
+                    } catch (IOException e) {
+                        e.printStackTrace();
+                    }
                     return false;
                 }
             });
@@ -239,11 +236,36 @@ public class DashboardActivity extends AppCompatActivity {
     //endregion
 
     //region UTILITARIES
-    private void getImageForCard(FidelityCard card) {
-        String url = buildUrlFromBarcodeValue(card.getBarCode().toString());
-        Callable<Bitmap> asyncOperation = new HttpManager(url);
-        Callback<Bitmap> mainThreadOperation = getMainThreadOperation();
-        AsyncTaskRunner.executeAsync(asyncOperation, mainThreadOperation);
+    // convert from bitmap to byte array
+    public static byte[] getBytes(Bitmap bitmap) {
+        ByteArrayOutputStream stream = new ByteArrayOutputStream();
+        bitmap.compress(Bitmap.CompressFormat.PNG, 0, stream);
+        return stream.toByteArray();
+    }
+
+    // convert from byte array to bitmap
+    public static Bitmap getImage(byte[] image) {
+        return BitmapFactory.decodeByteArray(image, 0, image.length);
+    }
+
+    private void getImageForCard(FidelityCard card) throws IOException {
+        Cursor c = sqLiteHelper.getImage(card.id);
+        if(c.getCount()>0){
+            Log.d("ceva","ceva");
+            c.moveToFirst();
+            byte[] blob = c.getBlob(1);
+            Bitmap image = getImage(blob);
+            Popup_Barcode popup_barcode = new Popup_Barcode(image);
+            popup_barcode.show(getSupportFragmentManager(), "popupBarcode");
+        }
+        else {
+            Log.d("ceva","altceva");
+            //Daca exista imaginea in baza de date o vom lua de acolo. Daca nu exista, o vom lua din API si o vom adauga in baza de date
+            String url = buildUrlFromBarcodeValue(card.getBarCode().toString());
+            Callable<Bitmap> asyncOperation = new HttpManager(url);
+            Callback<Bitmap> mainThreadOperation = getMainThreadOperation(card.id);
+            AsyncTaskRunner.executeAsync(asyncOperation, mainThreadOperation);
+        }
     }
 
     private String buildUrlFromBarcodeValue(String barcodeValue) {
@@ -251,13 +273,15 @@ public class DashboardActivity extends AppCompatActivity {
         return s;
     }
 
-    private Callback<Bitmap> getMainThreadOperation() {
+    private Callback<Bitmap> getMainThreadOperation(int id) {
         return new Callback<Bitmap>() {
 
             @Override
             public void runResultOnUiThread(Bitmap result) {
                 Popup_Barcode popup_barcode = new Popup_Barcode(result);
                 popup_barcode.show(getSupportFragmentManager(), "popupBarcode");
+                byte[] blob = getBytes(result);
+                sqLiteHelper.addImage(blob,id);
             }
         };
     }
