@@ -1718,6 +1718,7 @@ id bottom
 id bounce
 id btnAdd
 id btnCancel
+id btnExport
 id btnLogin
 id btnRegister
 id btnSave
@@ -2235,6 +2236,7 @@ string default_web_client_id
 string email
 string email_login
 string error_icon_content_description
+string export
 string exposed_dropdown_menu_content_description
 string fab_transformation_scrim_behavior
 string fab_transformation_sheet_behavior

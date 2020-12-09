@@ -57,6 +57,14 @@ public class FidelityCard {
         this.barCode = barCode;
     }
 
-
-
+    @Override
+    public String toString() {
+        return "{" +
+                "\"id\":" + id +
+                ", \"name\":\"" + name + "\"," +
+                "\"attributes\":{" +
+                "\"cardHolderName\":\"" + cardHolderName + '\"' +
+                ", \"barcodeValue\":\"" + barCode + '\"' +
+                "}}";
+    }
 }

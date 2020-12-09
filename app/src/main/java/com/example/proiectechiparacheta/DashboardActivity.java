@@ -3,6 +3,7 @@ package com.example.proiectechiparacheta;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Context;
 import android.content.Intent;
 import android.database.Cursor;
 import android.graphics.Bitmap;
@@ -30,11 +31,20 @@ import com.google.firebase.firestore.FirebaseFirestore;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import java.io.BufferedReader;
 import java.io.ByteArrayOutputStream;
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.FileWriter;
 import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.io.OutputStreamWriter;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.Callable;
+import java.util.logging.Logger;
 
 public class DashboardActivity extends AppCompatActivity {
     //region DECLARATION ZONE
@@ -72,39 +82,6 @@ public class DashboardActivity extends AppCompatActivity {
     //endregion
 
     //region ONCREATE
-
-    public List<FidelityCard> getCardsFromJson(){
-        String json = "[\n" +
-                "  {\n" +
-                "    \"id\": 4,\n" +
-                "    \"name\": \"IKEA\",\n" +
-                "    \"attributes\": {\n" +
-                "      \"cardHolderName\": \"Andutzu Dragutzu\",\n" +
-                "      \"barcodeValue\": \"muieTimofte\",\n" +
-                "      \"username\": \"ionutcopilfrumos@gmail.com\"\n" +
-                "    }\n" +
-                "  },\n" +
-                "  {\n" +
-                "    \"id\": 3,\n" +
-                "    \"name\": \"ANDU\",\n" +
-                "    \"attributes\": {\n" +
-                "      \"cardHolderName\": \"SUGE PULA\",\n" +
-                "      \"barcodeValue\": \"cumasa\",\n" +
-                "      \"username\": \"siCuTacsuMustaciosu@gmail.com\"\n" +
-                "    }\n" +
-                "  },\n" +
-                "  {\n" +
-                "    \"id\": 2,\n" +
-                "    \"name\": \"PizdaMeaEGrasa\",\n" +
-                "    \"attributes\": {\n" +
-                "      \"cardHolderName\": \"Mortii mei sunt morti\",\n" +
-                "      \"barcodeValue\": \"bagPulasamiBag\",\n" +
-                "      \"username\": \"davidGrasuPuliiMele@gmail.com\"\n" +
-                "    }\n" +
-                "  }\n" +
-                "]";
-        return JSONParser.fromJson(json);
-    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -156,6 +133,22 @@ public class DashboardActivity extends AppCompatActivity {
         adapter = new CustomAdapter(this, arrayList);
         listView.setAdapter(adapter);
         registerForContextMenu(listView);
+        Button btnExport = findViewById(R.id.btnExport);
+        btnExport.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String toWrite = "[";
+                for(int i=0;i<arrayList.size();i++){
+                    toWrite+=arrayList.get(i).toString();
+                    Log.d("object", arrayList.get(i).toString());
+                    if(i!=arrayList.size()-1)
+                    toWrite+=",";
+                }
+                toWrite += "]";
+                writeStringAsFile(toWrite,"json.txt");
+                Log.d("amscris",toWrite);
+            }
+        });
 
         btnAdd.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -218,15 +211,6 @@ public class DashboardActivity extends AppCompatActivity {
                 }
             });
 
-            //  ============== EXPORT JSON  ==============
-            menu.add("Export JSON").setOnMenuItemClickListener(new MenuItem.OnMenuItemClickListener() {
-                @Override
-                public boolean onMenuItemClick(MenuItem item) {
-                    exportCard(card);
-                    return false;
-                }
-            });
-
             //  ============== DELETE  ==============
 
             menu.add("Delete").setOnMenuItemClickListener(new MenuItem.OnMenuItemClickListener() {
@@ -269,6 +253,35 @@ public class DashboardActivity extends AppCompatActivity {
     //endregion
 
     //region UTILITARIES
+
+    public void writeStringAsFile(String fileContents, String fileName) {
+        Context context = DashboardActivity.this;
+        try {
+            FileWriter out = new FileWriter(new File("/data/data/com.example.proiectechiparacheta/files/json.txt"));
+            out.write(fileContents);
+            out.close();
+        } catch (IOException e) {
+            Log.d("error",e.toString());
+        }
+    }
+
+    public String readFileAsString(String fileName) {
+        Context context = DashboardActivity.this;
+        StringBuilder stringBuilder = new StringBuilder();
+        String line;
+
+        try (BufferedReader in = new BufferedReader(new FileReader(new File("/data/data/com.example.proiectechiparacheta/files/json.txt")))){
+            Log.d("ceva",context.getFilesDir().toString());
+            while ((line = in.readLine()) != null) stringBuilder.append(line);
+        } catch (FileNotFoundException e) {
+           Log.d("error",e.toString());
+        } catch (IOException e) {
+            Log.d("error",e.toString());
+        }
+        Log.d("stringCitit",stringBuilder.toString());
+        return stringBuilder.toString();
+    }
+
     // convert from bitmap to byte array
     public static byte[] getBytes(Bitmap bitmap) {
         ByteArrayOutputStream stream = new ByteArrayOutputStream();
@@ -399,6 +412,10 @@ public class DashboardActivity extends AppCompatActivity {
         }
         arrayList.add(new FidelityCard(id, name, cardHolderName, barcode));
         adapter.notifyDataSetChanged();
+    }
+
+    public List<FidelityCard> getCardsFromJson(){
+        return JSONParser.fromJson(readFileAsString("json.txt"));
     }
 
     //endregion
