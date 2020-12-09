@@ -33,6 +33,7 @@ import org.json.JSONObject;
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.List;
 import java.util.concurrent.Callable;
 
 public class DashboardActivity extends AppCompatActivity {
@@ -72,12 +73,44 @@ public class DashboardActivity extends AppCompatActivity {
 
     //region ONCREATE
 
+    public List<FidelityCard> getCardsFromJson(){
+        String json = "[\n" +
+                "  {\n" +
+                "    \"id\": 4,\n" +
+                "    \"name\": \"IKEA\",\n" +
+                "    \"attributes\": {\n" +
+                "      \"cardHolderName\": \"Andutzu Dragutzu\",\n" +
+                "      \"barcodeValue\": \"muieTimofte\",\n" +
+                "      \"username\": \"ionutcopilfrumos@gmail.com\"\n" +
+                "    }\n" +
+                "  },\n" +
+                "  {\n" +
+                "    \"id\": 3,\n" +
+                "    \"name\": \"ANDU\",\n" +
+                "    \"attributes\": {\n" +
+                "      \"cardHolderName\": \"SUGE PULA\",\n" +
+                "      \"barcodeValue\": \"cumasa\",\n" +
+                "      \"username\": \"siCuTacsuMustaciosu@gmail.com\"\n" +
+                "    }\n" +
+                "  },\n" +
+                "  {\n" +
+                "    \"id\": 2,\n" +
+                "    \"name\": \"PizdaMeaEGrasa\",\n" +
+                "    \"attributes\": {\n" +
+                "      \"cardHolderName\": \"Mortii mei sunt morti\",\n" +
+                "      \"barcodeValue\": \"bagPulasamiBag\",\n" +
+                "      \"username\": \"davidGrasuPuliiMele@gmail.com\"\n" +
+                "    }\n" +
+                "  }\n" +
+                "]";
+        return JSONParser.fromJson(json);
+    }
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         sqLiteHelper = new SQLiteHelper(this);
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_dashboard);
-        getCards();
 
 
         //Sign out method
@@ -119,7 +152,7 @@ public class DashboardActivity extends AppCompatActivity {
 
         ImageButton btnAdd = findViewById(R.id.btnAdd);
         ListView listView = (ListView) findViewById(R.id.customListView);
-
+        arrayList = (ArrayList<FidelityCard>) getCardsFromJson();
         adapter = new CustomAdapter(this, arrayList);
         listView.setAdapter(adapter);
         registerForContextMenu(listView);
@@ -262,7 +295,7 @@ public class DashboardActivity extends AppCompatActivity {
             Log.d("ceva","altceva");
             //Daca exista imaginea in baza de date o vom lua de acolo. Daca nu exista, o vom lua din API si o vom adauga in baza de date
             String url = buildUrlFromBarcodeValue(card.getBarCode().toString());
-            Callable<Bitmap> asyncOperation = new HttpManager(url);
+                Callable<Bitmap> asyncOperation = new HttpManager(url);
             Callback<Bitmap> mainThreadOperation = getMainThreadOperation(card.id);
             AsyncTaskRunner.executeAsync(asyncOperation, mainThreadOperation);
         }
