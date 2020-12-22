@@ -1,12 +1,17 @@
 package com.example.proiectechiparacheta;
 import com.example.proiectechiparacheta.R;
 
+import android.animation.ObjectAnimator;
 import android.content.Context;
 import android.text.Layout;
 import android.view.LayoutInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.animation.AccelerateDecelerateInterpolator;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
+import android.view.animation.LinearInterpolator;
 import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -20,6 +25,7 @@ public class CustomAdapter extends BaseAdapter {
 
     Context context;
     ArrayList<FidelityCard> arr;
+    Animation scaleUp;
 
     public CustomAdapter(Context context, ArrayList<FidelityCard> arr) {
         this.context = context;
@@ -48,11 +54,24 @@ public class CustomAdapter extends BaseAdapter {
         TextView tvName = convertView.findViewById(R.id.cardName);
         TextView tvHolder = convertView.findViewById(R.id.cardHolderName);
         TextView tvBarCode = convertView.findViewById(R.id.barCode);
+        ImageView iv1 = convertView.findViewById(R.id.iv1);
+        ImageView iv2 = convertView.findViewById(R.id.iv2);
+        ObjectAnimator animation = ObjectAnimator.ofFloat(iv1, "rotationY", 0.0f, 360f);
+        animation.setDuration(10000);
+        animation.setRepeatCount(ObjectAnimator.INFINITE);
+        animation.setInterpolator(new LinearInterpolator());
+        ObjectAnimator animation2 = ObjectAnimator.ofFloat(iv2, "rotationY", 0.0f, 360f);
+        animation2.setDuration(10000);
+        animation2.setRepeatCount(ObjectAnimator.INFINITE);
+        animation2.setInterpolator(new LinearInterpolator());
+        animation.start();
+        animation2.start();
 
         tvId.setText(String.valueOf(arr.get(position).getId()));
         tvName.setText(arr.get(position).getName());
         tvHolder.setText(arr.get(position).getCardHolderName());
         tvBarCode.setText(arr.get(position).getBarCode());
+
 
         return convertView;
     }

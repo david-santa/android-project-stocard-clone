@@ -30,6 +30,7 @@ anim design_snackbar_out
 anim mtrl_bottom_sheet_slide_in
 anim mtrl_bottom_sheet_slide_out
 anim mtrl_card_lowers_interpolator
+anim rotatie
 animator design_appbar_state_list_animator
 animator design_fab_hide_motion_spec
 animator design_fab_show_motion_spec
@@ -1574,6 +1575,8 @@ drawable common_google_signin_btn_text_light
 drawable common_google_signin_btn_text_light_focused
 drawable common_google_signin_btn_text_light_normal
 drawable common_google_signin_btn_text_light_normal_background
+drawable customshape
+drawable customshape2
 drawable design_bottom_navigation_item_background
 drawable design_fab_background
 drawable design_ic_visibility
@@ -1592,6 +1595,8 @@ drawable ic_mtrl_checked_circle
 drawable ic_mtrl_chip_checked_black
 drawable ic_mtrl_chip_checked_circle
 drawable ic_mtrl_chip_close_circle
+drawable layoutborder
+drawable lv_smecherie
 drawable material_ic_calendar_black_24dp
 drawable material_ic_clear_black_24dp
 drawable material_ic_edit_black_24dp
@@ -1622,6 +1627,7 @@ drawable notification_template_icon_low_bg
 drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
 drawable round_button
+drawable tag
 drawable test_custom_background
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
@@ -1708,6 +1714,7 @@ id auto
 id autoComplete
 id autoCompleteToEnd
 id autoCompleteToStart
+id bC
 id barCode
 id barrier
 id baseline
@@ -1724,6 +1731,8 @@ id btnRegister
 id btnSave
 id btnSignOut
 id buttonPanel
+id cHN
+id cN
 id cache_measures
 id camera_preview
 id cancel_button
@@ -1833,9 +1842,12 @@ id ignore
 id ignoreRequest
 id image
 id info
+id innerConstraint
 id invisible
 id italic
 id item_touch_helper_previous_elevation
+id iv1
+id iv2
 id ivBarcode
 id jumpToEnd
 id jumpToStart

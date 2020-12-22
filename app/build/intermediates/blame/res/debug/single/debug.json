@@ -28,6 +28,10 @@
         "source": "C:\\Users\\David\\AndroidStudioProjects\\ProiectEchipaRacheta\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher_round.png"
     },
     {
+        "merged": "C:\\Users\\David\\AndroidStudioProjects\\ProiectEchipaRacheta\\app\\build\\intermediates\\res\\merged\\debug\\drawable_lv_smecherie.xml.flat",
+        "source": "C:\\Users\\David\\AndroidStudioProjects\\ProiectEchipaRacheta\\app\\src\\main\\res\\drawable\\lv_smecherie.xml"
+    },
+    {
         "merged": "C:\\Users\\David\\AndroidStudioProjects\\ProiectEchipaRacheta\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_ic_launcher_foreground.xml.flat",
         "source": "C:\\Users\\David\\AndroidStudioProjects\\ProiectEchipaRacheta\\app\\src\\main\\res\\drawable-v24\\ic_launcher_foreground.xml"
     },
@@ -38,6 +42,10 @@
     {
         "merged": "C:\\Users\\David\\AndroidStudioProjects\\ProiectEchipaRacheta\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher.png.flat",
         "source": "C:\\Users\\David\\AndroidStudioProjects\\ProiectEchipaRacheta\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\David\\AndroidStudioProjects\\ProiectEchipaRacheta\\app\\build\\intermediates\\res\\merged\\debug\\drawable_customshape2.xml.flat",
+        "source": "C:\\Users\\David\\AndroidStudioProjects\\ProiectEchipaRacheta\\app\\src\\main\\res\\drawable\\customshape2.xml"
     },
     {
         "merged": "C:\\Users\\David\\AndroidStudioProjects\\ProiectEchipaRacheta\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_add_by_form.xml.flat",
@@ -80,8 +88,16 @@
         "source": "C:\\Users\\David\\AndroidStudioProjects\\ProiectEchipaRacheta\\app\\src\\main\\res\\menu\\popup.xml"
     },
     {
+        "merged": "C:\\Users\\David\\AndroidStudioProjects\\ProiectEchipaRacheta\\app\\build\\intermediates\\res\\merged\\debug\\drawable_customshape.xml.flat",
+        "source": "C:\\Users\\David\\AndroidStudioProjects\\ProiectEchipaRacheta\\app\\src\\main\\res\\drawable\\customshape.xml"
+    },
+    {
         "merged": "C:\\Users\\David\\AndroidStudioProjects\\ProiectEchipaRacheta\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_ic_launcher.xml.flat",
         "source": "C:\\Users\\David\\AndroidStudioProjects\\ProiectEchipaRacheta\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher.xml"
+    },
+    {
+        "merged": "C:\\Users\\David\\AndroidStudioProjects\\ProiectEchipaRacheta\\app\\build\\intermediates\\res\\merged\\debug\\drawable_tag.png.flat",
+        "source": "C:\\Users\\David\\AndroidStudioProjects\\ProiectEchipaRacheta\\app\\src\\main\\res\\drawable\\tag.png"
     },
     {
         "merged": "C:\\Users\\David\\AndroidStudioProjects\\ProiectEchipaRacheta\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
@@ -104,12 +120,20 @@
         "source": "C:\\Users\\David\\AndroidStudioProjects\\ProiectEchipaRacheta\\app\\src\\main\\res\\drawable\\ic_launcher_background.xml"
     },
     {
+        "merged": "C:\\Users\\David\\AndroidStudioProjects\\ProiectEchipaRacheta\\app\\build\\intermediates\\res\\merged\\debug\\anim_rotatie.xml.flat",
+        "source": "C:\\Users\\David\\AndroidStudioProjects\\ProiectEchipaRacheta\\app\\src\\main\\res\\anim\\rotatie.xml"
+    },
+    {
         "merged": "C:\\Users\\David\\AndroidStudioProjects\\ProiectEchipaRacheta\\app\\build\\intermediates\\res\\merged\\debug\\drawable_background.png.flat",
         "source": "C:\\Users\\David\\AndroidStudioProjects\\ProiectEchipaRacheta\\app\\src\\main\\res\\drawable\\background.png"
     },
     {
         "merged": "C:\\Users\\David\\AndroidStudioProjects\\ProiectEchipaRacheta\\app\\build\\intermediates\\res\\merged\\debug\\drawable_round_button.xml.flat",
         "source": "C:\\Users\\David\\AndroidStudioProjects\\ProiectEchipaRacheta\\app\\src\\main\\res\\drawable\\round_button.xml"
+    },
+    {
+        "merged": "C:\\Users\\David\\AndroidStudioProjects\\ProiectEchipaRacheta\\app\\build\\intermediates\\res\\merged\\debug\\drawable_layoutborder.xml.flat",
+        "source": "C:\\Users\\David\\AndroidStudioProjects\\ProiectEchipaRacheta\\app\\src\\main\\res\\drawable\\layoutborder.xml"
     },
     {
         "merged": "C:\\Users\\David\\AndroidStudioProjects\\ProiectEchipaRacheta\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher_round.png.flat",
