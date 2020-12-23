@@ -134,6 +134,14 @@ public class DashboardActivity extends AppCompatActivity {
         listView.setAdapter(adapter);
         registerForContextMenu(listView);
         Button btnExport = findViewById(R.id.btnExport);
+        Button btnCamera = findViewById(R.id.btnCamera);
+        btnCamera.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(DashboardActivity.this,AddByCamera.class);
+                startActivity(intent);
+            }
+        });
         btnExport.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

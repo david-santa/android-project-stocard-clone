@@ -31,6 +31,16 @@
         app:layout_constraintHorizontal_bias="0.42"
         app:layout_constraintStart_toStartOf="parent" />
 
+    <Button
+        android:id="@+id/btnCamera"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/camera"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.91"
+        app:layout_constraintStart_toStartOf="parent" />
+
     <ImageButton
         android:id="@+id/btnAdd"
         android:layout_width="wrap_content"
@@ -46,19 +56,19 @@
         app:layout_constraintHorizontal_bias="0.08"
         app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@android:drawable/ic_input_add" />
+
     <Button
         android:id="@+id/btnSignOut"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/btnSignOut"
-        android:layout_marginBottom="30dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="64dp"
         android:background="@drawable/round_button"
         android:backgroundTint="@android:color/holo_blue_bright"
+        android:text="@string/btnSignOut"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.08"
-        app:srcCompat="@android:drawable/ic_input_add"
-        android:layout_marginRight="60dp"/>
+        app:srcCompat="@android:drawable/ic_input_add" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

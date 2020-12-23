@@ -14,6 +14,7 @@ com/example/proiectechiparacheta/LoginActivity.java
 com/example/proiectechiparacheta/DashboardActivity.java
  com.example.proiectechiparacheta.DashboardActivity
  com.example.proiectechiparacheta.DashboardActivity$1
+ com.example.proiectechiparacheta.DashboardActivity$10
  com.example.proiectechiparacheta.DashboardActivity$2
  com.example.proiectechiparacheta.DashboardActivity$3
  com.example.proiectechiparacheta.DashboardActivity$4
@@ -43,6 +44,9 @@ com/example/proiectechiparacheta/AddByForm.java
  com.example.proiectechiparacheta.AddByForm
  com.example.proiectechiparacheta.AddByForm$1
  com.example.proiectechiparacheta.AddByForm$2
+ com.example.proiectechiparacheta.AddByForm$3
+ com.example.proiectechiparacheta.AddByForm$4
+ com.example.proiectechiparacheta.AddByForm$5
 com/example/proiectechiparacheta/Async/RunnableTask.java
  com.example.proiectechiparacheta.Async.RunnableTask
 com/example/proiectechiparacheta/Async/HttpManager.java

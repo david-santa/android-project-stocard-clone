@@ -1589,6 +1589,7 @@ drawable gradient_1
 drawable gradient_2
 drawable gradient_3
 drawable gradient_list
+drawable handholdingcard
 drawable ic_launcher_background
 drawable ic_launcher_foreground
 drawable ic_mtrl_checked_circle
@@ -1724,6 +1725,7 @@ id blocking
 id bottom
 id bounce
 id btnAdd
+id btnCamera
 id btnCancel
 id btnExport
 id btnLogin
@@ -2218,6 +2220,7 @@ string appbar_scrolling_view_behavior
 string barcode_value
 string bottom_sheet_behavior
 string btnSignOut
+string camera
 string cancel
 string card_holder_name
 string character_counter_content_description

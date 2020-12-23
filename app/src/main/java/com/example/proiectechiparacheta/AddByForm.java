@@ -7,10 +7,13 @@ import androidx.constraintlayout.widget.ConstraintLayout;
 import android.content.Intent;
 import android.graphics.drawable.AnimationDrawable;
 import android.os.Bundle;
+import android.text.Editable;
+import android.text.TextWatcher;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.android.gms.tasks.OnFailureListener;
@@ -42,6 +45,9 @@ public class AddByForm extends AppCompatActivity {
         EditText etName = findViewById(R.id.etName);
         EditText etCardHolderName = findViewById(R.id.etCardHolderName);
         EditText etBarcodeValue = findViewById(R.id.etBarcodeValue);
+        TextView etcN = findViewById(R.id.cN);
+        TextView etcHn = findViewById(R.id.cHN);
+        TextView etbC = findViewById(R.id.bC);
         Button btnSave = findViewById(R.id.btnSave);
         Button btnCancel = findViewById(R.id.btnCancel);
 
@@ -49,7 +55,61 @@ public class AddByForm extends AppCompatActivity {
             etName.setText(intent.getStringExtra("name"));
             etCardHolderName.setText(intent.getStringExtra("cardHolderName"));
             etBarcodeValue.setText(intent.getStringExtra("barcode"));
+            etcN.setText(intent.getStringExtra("name"));
+            etbC.setText(intent.getStringExtra("barcode"));
+            etcHn.setText(intent.getStringExtra("cardHolderName"));
         }
+
+        etName.addTextChangedListener(new TextWatcher() {
+            @Override
+            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+
+            }
+
+            @Override
+            public void onTextChanged(CharSequence s, int start, int before, int count) {
+
+            }
+
+            @Override
+            public void afterTextChanged(Editable s) {
+                etcN.setText(etName.getText().toString());
+            }
+        });
+
+        etCardHolderName.addTextChangedListener(new TextWatcher() {
+            @Override
+            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+
+            }
+
+            @Override
+            public void onTextChanged(CharSequence s, int start, int before, int count) {
+
+            }
+
+            @Override
+            public void afterTextChanged(Editable s) {
+                etcHn.setText(etCardHolderName.getText().toString());
+            }
+        });
+
+        etBarcodeValue.addTextChangedListener(new TextWatcher() {
+            @Override
+            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+
+            }
+
+            @Override
+            public void onTextChanged(CharSequence s, int start, int before, int count) {
+
+            }
+
+            @Override
+            public void afterTextChanged(Editable s) {
+                etbC.setText(etBarcodeValue.getText().toString());
+            }
+        });
 
         btnCancel.setOnClickListener(new View.OnClickListener() {
             @Override

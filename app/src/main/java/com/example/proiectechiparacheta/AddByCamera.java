@@ -41,8 +41,6 @@ public class AddByCamera extends Activity {
             @Override
             public void surfaceCreated(@NonNull SurfaceHolder holder) {
                 if (ActivityCompat.checkSelfPermission(AddByCamera.this, Manifest.permission.CAMERA) != PackageManager.PERMISSION_GRANTED) {
-                    // TODO: Consider calling
-                    //    ActivityCompat#requestPermissions
                     // here to request the missing permissions, and then overriding
                     //   public void onRequestPermissionsResult(int requestCode, String[] permissions,
                     //                                          int[] grantResults)
