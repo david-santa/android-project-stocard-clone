@@ -24,8 +24,9 @@
             android:layout_marginTop="50dp"
             android:rotation="-2"
             android:fontFamily="@font/mukta_vaani_light"
-            android:text="TextView"
-            android:textSize="15dp"
+            android:text="@string/denumire_card"
+            android:textSize="15sp"
+            style="@style/text"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.55"
             app:layout_constraintStart_toStartOf="parent"
@@ -37,8 +38,9 @@
             android:layout_height="wrap_content"
             android:layout_marginEnd="70dp"
             android:fontFamily="@font/mukta_vaani_light"
-            android:text="TextView"
-            android:textSize="10dp"
+            android:text="@string/cod_de_bare"
+            android:textSize="10sp"
+            style="@style/text"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/cN"
@@ -49,10 +51,11 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="@font/mukta_vaani_light"
-            android:text="TextView"
+            android:text="@string/detinator_card"
             android:rotation="-2"
             android:layout_marginLeft="110dp"
-            android:textSize="10dp"
+            android:textSize="10sp"
+            style="@style/text"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/cN"
@@ -64,9 +67,12 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/save"
+        style="@style/btn"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/btnCancel"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintHorizontal_bias="0.4"
+     />
 
     <Button
         android:id="@+id/btnCancel"
@@ -75,12 +81,15 @@
         android:text="@string/cancel"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.71"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintHorizontal_bias="0.8"
+        app:layout_constraintStart_toStartOf="parent"
+        style="@style/btn"
+
+        />
 
     <EditText
 
-        android:layout_marginTop="300dp"
+        android:layout_marginTop="260dp"
         android:id="@+id/etName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -113,5 +122,6 @@
         android:hint="@string/barcode_value"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/etCardHolderName" />
+        app:layout_constraintTop_toBottomOf="@+id/etCardHolderName"
+        />
 </androidx.constraintlayout.widget.ConstraintLayout>

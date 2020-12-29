@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Proiect Echipa Racheta</string>
+    <string name="app_name">Card Keeper</string>
     <string name="hello">HELLO</string>
     <string name="username">username</string>
     <string name="password">password</string>
@@ -17,11 +17,15 @@
     <string name="text_email">Introduceti o adresa de email!</string>
     <string name="text_parola">Introduceti o parola!</string>
     <string name="text_check_parola">Parola trebuie sa aiba cel putin 6 caractere</string>
-    <string name="createuserwithEmail">createUserWithEmail:onComplete:</string>
+    <string name="createuserwithEmail">Inregistrarea a reusit</string>
     <string name="failed_register">Inregistrarea a esuat.</string>
     <string name="email_login">Introduceti adresa de email!</string>
     <string name="pass_login">Introduceti parola!</string>
     <string name="btnSignOut">Sign Out</string>
     <string name="export">Export</string>
     <string name="camera">Camera</string>
+    <string name="welcome">Welcome</string>
+    <string name="denumire_card">Denumire Card</string>
+    <string name="detinator_card">Detinator Card</string>
+    <string name="cod_de_bare">Cod de bare</string>
 </resources>
