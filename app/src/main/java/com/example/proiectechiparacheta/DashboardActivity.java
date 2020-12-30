@@ -66,8 +66,13 @@ public class DashboardActivity extends AppCompatActivity {
             public void runResultOnUiThread(List<FidelityCard> result) {
                 if(result!=null){
                     arrayList.clear();
-                    arrayList.addAll(result);
-                    adapter.notifyDataSetChanged();
+//                    arrayList.addAll(result);
+                    for(FidelityCard card:result){
+                        if(card.userId.equals(user.getUid())){
+                            arrayList.add(card);
+                            adapter.notifyDataSetChanged();
+                        }
+                    }
                 }
             }
         };
@@ -164,7 +169,6 @@ public class DashboardActivity extends AppCompatActivity {
 
         ImageButton btnAdd = findViewById(R.id.btnAdd);
         ListView listView = (ListView) findViewById(R.id.customListView);
-        arrayList = (ArrayList<FidelityCard>) getCardsFromJson();
         adapter = new CustomAdapter(this, arrayList);
         listView.setAdapter(adapter);
         registerForContextMenu(listView);
