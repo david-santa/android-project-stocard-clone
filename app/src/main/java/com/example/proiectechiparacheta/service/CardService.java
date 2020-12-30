@@ -1,6 +1,7 @@
 package com.example.proiectechiparacheta.service;
 
 import android.content.Context;
+import android.telecom.Call;
 
 import com.example.proiectechiparacheta.Async.AsyncTaskRunner;
 import com.example.proiectechiparacheta.Async.Callback;
@@ -25,6 +26,19 @@ public class CardService {
             @Override
             public List<FidelityCard> call() throws Exception {
                 return fidelityCardDao.getAllCards();
+            }
+        };
+        taskRunner.executeAsync(callable,callback);
+    }
+
+    public void getNumber(Callback<Integer> callback, String uid){
+        Callable callable = new Callable() {
+            @Override
+            public Integer call() throws Exception {
+                if(uid!=null){
+                    return fidelityCardDao.getNumberOfCards(uid);
+                }
+                else return -1;
             }
         };
         taskRunner.executeAsync(callable,callback);

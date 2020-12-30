@@ -1984,6 +1984,7 @@ id normal
 id notification_background
 id notification_main_column
 id notification_main_column_container
+id numOfCards
 id off
 id on
 id outline
@@ -2364,6 +2365,7 @@ string exposed_dropdown_menu_content_description
 string fab_transformation_scrim_behavior
 string fab_transformation_sheet_behavior
 string failed_register
+string filter_by_name
 string firebase_database_url
 string gcm_defaultSenderId
 string google_api_key
@@ -2415,6 +2417,7 @@ string mtrl_picker_toggle_to_text_input_mode
 string mtrl_picker_toggle_to_year_selection
 string name
 string not_set
+string number_of_cards
 string pass_login
 string password
 string password_toggle_content_description

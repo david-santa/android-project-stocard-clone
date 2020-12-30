@@ -28,4 +28,6 @@
     <string name="denumire_card">Denumire Card</string>
     <string name="detinator_card">Detinator Card</string>
     <string name="cod_de_bare">Cod de bare</string>
+    <string name="number_of_cards">Number of cards:</string>
+    <string name="filter_by_name">Filter by Name</string>
 </resources>

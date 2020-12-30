@@ -19,6 +19,9 @@ public interface FidelityCardDao {
     @Query("select * from cards where name LIKE :filter")
     List<FidelityCard> getFilteredCards(String filter);
 
+    @Query("select count(*) from cards where userId = :uid")
+    int getNumberOfCards(String uid);
+
     @Insert
     long insert(FidelityCard card);
 

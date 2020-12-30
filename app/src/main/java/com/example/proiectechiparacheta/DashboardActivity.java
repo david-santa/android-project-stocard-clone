@@ -22,6 +22,7 @@ import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.ListView;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.proiectechiparacheta.Async.AsyncTaskRunner;
@@ -65,6 +66,7 @@ public class DashboardActivity extends AppCompatActivity {
     //endregion
     final FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
     private int noOfFav;
+    TextView tvNumber;
 
     private int determineNoOfFav(){
         int i = 0;
@@ -114,7 +116,6 @@ public class DashboardActivity extends AppCompatActivity {
         return new Callback<List<FidelityCard>>() {
             @Override
             public void runResultOnUiThread(List<FidelityCard> result) {
-                Log.d("res",result.toString());
                 if(result!=null){
                     arrayList.clear();
 //                    arrayList.addAll(result);
@@ -187,6 +188,18 @@ public class DashboardActivity extends AppCompatActivity {
                    adapter.notifyDataSetChanged();               }
            }
        };
+    }
+
+    Callback<Integer> getNumberOfCardsFromDbCallback(){
+        return new Callback<Integer>(){
+
+            @Override
+            public void runResultOnUiThread(Integer result) {
+                if(result!=-1){
+                    tvNumber.setText("Number of cards: " + String.valueOf(result));
+                }
+            }
+        };
     }
 
     //region ONCREATE
@@ -306,6 +319,8 @@ public class DashboardActivity extends AppCompatActivity {
                 Log.d("Aftertext","dasdadasdadsasd");
             }
         });
+        tvNumber = findViewById(R.id.numOfCards);
+        cardService.getNumber(getNumberOfCardsFromDbCallback(),user.getUid());
 
     }
 
