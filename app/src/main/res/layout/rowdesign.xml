@@ -8,6 +8,7 @@
     android:layout_height="150dp"
     android:background="@android:color/transparent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/Theme.ProiectEchipaRacheta"
     >
 
     <ImageView
@@ -60,7 +61,7 @@
         <TextView
             android:id="@+id/cardName"
             android:layout_marginTop="20px"
-            android:textSize="30dp"
+            android:textSize="25dp"
             android:fontFamily="@font/mukta_vaani_light"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

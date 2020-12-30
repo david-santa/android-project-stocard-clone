@@ -1,154 +1,158 @@
 [
     {
-        "merged": "C:\\Users\\David\\AndroidStudioProjects\\ProiectEchipaRacheta\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_dashboard.xml.flat",
-        "source": "C:\\Users\\David\\AndroidStudioProjects\\ProiectEchipaRacheta\\app\\src\\main\\res\\layout\\activity_dashboard.xml"
+        "merged": "/Users/bogdantatu/Desktop/Facultate/Dispozitive si Aplicatii mobile/android-project/app/build/intermediates/res/merged/debug/mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "/Users/bogdantatu/Desktop/Facultate/Dispozitive si Aplicatii mobile/android-project/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml"
     },
     {
-        "merged": "C:\\Users\\David\\AndroidStudioProjects\\ProiectEchipaRacheta\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_add_by_camera.xml.flat",
-        "source": "C:\\Users\\David\\AndroidStudioProjects\\ProiectEchipaRacheta\\app\\src\\main\\res\\layout\\activity_add_by_camera.xml"
+        "merged": "/Users/bogdantatu/Desktop/Facultate/Dispozitive si Aplicatii mobile/android-project/app/build/intermediates/res/merged/debug/drawable_ic_launcher_background.xml.flat",
+        "source": "/Users/bogdantatu/Desktop/Facultate/Dispozitive si Aplicatii mobile/android-project/app/src/main/res/drawable/ic_launcher_background.xml"
     },
     {
-        "merged": "C:\\Users\\David\\AndroidStudioProjects\\ProiectEchipaRacheta\\app\\build\\intermediates\\res\\merged\\debug\\drawable_gradient_1.xml.flat",
-        "source": "C:\\Users\\David\\AndroidStudioProjects\\ProiectEchipaRacheta\\app\\src\\main\\res\\drawable\\gradient_1.xml"
+        "merged": "/Users/bogdantatu/Desktop/Facultate/Dispozitive si Aplicatii mobile/android-project/app/build/intermediates/res/merged/debug/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "/Users/bogdantatu/Desktop/Facultate/Dispozitive si Aplicatii mobile/android-project/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml"
     },
     {
-        "merged": "C:\\Users\\David\\AndroidStudioProjects\\ProiectEchipaRacheta\\app\\build\\intermediates\\res\\merged\\debug\\drawable_gradient_list.xml.flat",
-        "source": "C:\\Users\\David\\AndroidStudioProjects\\ProiectEchipaRacheta\\app\\src\\main\\res\\drawable\\gradient_list.xml"
+        "merged": "/Users/bogdantatu/Desktop/Facultate/Dispozitive si Aplicatii mobile/android-project/app/build/intermediates/res/merged/debug/drawable_ic_json_file.xml.flat",
+        "source": "/Users/bogdantatu/Desktop/Facultate/Dispozitive si Aplicatii mobile/android-project/app/src/main/res/drawable/ic_json_file.xml"
     },
     {
-        "merged": "C:\\Users\\David\\AndroidStudioProjects\\ProiectEchipaRacheta\\app\\build\\intermediates\\res\\merged\\debug\\drawable_gradient_3.xml.flat",
-        "source": "C:\\Users\\David\\AndroidStudioProjects\\ProiectEchipaRacheta\\app\\src\\main\\res\\drawable\\gradient_3.xml"
+        "merged": "/Users/bogdantatu/Desktop/Facultate/Dispozitive si Aplicatii mobile/android-project/app/build/intermediates/res/merged/debug/drawable_round_button.xml.flat",
+        "source": "/Users/bogdantatu/Desktop/Facultate/Dispozitive si Aplicatii mobile/android-project/app/src/main/res/drawable/round_button.xml"
     },
     {
-        "merged": "C:\\Users\\David\\AndroidStudioProjects\\ProiectEchipaRacheta\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher_round.png.flat",
-        "source": "C:\\Users\\David\\AndroidStudioProjects\\ProiectEchipaRacheta\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher_round.png"
+        "merged": "/Users/bogdantatu/Desktop/Facultate/Dispozitive si Aplicatii mobile/android-project/app/build/intermediates/res/merged/debug/layout_activity_add_by_form.xml.flat",
+        "source": "/Users/bogdantatu/Desktop/Facultate/Dispozitive si Aplicatii mobile/android-project/app/src/main/res/layout/activity_add_by_form.xml"
     },
     {
-        "merged": "C:\\Users\\David\\AndroidStudioProjects\\ProiectEchipaRacheta\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher_round.png.flat",
-        "source": "C:\\Users\\David\\AndroidStudioProjects\\ProiectEchipaRacheta\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher_round.png"
+        "merged": "/Users/bogdantatu/Desktop/Facultate/Dispozitive si Aplicatii mobile/android-project/app/build/intermediates/res/merged/debug/drawable_background.png.flat",
+        "source": "/Users/bogdantatu/Desktop/Facultate/Dispozitive si Aplicatii mobile/android-project/app/src/main/res/drawable/background.png"
     },
     {
-        "merged": "C:\\Users\\David\\AndroidStudioProjects\\ProiectEchipaRacheta\\app\\build\\intermediates\\res\\merged\\debug\\drawable_lv_smecherie.xml.flat",
-        "source": "C:\\Users\\David\\AndroidStudioProjects\\ProiectEchipaRacheta\\app\\src\\main\\res\\drawable\\lv_smecherie.xml"
+        "merged": "/Users/bogdantatu/Desktop/Facultate/Dispozitive si Aplicatii mobile/android-project/app/build/intermediates/res/merged/debug/mipmap-mdpi_ic_launcher_round.png.flat",
+        "source": "/Users/bogdantatu/Desktop/Facultate/Dispozitive si Aplicatii mobile/android-project/app/src/main/res/mipmap-mdpi/ic_launcher_round.png"
     },
     {
-        "merged": "C:\\Users\\David\\AndroidStudioProjects\\ProiectEchipaRacheta\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_ic_launcher_foreground.xml.flat",
-        "source": "C:\\Users\\David\\AndroidStudioProjects\\ProiectEchipaRacheta\\app\\src\\main\\res\\drawable-v24\\ic_launcher_foreground.xml"
+        "merged": "/Users/bogdantatu/Desktop/Facultate/Dispozitive si Aplicatii mobile/android-project/app/build/intermediates/res/merged/debug/drawable_gradient_3.xml.flat",
+        "source": "/Users/bogdantatu/Desktop/Facultate/Dispozitive si Aplicatii mobile/android-project/app/src/main/res/drawable/gradient_3.xml"
     },
     {
-        "merged": "C:\\Users\\David\\AndroidStudioProjects\\ProiectEchipaRacheta\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_barcode.xml.flat",
-        "source": "C:\\Users\\David\\AndroidStudioProjects\\ProiectEchipaRacheta\\app\\src\\main\\res\\drawable\\ic_barcode.xml"
+        "merged": "/Users/bogdantatu/Desktop/Facultate/Dispozitive si Aplicatii mobile/android-project/app/build/intermediates/res/merged/debug/drawable_gradient_list.xml.flat",
+        "source": "/Users/bogdantatu/Desktop/Facultate/Dispozitive si Aplicatii mobile/android-project/app/src/main/res/drawable/gradient_list.xml"
     },
     {
-        "merged": "C:\\Users\\David\\AndroidStudioProjects\\ProiectEchipaRacheta\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher.png.flat",
-        "source": "C:\\Users\\David\\AndroidStudioProjects\\ProiectEchipaRacheta\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher.png"
+        "merged": "/Users/bogdantatu/Desktop/Facultate/Dispozitive si Aplicatii mobile/android-project/app/build/intermediates/res/merged/debug/layout_activity_register.xml.flat",
+        "source": "/Users/bogdantatu/Desktop/Facultate/Dispozitive si Aplicatii mobile/android-project/app/src/main/res/layout/activity_register.xml"
     },
     {
-        "merged": "C:\\Users\\David\\AndroidStudioProjects\\ProiectEchipaRacheta\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher.png.flat",
-        "source": "C:\\Users\\David\\AndroidStudioProjects\\ProiectEchipaRacheta\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher.png"
+        "merged": "/Users/bogdantatu/Desktop/Facultate/Dispozitive si Aplicatii mobile/android-project/app/build/intermediates/res/merged/debug/drawable_layoutborder.xml.flat",
+        "source": "/Users/bogdantatu/Desktop/Facultate/Dispozitive si Aplicatii mobile/android-project/app/src/main/res/drawable/layoutborder.xml"
     },
     {
-        "merged": "C:\\Users\\David\\AndroidStudioProjects\\ProiectEchipaRacheta\\app\\build\\intermediates\\res\\merged\\debug\\drawable_customshape2.xml.flat",
-        "source": "C:\\Users\\David\\AndroidStudioProjects\\ProiectEchipaRacheta\\app\\src\\main\\res\\drawable\\customshape2.xml"
+        "merged": "/Users/bogdantatu/Desktop/Facultate/Dispozitive si Aplicatii mobile/android-project/app/build/intermediates/res/merged/debug/drawable_tag.png.flat",
+        "source": "/Users/bogdantatu/Desktop/Facultate/Dispozitive si Aplicatii mobile/android-project/app/src/main/res/drawable/tag.png"
     },
     {
-        "merged": "C:\\Users\\David\\AndroidStudioProjects\\ProiectEchipaRacheta\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_add_by_form.xml.flat",
-        "source": "C:\\Users\\David\\AndroidStudioProjects\\ProiectEchipaRacheta\\app\\src\\main\\res\\layout\\activity_add_by_form.xml"
+        "merged": "/Users/bogdantatu/Desktop/Facultate/Dispozitive si Aplicatii mobile/android-project/app/build/intermediates/res/merged/debug/drawable_customshape2.xml.flat",
+        "source": "/Users/bogdantatu/Desktop/Facultate/Dispozitive si Aplicatii mobile/android-project/app/src/main/res/drawable/customshape2.xml"
     },
     {
-        "merged": "C:\\Users\\David\\AndroidStudioProjects\\ProiectEchipaRacheta\\app\\build\\intermediates\\res\\merged\\debug\\font_mukta_vaani_light.ttf.flat",
-        "source": "C:\\Users\\David\\AndroidStudioProjects\\ProiectEchipaRacheta\\app\\src\\main\\res\\font\\mukta_vaani_light.ttf"
+        "merged": "/Users/bogdantatu/Desktop/Facultate/Dispozitive si Aplicatii mobile/android-project/app/build/intermediates/res/merged/debug/layout_activity_main.xml.flat",
+        "source": "/Users/bogdantatu/Desktop/Facultate/Dispozitive si Aplicatii mobile/android-project/app/src/main/res/layout/activity_main.xml"
     },
     {
-        "merged": "C:\\Users\\David\\AndroidStudioProjects\\ProiectEchipaRacheta\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher.png.flat",
-        "source": "C:\\Users\\David\\AndroidStudioProjects\\ProiectEchipaRacheta\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher.png"
+        "merged": "/Users/bogdantatu/Desktop/Facultate/Dispozitive si Aplicatii mobile/android-project/app/build/intermediates/res/merged/debug/layout_activity_add_by_camera.xml.flat",
+        "source": "/Users/bogdantatu/Desktop/Facultate/Dispozitive si Aplicatii mobile/android-project/app/src/main/res/layout/activity_add_by_camera.xml"
     },
     {
-        "merged": "C:\\Users\\David\\AndroidStudioProjects\\ProiectEchipaRacheta\\app\\build\\intermediates\\res\\merged\\debug\\drawable_gradient_2.xml.flat",
-        "source": "C:\\Users\\David\\AndroidStudioProjects\\ProiectEchipaRacheta\\app\\src\\main\\res\\drawable\\gradient_2.xml"
+        "merged": "/Users/bogdantatu/Desktop/Facultate/Dispozitive si Aplicatii mobile/android-project/app/build/intermediates/res/merged/debug/drawable-v24_ic_launcher_foreground.xml.flat",
+        "source": "/Users/bogdantatu/Desktop/Facultate/Dispozitive si Aplicatii mobile/android-project/app/src/main/res/drawable-v24/ic_launcher_foreground.xml"
     },
     {
-        "merged": "C:\\Users\\David\\AndroidStudioProjects\\ProiectEchipaRacheta\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher.png.flat",
-        "source": "C:\\Users\\David\\AndroidStudioProjects\\ProiectEchipaRacheta\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher.png"
+        "merged": "/Users/bogdantatu/Desktop/Facultate/Dispozitive si Aplicatii mobile/android-project/app/build/intermediates/res/merged/debug/mipmap-hdpi_ic_launcher_round.png.flat",
+        "source": "/Users/bogdantatu/Desktop/Facultate/Dispozitive si Aplicatii mobile/android-project/app/src/main/res/mipmap-hdpi/ic_launcher_round.png"
     },
     {
-        "merged": "C:\\Users\\David\\AndroidStudioProjects\\ProiectEchipaRacheta\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher_round.png.flat",
-        "source": "C:\\Users\\David\\AndroidStudioProjects\\ProiectEchipaRacheta\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher_round.png"
+        "merged": "/Users/bogdantatu/Desktop/Facultate/Dispozitive si Aplicatii mobile/android-project/app/build/intermediates/res/merged/debug/layout_rowdesign.xml.flat",
+        "source": "/Users/bogdantatu/Desktop/Facultate/Dispozitive si Aplicatii mobile/android-project/app/src/main/res/layout/rowdesign.xml"
     },
     {
-        "merged": "C:\\Users\\David\\AndroidStudioProjects\\ProiectEchipaRacheta\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher_round.png.flat",
-        "source": "C:\\Users\\David\\AndroidStudioProjects\\ProiectEchipaRacheta\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher_round.png"
+        "merged": "/Users/bogdantatu/Desktop/Facultate/Dispozitive si Aplicatii mobile/android-project/app/build/intermediates/res/merged/debug/mipmap-xxxhdpi_ic_launcher_round.png.flat",
+        "source": "/Users/bogdantatu/Desktop/Facultate/Dispozitive si Aplicatii mobile/android-project/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png"
     },
     {
-        "merged": "C:\\Users\\David\\AndroidStudioProjects\\ProiectEchipaRacheta\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_credit_card.xml.flat",
-        "source": "C:\\Users\\David\\AndroidStudioProjects\\ProiectEchipaRacheta\\app\\src\\main\\res\\drawable\\ic_credit_card.xml"
+        "merged": "/Users/bogdantatu/Desktop/Facultate/Dispozitive si Aplicatii mobile/android-project/app/build/intermediates/res/merged/debug/drawable_customshape.xml.flat",
+        "source": "/Users/bogdantatu/Desktop/Facultate/Dispozitive si Aplicatii mobile/android-project/app/src/main/res/drawable/customshape.xml"
     },
     {
-        "merged": "C:\\Users\\David\\AndroidStudioProjects\\ProiectEchipaRacheta\\app\\build\\intermediates\\res\\merged\\debug\\drawable_handholdingcard.jpg.flat",
-        "source": "C:\\Users\\David\\AndroidStudioProjects\\ProiectEchipaRacheta\\app\\src\\main\\res\\drawable\\handholdingcard.jpg"
+        "merged": "/Users/bogdantatu/Desktop/Facultate/Dispozitive si Aplicatii mobile/android-project/app/build/intermediates/res/merged/debug/mipmap-xxhdpi_ic_launcher_round.png.flat",
+        "source": "/Users/bogdantatu/Desktop/Facultate/Dispozitive si Aplicatii mobile/android-project/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.png"
     },
     {
-        "merged": "C:\\Users\\David\\AndroidStudioProjects\\ProiectEchipaRacheta\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_register.xml.flat",
-        "source": "C:\\Users\\David\\AndroidStudioProjects\\ProiectEchipaRacheta\\app\\src\\main\\res\\layout\\activity_register.xml"
+        "merged": "/Users/bogdantatu/Desktop/Facultate/Dispozitive si Aplicatii mobile/android-project/app/build/intermediates/res/merged/debug/layout_activity_dashboard.xml.flat",
+        "source": "/Users/bogdantatu/Desktop/Facultate/Dispozitive si Aplicatii mobile/android-project/app/src/main/res/layout/activity_dashboard.xml"
     },
     {
-        "merged": "C:\\Users\\David\\AndroidStudioProjects\\ProiectEchipaRacheta\\app\\build\\intermediates\\res\\merged\\debug\\layout_popup_barcode.xml.flat",
-        "source": "C:\\Users\\David\\AndroidStudioProjects\\ProiectEchipaRacheta\\app\\src\\main\\res\\layout\\popup_barcode.xml"
+        "merged": "/Users/bogdantatu/Desktop/Facultate/Dispozitive si Aplicatii mobile/android-project/app/build/intermediates/res/merged/debug/drawable_gradient_1.xml.flat",
+        "source": "/Users/bogdantatu/Desktop/Facultate/Dispozitive si Aplicatii mobile/android-project/app/src/main/res/drawable/gradient_1.xml"
     },
     {
-        "merged": "C:\\Users\\David\\AndroidStudioProjects\\ProiectEchipaRacheta\\app\\build\\intermediates\\res\\merged\\debug\\menu_popup.xml.flat",
-        "source": "C:\\Users\\David\\AndroidStudioProjects\\ProiectEchipaRacheta\\app\\src\\main\\res\\menu\\popup.xml"
+        "merged": "/Users/bogdantatu/Desktop/Facultate/Dispozitive si Aplicatii mobile/android-project/app/build/intermediates/res/merged/debug/menu_popup.xml.flat",
+        "source": "/Users/bogdantatu/Desktop/Facultate/Dispozitive si Aplicatii mobile/android-project/app/src/main/res/menu/popup.xml"
     },
     {
-        "merged": "C:\\Users\\David\\AndroidStudioProjects\\ProiectEchipaRacheta\\app\\build\\intermediates\\res\\merged\\debug\\drawable_customshape.xml.flat",
-        "source": "C:\\Users\\David\\AndroidStudioProjects\\ProiectEchipaRacheta\\app\\src\\main\\res\\drawable\\customshape.xml"
+        "merged": "/Users/bogdantatu/Desktop/Facultate/Dispozitive si Aplicatii mobile/android-project/app/build/intermediates/res/merged/debug/drawable_handholdingcard.jpg.flat",
+        "source": "/Users/bogdantatu/Desktop/Facultate/Dispozitive si Aplicatii mobile/android-project/app/src/main/res/drawable/handholdingcard.jpg"
     },
     {
-        "merged": "C:\\Users\\David\\AndroidStudioProjects\\ProiectEchipaRacheta\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_ic_launcher.xml.flat",
-        "source": "C:\\Users\\David\\AndroidStudioProjects\\ProiectEchipaRacheta\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher.xml"
+        "merged": "/Users/bogdantatu/Desktop/Facultate/Dispozitive si Aplicatii mobile/android-project/app/build/intermediates/res/merged/debug/mipmap-xxhdpi_ic_launcher.png.flat",
+        "source": "/Users/bogdantatu/Desktop/Facultate/Dispozitive si Aplicatii mobile/android-project/app/src/main/res/mipmap-xxhdpi/ic_launcher.png"
     },
     {
-        "merged": "C:\\Users\\David\\AndroidStudioProjects\\ProiectEchipaRacheta\\app\\build\\intermediates\\res\\merged\\debug\\drawable_tag.png.flat",
-        "source": "C:\\Users\\David\\AndroidStudioProjects\\ProiectEchipaRacheta\\app\\src\\main\\res\\drawable\\tag.png"
+        "merged": "/Users/bogdantatu/Desktop/Facultate/Dispozitive si Aplicatii mobile/android-project/app/build/intermediates/res/merged/debug/mipmap-hdpi_ic_launcher.png.flat",
+        "source": "/Users/bogdantatu/Desktop/Facultate/Dispozitive si Aplicatii mobile/android-project/app/src/main/res/mipmap-hdpi/ic_launcher.png"
     },
     {
-        "merged": "C:\\Users\\David\\AndroidStudioProjects\\ProiectEchipaRacheta\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
-        "source": "C:\\Users\\David\\AndroidStudioProjects\\ProiectEchipaRacheta\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher_round.xml"
+        "merged": "/Users/bogdantatu/Desktop/Facultate/Dispozitive si Aplicatii mobile/android-project/app/build/intermediates/res/merged/debug/mipmap-xhdpi_ic_launcher_round.png.flat",
+        "source": "/Users/bogdantatu/Desktop/Facultate/Dispozitive si Aplicatii mobile/android-project/app/src/main/res/mipmap-xhdpi/ic_launcher_round.png"
     },
     {
-        "merged": "C:\\Users\\David\\AndroidStudioProjects\\ProiectEchipaRacheta\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_main.xml.flat",
-        "source": "C:\\Users\\David\\AndroidStudioProjects\\ProiectEchipaRacheta\\app\\src\\main\\res\\layout\\activity_main.xml"
+        "merged": "/Users/bogdantatu/Desktop/Facultate/Dispozitive si Aplicatii mobile/android-project/app/build/intermediates/res/merged/debug/drawable_lv_smecherie.xml.flat",
+        "source": "/Users/bogdantatu/Desktop/Facultate/Dispozitive si Aplicatii mobile/android-project/app/src/main/res/drawable/lv_smecherie.xml"
     },
     {
-        "merged": "C:\\Users\\David\\AndroidStudioProjects\\ProiectEchipaRacheta\\app\\build\\intermediates\\res\\merged\\debug\\layout_rowdesign.xml.flat",
-        "source": "C:\\Users\\David\\AndroidStudioProjects\\ProiectEchipaRacheta\\app\\src\\main\\res\\layout\\rowdesign.xml"
+        "merged": "/Users/bogdantatu/Desktop/Facultate/Dispozitive si Aplicatii mobile/android-project/app/build/intermediates/res/merged/debug/drawable_gradient_2.xml.flat",
+        "source": "/Users/bogdantatu/Desktop/Facultate/Dispozitive si Aplicatii mobile/android-project/app/src/main/res/drawable/gradient_2.xml"
     },
     {
-        "merged": "C:\\Users\\David\\AndroidStudioProjects\\ProiectEchipaRacheta\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher.png.flat",
-        "source": "C:\\Users\\David\\AndroidStudioProjects\\ProiectEchipaRacheta\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher.png"
+        "merged": "/Users/bogdantatu/Desktop/Facultate/Dispozitive si Aplicatii mobile/android-project/app/build/intermediates/res/merged/debug/mipmap-mdpi_ic_launcher.png.flat",
+        "source": "/Users/bogdantatu/Desktop/Facultate/Dispozitive si Aplicatii mobile/android-project/app/src/main/res/mipmap-mdpi/ic_launcher.png"
     },
     {
-        "merged": "C:\\Users\\David\\AndroidStudioProjects\\ProiectEchipaRacheta\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_launcher_background.xml.flat",
-        "source": "C:\\Users\\David\\AndroidStudioProjects\\ProiectEchipaRacheta\\app\\src\\main\\res\\drawable\\ic_launcher_background.xml"
+        "merged": "/Users/bogdantatu/Desktop/Facultate/Dispozitive si Aplicatii mobile/android-project/app/build/intermediates/res/merged/debug/mipmap-xxxhdpi_ic_launcher.png.flat",
+        "source": "/Users/bogdantatu/Desktop/Facultate/Dispozitive si Aplicatii mobile/android-project/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png"
     },
     {
-        "merged": "C:\\Users\\David\\AndroidStudioProjects\\ProiectEchipaRacheta\\app\\build\\intermediates\\res\\merged\\debug\\anim_rotatie.xml.flat",
-        "source": "C:\\Users\\David\\AndroidStudioProjects\\ProiectEchipaRacheta\\app\\src\\main\\res\\anim\\rotatie.xml"
+        "merged": "/Users/bogdantatu/Desktop/Facultate/Dispozitive si Aplicatii mobile/android-project/app/build/intermediates/res/merged/debug/mipmap-xhdpi_ic_launcher.png.flat",
+        "source": "/Users/bogdantatu/Desktop/Facultate/Dispozitive si Aplicatii mobile/android-project/app/src/main/res/mipmap-xhdpi/ic_launcher.png"
     },
     {
-        "merged": "C:\\Users\\David\\AndroidStudioProjects\\ProiectEchipaRacheta\\app\\build\\intermediates\\res\\merged\\debug\\drawable_background.png.flat",
-        "source": "C:\\Users\\David\\AndroidStudioProjects\\ProiectEchipaRacheta\\app\\src\\main\\res\\drawable\\background.png"
+        "merged": "/Users/bogdantatu/Desktop/Facultate/Dispozitive si Aplicatii mobile/android-project/app/build/intermediates/res/merged/debug/layout_popup_barcode.xml.flat",
+        "source": "/Users/bogdantatu/Desktop/Facultate/Dispozitive si Aplicatii mobile/android-project/app/src/main/res/layout/popup_barcode.xml"
     },
     {
-        "merged": "C:\\Users\\David\\AndroidStudioProjects\\ProiectEchipaRacheta\\app\\build\\intermediates\\res\\merged\\debug\\drawable_round_button.xml.flat",
-        "source": "C:\\Users\\David\\AndroidStudioProjects\\ProiectEchipaRacheta\\app\\src\\main\\res\\drawable\\round_button.xml"
+        "merged": "/Users/bogdantatu/Desktop/Facultate/Dispozitive si Aplicatii mobile/android-project/app/build/intermediates/res/merged/debug/drawable_ic_barcode.xml.flat",
+        "source": "/Users/bogdantatu/Desktop/Facultate/Dispozitive si Aplicatii mobile/android-project/app/src/main/res/drawable/ic_barcode.xml"
     },
     {
-        "merged": "C:\\Users\\David\\AndroidStudioProjects\\ProiectEchipaRacheta\\app\\build\\intermediates\\res\\merged\\debug\\drawable_layoutborder.xml.flat",
-        "source": "C:\\Users\\David\\AndroidStudioProjects\\ProiectEchipaRacheta\\app\\src\\main\\res\\drawable\\layoutborder.xml"
+        "merged": "/Users/bogdantatu/Desktop/Facultate/Dispozitive si Aplicatii mobile/android-project/app/build/intermediates/res/merged/debug/font_mukta_vaani_light.ttf.flat",
+        "source": "/Users/bogdantatu/Desktop/Facultate/Dispozitive si Aplicatii mobile/android-project/app/src/main/res/font/mukta_vaani_light.ttf"
     },
     {
-        "merged": "C:\\Users\\David\\AndroidStudioProjects\\ProiectEchipaRacheta\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher_round.png.flat",
-        "source": "C:\\Users\\David\\AndroidStudioProjects\\ProiectEchipaRacheta\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher_round.png"
+        "merged": "/Users/bogdantatu/Desktop/Facultate/Dispozitive si Aplicatii mobile/android-project/app/build/intermediates/res/merged/debug/anim_rotatie.xml.flat",
+        "source": "/Users/bogdantatu/Desktop/Facultate/Dispozitive si Aplicatii mobile/android-project/app/src/main/res/anim/rotatie.xml"
+    },
+    {
+        "merged": "/Users/bogdantatu/Desktop/Facultate/Dispozitive si Aplicatii mobile/android-project/app/build/intermediates/res/merged/debug/drawable_ic_credit_card.xml.flat",
+        "source": "/Users/bogdantatu/Desktop/Facultate/Dispozitive si Aplicatii mobile/android-project/app/src/main/res/drawable/ic_credit_card.xml"
     }
 ]

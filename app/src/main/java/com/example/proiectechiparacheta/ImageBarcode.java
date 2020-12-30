@@ -20,6 +20,10 @@ public class ImageBarcode {
     @ColumnInfo(name="cardId")
     public int cardId;
 
+    public ImageBarcode() {
+        image = null;
+    }
+
     public ImageBarcode(int id, byte[] image, int userId) {
         this.id = id;
         this.image = image;

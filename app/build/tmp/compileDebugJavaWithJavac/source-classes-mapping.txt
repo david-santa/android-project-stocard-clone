@@ -71,6 +71,13 @@ com/example/proiectechiparacheta/AddByForm.java
  com.example.proiectechiparacheta.AddByForm$5
 com/example/proiectechiparacheta/Async/RunnableTask.java
  com.example.proiectechiparacheta.Async.RunnableTask
+com/example/proiectechiparacheta/service/ImageService.java
+ com.example.proiectechiparacheta.service.ImageService
+ com.example.proiectechiparacheta.service.ImageService$1
+ com.example.proiectechiparacheta.service.ImageService$2
+ com.example.proiectechiparacheta.service.ImageService$3
+ com.example.proiectechiparacheta.service.ImageService$4
+ com.example.proiectechiparacheta.service.ImageService$5
 com/example/proiectechiparacheta/Async/HttpManager.java
  com.example.proiectechiparacheta.Async.HttpManager
 com/example/proiectechiparacheta/Popup_Barcode.java
