@@ -24,6 +24,8 @@ com/example/proiectechiparacheta/DashboardActivity.java
  com.example.proiectechiparacheta.DashboardActivity$13
  com.example.proiectechiparacheta.DashboardActivity$14
  com.example.proiectechiparacheta.DashboardActivity$15
+ com.example.proiectechiparacheta.DashboardActivity$16
+ com.example.proiectechiparacheta.DashboardActivity$17
  com.example.proiectechiparacheta.DashboardActivity$2
  com.example.proiectechiparacheta.DashboardActivity$3
  com.example.proiectechiparacheta.DashboardActivity$4
@@ -49,6 +51,7 @@ com/example/proiectechiparacheta/service/CardService.java
  com.example.proiectechiparacheta.service.CardService$2
  com.example.proiectechiparacheta.service.CardService$3
  com.example.proiectechiparacheta.service.CardService$4
+ com.example.proiectechiparacheta.service.CardService$5
 com/example/proiectechiparacheta/database/DatabaseManager.java
  com.example.proiectechiparacheta.database.DatabaseManager
 com/example/proiectechiparacheta/Async/HandlerMessage.java

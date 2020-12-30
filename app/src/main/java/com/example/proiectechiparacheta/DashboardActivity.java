@@ -10,12 +10,15 @@ import android.database.Cursor;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.os.Bundle;
+import android.text.Editable;
+import android.text.TextWatcher;
 import android.util.Log;
 import android.view.ContextMenu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.ListView;
@@ -93,13 +96,47 @@ public class DashboardActivity extends AppCompatActivity {
                         MODE_PRIVATE);
                 sharedPreferences.getInt("noOfFav",0);
                 Map<String, ?> allEntries = sharedPreferences.getAll();
-                Log.d("nooffav",String.valueOf(determineNoOfFav()));
                 for (Map.Entry<String, ?> entry : allEntries.entrySet()) {
-                    Log.d("map values", entry.getKey() + ": " + entry.getValue().toString());
-                    Log.d("hahaha",arrayList.toString());
                     if(entry.getKey().contains("fav")){
                         for(FidelityCard card : arrayList){
-                            Log.d("MORTI MEI",String.valueOf(card.id) + " " + entry.getValue().toString());
+                            if(String.valueOf(card.id).equals(entry.getValue().toString())){
+                                card.isFav=true;
+                                adapter.notifyDataSetChanged();
+                            }
+                        }
+                    }
+                }
+            }
+        };
+    }
+
+    private Callback<List<FidelityCard>> getFilteredCardsFromDbCallback(){
+        return new Callback<List<FidelityCard>>() {
+            @Override
+            public void runResultOnUiThread(List<FidelityCard> result) {
+                Log.d("res",result.toString());
+                if(result!=null){
+                    arrayList.clear();
+//                    arrayList.addAll(result);
+                    for(FidelityCard card:result){
+                        if(card.userId.equals(user.getUid())){
+                            arrayList.add(card);
+                            adapter.notifyDataSetChanged();
+                        }
+                    }
+                }
+                if(result.isEmpty()){
+                    arrayList.clear();
+                    adapter.notifyDataSetChanged();
+                }
+                SharedPreferences sharedPreferences
+                        = getSharedPreferences("MySharedPref",
+                        MODE_PRIVATE);
+                sharedPreferences.getInt("noOfFav",0);
+                Map<String, ?> allEntries = sharedPreferences.getAll();
+                for (Map.Entry<String, ?> entry : allEntries.entrySet()) {
+                    if(entry.getKey().contains("fav")){
+                        for(FidelityCard card : arrayList){
                             if(String.valueOf(card.id).equals(entry.getValue().toString())){
                                 card.isFav=true;
                                 adapter.notifyDataSetChanged();
@@ -156,6 +193,7 @@ public class DashboardActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
         cardService = new CardService(getApplicationContext());
         cardService.getAll(getAllCardsFromDbCallback());
         super.onCreate(savedInstanceState);
@@ -250,7 +288,24 @@ public class DashboardActivity extends AppCompatActivity {
             }
         });
 
+        EditText etFilter = findViewById(R.id.etFilter);
+        etFilter.addTextChangedListener(new TextWatcher() {
+            @Override
+            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
 
+            }
+
+            @Override
+            public void onTextChanged(CharSequence s, int start, int before, int count) {
+
+            }
+
+            @Override
+            public void afterTextChanged(Editable s) {
+                cardService.getFiltered(getFilteredCardsFromDbCallback(),"%"+etFilter.getText().toString()+"%");
+                Log.d("Aftertext","dasdadasdadsasd");
+            }
+        });
 
     }
 
@@ -288,6 +343,7 @@ public class DashboardActivity extends AppCompatActivity {
                    if(card.isFav) {
                        noOfFav++;
                        myEdit.putInt("fav"+String.valueOf(card.getId()),card.getId());
+                       myEdit.putInt("noOfFav",noOfFav);
                        FidelityCard tempCard = card;
                        arrayList.remove(card);
                        arrayList.add(0, card);
@@ -296,6 +352,7 @@ public class DashboardActivity extends AppCompatActivity {
                    else{
                        myEdit.remove("fav"+String.valueOf(card.getId()));
                        noOfFav--;
+                       myEdit.putInt("noOfFav",noOfFav);
                        myEdit.commit();
                    }
                    adapter.notifyDataSetChanged();

@@ -16,6 +16,9 @@ public interface FidelityCardDao {
     @Query("select * from cards")
     List<FidelityCard> getAllCards();
 
+    @Query("select * from cards where name LIKE :filter")
+    List<FidelityCard> getFilteredCards(String filter);
+
     @Insert
     long insert(FidelityCard card);
 

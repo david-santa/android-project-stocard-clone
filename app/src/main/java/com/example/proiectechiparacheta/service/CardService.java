@@ -30,6 +30,18 @@ public class CardService {
         taskRunner.executeAsync(callable,callback);
     }
 
+    public void getFiltered(Callback<List<FidelityCard>> callback, String filter){
+        Callable<List<FidelityCard>> callable = new Callable<List<FidelityCard>>() {
+            @Override
+            public List<FidelityCard> call() throws Exception {
+                if(filter!=null && filter!="")
+                return fidelityCardDao.getFilteredCards(filter);
+                return null;
+            }
+        };
+        taskRunner.executeAsync(callable,callback);
+    }
+
     public void insert(Callback<FidelityCard> callback, FidelityCard card){
         Callable<FidelityCard> callable = new Callable<FidelityCard>(){
 
