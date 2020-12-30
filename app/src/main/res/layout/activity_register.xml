@@ -7,7 +7,8 @@
     android:fitsSystemWindows="true"
     android:background="@drawable/gradient_list"
     android:id="@+id/registerLayout"
-    tools:context=".RegisterActivity">
+    tools:context=".RegisterActivity"
+>
 
     <TextView
         android:id="@+id/tvHello"
@@ -67,42 +68,35 @@
 
         <Button
             android:id="@+id/sign_up_button"
-            style="?android:textAppearanceSmall"
-            android:layout_width="150dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
             android:text="@string/sign_up"
-            android:background="@drawable/round_button"
-            android:backgroundTint="@android:color/holo_blue_dark"
-            android:src="@android:drawable/ic_media_play"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             android:contentDescription="@string/add"
             app:layout_constraintTop_toBottomOf="@+id/etPasswordReg"
-            android:textColor="@android:color/black"
-            android:textStyle="bold" />
+            style="@style/btn"
+            android:layout_marginBottom="20dp"
+            />
 
 
         <!-- Link to Login Screen -->
 
         <Button
             android:id="@+id/sign_in_button"
-            style="?android:textAppearanceSmall"
-            android:layout_width="150dp"
+            style="@style/btn"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="@drawable/round_button"
-            android:backgroundTint="@android:color/holo_blue_dark"
-            android:src="@android:drawable/ic_media_play"
             android:text="@string/login_screen"
-            android:textAllCaps="false"
-            android:textColor="@android:color/black"
-            android:textSize="15dp"
-            android:textStyle="bold"
             app:layout_constraintTop_toBottomOf="@id/sign_up_button"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"/>
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="20dp"
+
+            />
 
     <ProgressBar
         android:id="@+id/progressBar"

@@ -2,7 +2,7 @@
 <layer-list xmlns:android="http://schemas.android.com/apk/res/android">
     <item android:drawable="@drawable/gradient_2"/>
     <item>
-        <bitmap android:src="@drawable/tag" android:gravity="center" android:alpha="0.1"/>
+        <bitmap android:src="@drawable/tag" android:gravity="center" android:alpha="0.05"/>
     </item>
 
     <item android:top="300dp"

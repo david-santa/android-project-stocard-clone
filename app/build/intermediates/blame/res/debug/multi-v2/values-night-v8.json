@@ -1,10 +1,29 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\David\\AndroidStudioProjects\\ProiectEchipaRacheta\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-night-v8\\values-night-v8.xml",
+            "outputFile": "/Users/bogdantatu/Desktop/Facultate/Dispozitive si Aplicatii mobile/Proiect/android-project/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-night-v8/values-night-v8.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\David\\.gradle\\caches\\transforms-2\\files-2.1\\1c961529b3ea5531dcb73d785089b74d\\material-1.2.1\\res\\values-night-v8\\values-night-v8.xml",
+                    "source": "/Users/bogdantatu/Desktop/Facultate/Dispozitive si Aplicatii mobile/Proiect/android-project/app/src/main/res/values-night/themes.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "100",
+                        "endLines": "14",
+                        "endColumns": "12",
+                        "endOffsets": "829"
+                    },
+                    "to": {
+                        "startLines": "25",
+                        "startColumns": "4",
+                        "startOffsets": "2594",
+                        "endLines": "37",
+                        "endColumns": "12",
+                        "endOffsets": "3321"
+                    }
+                },
+                {
+                    "source": "/Users/bogdantatu/.gradle/caches/transforms-2/files-2.1/1c961529b3ea5531dcb73d785089b74d/material-1.2.1/res/values-night-v8/values-night-v8.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -21,7 +40,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\David\\.gradle\\caches\\transforms-2\\files-2.1\\b0f78253426e641fb17cc514cc292ff6\\appcompat-1.2.0\\res\\values-night-v8\\values-night-v8.xml",
+                    "source": "/Users/bogdantatu/.gradle/caches/transforms-2/files-2.1/b0f78253426e641fb17cc514cc292ff6/appcompat-1.2.0/res/values-night-v8/values-night-v8.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9",
                         "startColumns": "4,4,4,4,4,4,4,4",
@@ -35,25 +54,6 @@
                         "startOffsets": "100,170,254,338,434,536,638,3326",
                         "endColumns": "69,83,83,95,101,101,93,88",
                         "endOffsets": "165,249,333,429,531,633,727,3410"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\David\\AndroidStudioProjects\\ProiectEchipaRacheta\\app\\src\\main\\res\\values-night\\themes.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "102",
-                        "endLines": "14",
-                        "endColumns": "12",
-                        "endOffsets": "843"
-                    },
-                    "to": {
-                        "startLines": "25",
-                        "startColumns": "4",
-                        "startOffsets": "2594",
-                        "endLines": "37",
-                        "endColumns": "12",
-                        "endOffsets": "3321"
                     }
                 }
             ]

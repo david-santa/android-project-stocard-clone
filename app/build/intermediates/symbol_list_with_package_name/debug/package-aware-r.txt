@@ -1003,6 +1003,7 @@ color foreground_material_dark
 color foreground_material_light
 color highlighted_text_material_dark
 color highlighted_text_material_light
+color ic_launcher_background
 color material_blue_grey_800
 color material_blue_grey_900
 color material_blue_grey_950
@@ -1082,6 +1083,7 @@ color mtrl_textinput_disabled_color
 color mtrl_textinput_filled_box_default_background_color
 color mtrl_textinput_focused_box_stroke_color
 color mtrl_textinput_hovered_box_stroke_color
+color niceBlue
 color notification_action_color_filter
 color notification_icon_bg_color
 color primary_dark_material_dark
@@ -1590,6 +1592,8 @@ drawable gradient_2
 drawable gradient_3
 drawable gradient_list
 drawable handholdingcard
+drawable ic_barcode
+drawable ic_credit_card
 drawable ic_launcher_background
 drawable ic_launcher_foreground
 drawable ic_mtrl_checked_circle
@@ -2228,6 +2232,7 @@ string character_counter_overflowed_content_description
 string character_counter_pattern
 string chip_text
 string clear_text_end_icon_content_description
+string cod_de_bare
 string common_google_play_services_enable_button
 string common_google_play_services_enable_text
 string common_google_play_services_enable_title
@@ -2248,6 +2253,8 @@ string common_signin_button_text
 string common_signin_button_text_long
 string createuserwithEmail
 string default_web_client_id
+string denumire_card
+string detinator_card
 string email
 string email_login
 string error_icon_content_description
@@ -2323,6 +2330,7 @@ string text_check_parola
 string text_email
 string text_parola
 string username
+string welcome
 style AlertDialog_AppCompat
 style AlertDialog_AppCompat_Light
 style AndroidThemeColorAccentYellow
@@ -3016,7 +3024,8 @@ style Widget_MaterialComponents_Toolbar_PrimarySurface
 style Widget_MaterialComponents_Toolbar_Surface
 style Widget_MaterialComponents_Tooltip
 style Widget_Support_CoordinatorLayout
-style btnRegister
+style btn
+style text
 styleable ActionBar background backgroundSplit backgroundStacked contentInsetEnd contentInsetEndWithActions contentInsetLeft contentInsetRight contentInsetStart contentInsetStartWithNavigation customNavigationLayout displayOptions divider elevation height hideOnContentScroll homeAsUpIndicator homeLayout icon indeterminateProgressStyle itemPadding logo navigationMode popupTheme progressBarPadding progressBarStyle subtitle subtitleTextStyle title titleTextStyle
 styleable ActionBarLayout android_layout_gravity
 styleable ActionMenuItemView android_minWidth
