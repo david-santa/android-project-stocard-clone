@@ -25,4 +25,7 @@ public interface ImageBarcodeDao {
 
     @Delete
     int delete(ImageBarcode image);
+
+    @Query("select * from images where cardId = :cId")
+    List<ImageBarcode> getImageOf(int cId);
 }

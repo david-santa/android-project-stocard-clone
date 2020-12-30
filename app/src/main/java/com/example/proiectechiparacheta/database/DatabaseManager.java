@@ -11,7 +11,7 @@ import com.example.proiectechiparacheta.ImageBarcode;
 import com.example.proiectechiparacheta.database.dao.FidelityCardDao;
 import com.example.proiectechiparacheta.database.dao.ImageBarcodeDao;
 
-@Database(entities={FidelityCard.class, ImageBarcode.class},exportSchema = false, version =2)
+@Database(entities={FidelityCard.class, ImageBarcode.class},exportSchema = false, version =3)
 public abstract class DatabaseManager extends RoomDatabase {
 
     private static DatabaseManager databaseManager;
