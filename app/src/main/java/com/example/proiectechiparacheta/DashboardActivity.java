@@ -78,6 +78,7 @@ public class DashboardActivity extends AppCompatActivity {
             public void runResultOnUiThread(FidelityCard result) {
                 if(result!=null){
                     arrayList.add(result);
+                    System.out.println(result.toString());
                     adapter.notifyDataSetChanged();
                 }
             }
@@ -427,10 +428,8 @@ public class DashboardActivity extends AppCompatActivity {
         String name = data.getStringExtra("name");
         String cardHolderName = data.getStringExtra("cardHolderName");
         String barcode = data.getStringExtra("barcode");
-        int id = 3;
-        arrayList.add(new FidelityCard(id, name, cardHolderName, barcode));
-        adapter.notifyDataSetChanged();
-        cardService.insert(insertIntoDbCallback(),new FidelityCard(id,name,cardHolderName,barcode));
+        int id = -2;
+        cardService.insert(insertIntoDbCallback(),new FidelityCard(name,cardHolderName,barcode));
     }
 
     public List<FidelityCard> getCardsFromJson(){

@@ -22,12 +22,10 @@ public class FidelityCard {
 
     @Ignore
     public FidelityCard(){
-        this.id = 2;
         this.name = "Default";
         this.cardHolderName = "Default";
         this.barCode = "Default";
     }
-
 
     public FidelityCard(int id, String name, String cardHolderName, String barCode) {
         this.id = id;
@@ -36,6 +34,12 @@ public class FidelityCard {
         this.barCode = barCode;
     }
 
+    @Ignore
+    public FidelityCard(String name, String cardHolderName, String barCode) {
+        this.name = name;
+        this.cardHolderName = cardHolderName;
+        this.barCode = barCode;
+    }
 
     public int getId() {
         return id;
