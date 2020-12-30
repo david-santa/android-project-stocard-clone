@@ -54,19 +54,23 @@ public class CustomAdapter extends BaseAdapter {
         TextView tvName = convertView.findViewById(R.id.cardName);
         TextView tvHolder = convertView.findViewById(R.id.cardHolderName);
         TextView tvBarCode = convertView.findViewById(R.id.barCode);
-        ImageView iv1 = convertView.findViewById(R.id.iv1);
-        ImageView iv2 = convertView.findViewById(R.id.iv2);
+//        ImageView iv1 = convertView.findViewById(R.id.iv1);
+//        ImageView iv2 = convertView.findViewById(R.id.iv2);
         ImageView ivFav = convertView.findViewById(R.id.ivFav);
-        ObjectAnimator animation = ObjectAnimator.ofFloat(iv1, "rotationY", 0.0f, 360f);
-        animation.setDuration(10000);
-        animation.setRepeatCount(ObjectAnimator.INFINITE);
-        animation.setInterpolator(new LinearInterpolator());
-        ObjectAnimator animation2 = ObjectAnimator.ofFloat(iv2, "rotationY", 0.0f, 360f);
-        animation2.setDuration(10000);
-        animation2.setRepeatCount(ObjectAnimator.INFINITE);
-        animation2.setInterpolator(new LinearInterpolator());
-        animation.start();
-        animation2.start();
+
+//        ObjectAnimator animation = ObjectAnimator.ofFloat(iv1, "rotationY", 0.0f, 360f);
+//        animation.setDuration(10000);
+//        animation.setRepeatCount(ObjectAnimator.INFINITE);
+//        animation.setInterpolator(new LinearInterpolator());
+//
+//
+//        ObjectAnimator animation2 = ObjectAnimator.ofFloat(iv2, "rotationY", 0.0f, 360f);
+//        animation2.setDuration(10000);
+//        animation2.setRepeatCount(ObjectAnimator.INFINITE);
+//        animation2.setInterpolator(new LinearInterpolator());
+//
+//        animation.start();
+//        animation2.start();
 
         tvId.setText(String.valueOf(arr.get(position).getId()));
         tvName.setText(arr.get(position).getName());
