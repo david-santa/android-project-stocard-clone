@@ -19,6 +19,8 @@ public class FidelityCard {
     public String cardHolderName;
     @ColumnInfo(name="barcode")
     public String barCode;
+    @ColumnInfo(name="userId")
+    public String userId;
 
     @Ignore
     public FidelityCard(){
@@ -27,15 +29,25 @@ public class FidelityCard {
         this.barCode = "Default";
     }
 
-    public FidelityCard(int id, String name, String cardHolderName, String barCode) {
+    public FidelityCard(int id, String name, String cardHolderName, String barCode,String userId) {
         this.id = id;
         this.name = name;
         this.cardHolderName = cardHolderName;
         this.barCode = barCode;
+        this.userId = userId;
     }
 
     @Ignore
-    public FidelityCard(String name, String cardHolderName, String barCode) {
+    public FidelityCard(String name, String cardHolderName, String barCode, String userId) {
+        this.name = name;
+        this.cardHolderName = cardHolderName;
+        this.barCode = barCode;
+        this.userId = userId;
+    }
+
+    @Ignore
+    public FidelityCard(int id, String name, String cardHolderName, String barCode) {
+        this.id = id;
         this.name = name;
         this.cardHolderName = cardHolderName;
         this.barCode = barCode;

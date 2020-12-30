@@ -57,6 +57,7 @@ public class DashboardActivity extends AppCompatActivity {
     private FirebaseFirestore db = FirebaseFirestore.getInstance();
     CardService cardService;
     //endregion
+    final FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
 
 
     private Callback<List<FidelityCard>> getAllCardsFromDbCallback(){
@@ -122,7 +123,7 @@ public class DashboardActivity extends AppCompatActivity {
         cardService.getAll(getAllCardsFromDbCallback());
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_dashboard);
-
+        Log.d("SA MOARA MAAM",user.getUid());
 
         //Sign out method
         Button btnSignOut = findViewById(R.id.btnSignOut);
@@ -428,8 +429,8 @@ public class DashboardActivity extends AppCompatActivity {
         String name = data.getStringExtra("name");
         String cardHolderName = data.getStringExtra("cardHolderName");
         String barcode = data.getStringExtra("barcode");
-        int id = -2;
-        cardService.insert(insertIntoDbCallback(),new FidelityCard(name,cardHolderName,barcode));
+        String userId = user.getUid();
+        cardService.insert(insertIntoDbCallback(),new FidelityCard(name,cardHolderName,barcode,userId));
     }
 
     public List<FidelityCard> getCardsFromJson(){
