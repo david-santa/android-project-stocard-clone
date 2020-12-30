@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.database.Cursor;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
@@ -16,6 +17,7 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.Button;
 import android.widget.ImageButton;
+import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.Toast;
 
@@ -44,6 +46,7 @@ import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Map;
 import java.util.concurrent.Callable;
 import java.util.logging.Logger;
 
@@ -58,6 +61,17 @@ public class DashboardActivity extends AppCompatActivity {
     CardService cardService;
     //endregion
     final FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
+    private int noOfFav;
+
+    private int determineNoOfFav(){
+        int i = 0;
+        for(FidelityCard card : arrayList){
+            if(card.id==1){
+                i++;
+            }
+        }
+        return i;
+    }
 
 
     private Callback<List<FidelityCard>> getAllCardsFromDbCallback(){
@@ -74,6 +88,25 @@ public class DashboardActivity extends AppCompatActivity {
                         }
                     }
                 }
+                SharedPreferences sharedPreferences
+                        = getSharedPreferences("MySharedPref",
+                        MODE_PRIVATE);
+                sharedPreferences.getInt("noOfFav",0);
+                Map<String, ?> allEntries = sharedPreferences.getAll();
+                Log.d("nooffav",String.valueOf(determineNoOfFav()));
+                for (Map.Entry<String, ?> entry : allEntries.entrySet()) {
+                    Log.d("map values", entry.getKey() + ": " + entry.getValue().toString());
+                    Log.d("hahaha",arrayList.toString());
+                    if(entry.getKey().contains("fav")){
+                        for(FidelityCard card : arrayList){
+                            Log.d("MORTI MEI",String.valueOf(card.id) + " " + entry.getValue().toString());
+                            if(String.valueOf(card.id).equals(entry.getValue().toString())){
+                                card.isFav=true;
+                                adapter.notifyDataSetChanged();
+                            }
+                        }
+                    }
+                }
             }
         };
     }
@@ -84,7 +117,7 @@ public class DashboardActivity extends AppCompatActivity {
             public void runResultOnUiThread(FidelityCard result) {
                 if(result!=null){
                     arrayList.add(result);
-                    System.out.println(result.toString());
+                   System.out.println(result.toString());
                     adapter.notifyDataSetChanged();
                 }
             }
@@ -114,8 +147,7 @@ public class DashboardActivity extends AppCompatActivity {
            public void runResultOnUiThread(FidelityCard result) {
                if(result!=null){
                    arrayList.remove(position);
-                   adapter.notifyDataSetChanged();
-               }
+                   adapter.notifyDataSetChanged();               }
            }
        };
     }
@@ -128,7 +160,6 @@ public class DashboardActivity extends AppCompatActivity {
         cardService.getAll(getAllCardsFromDbCallback());
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_dashboard);
-        Log.d("SA MOARA MAAM",user.getUid());
 
         //Sign out method
         Button btnSignOut = findViewById(R.id.btnSignOut);
@@ -241,6 +272,33 @@ public class DashboardActivity extends AppCompatActivity {
                 @Override
                 public boolean onMenuItemClick(MenuItem item) {
                     editCard(card);
+                    return false;
+                }
+            });
+
+            menu.add("Add/Remove Favorite").setOnMenuItemClickListener(new MenuItem.OnMenuItemClickListener() {
+                @Override
+                public boolean onMenuItemClick(MenuItem item) {
+                    SharedPreferences sharedPreferences
+                            = getSharedPreferences("MySharedPref",
+                            MODE_PRIVATE);
+                    SharedPreferences.Editor myEdit
+                            = sharedPreferences.edit();
+                   card.isFav = !card.isFav;
+                   if(card.isFav) {
+                       noOfFav++;
+                       myEdit.putInt("fav"+String.valueOf(card.getId()),card.getId());
+                       FidelityCard tempCard = card;
+                       arrayList.remove(card);
+                       arrayList.add(0, card);
+                       myEdit.commit();
+                   }
+                   else{
+                       myEdit.remove("fav"+String.valueOf(card.getId()));
+                       noOfFav--;
+                       myEdit.commit();
+                   }
+                   adapter.notifyDataSetChanged();
                     return false;
                 }
             });

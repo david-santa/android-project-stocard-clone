@@ -1,7 +1,5 @@
 com/example/proiectechiparacheta/Async/AsyncTaskRunner.java
  com.example.proiectechiparacheta.Async.AsyncTaskRunner
-com/example/proiectechiparacheta/SharedPreferencesManager.java
- com.example.proiectechiparacheta.SharedPreferencesManager
 com/example/proiectechiparacheta/CustomAdapter.java
  com.example.proiectechiparacheta.CustomAdapter
 com/example/proiectechiparacheta/AddByCamera.java
@@ -25,6 +23,7 @@ com/example/proiectechiparacheta/DashboardActivity.java
  com.example.proiectechiparacheta.DashboardActivity$12
  com.example.proiectechiparacheta.DashboardActivity$13
  com.example.proiectechiparacheta.DashboardActivity$14
+ com.example.proiectechiparacheta.DashboardActivity$15
  com.example.proiectechiparacheta.DashboardActivity$2
  com.example.proiectechiparacheta.DashboardActivity$3
  com.example.proiectechiparacheta.DashboardActivity$4

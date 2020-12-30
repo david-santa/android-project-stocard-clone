@@ -21,12 +21,15 @@ public class FidelityCard {
     public String barCode;
     @ColumnInfo(name="userId")
     public String userId;
+    @Ignore
+    public boolean isFav;
 
     @Ignore
     public FidelityCard(){
         this.name = "Default";
         this.cardHolderName = "Default";
         this.barCode = "Default";
+        isFav=false;
     }
 
     public FidelityCard(int id, String name, String cardHolderName, String barCode,String userId) {
@@ -35,6 +38,7 @@ public class FidelityCard {
         this.cardHolderName = cardHolderName;
         this.barCode = barCode;
         this.userId = userId;
+        isFav=false;
     }
 
     @Ignore
@@ -43,6 +47,7 @@ public class FidelityCard {
         this.cardHolderName = cardHolderName;
         this.barCode = barCode;
         this.userId = userId;
+        isFav=false;
     }
 
     @Ignore
@@ -51,6 +56,7 @@ public class FidelityCard {
         this.name = name;
         this.cardHolderName = cardHolderName;
         this.barCode = barCode;
+        isFav=false;
     }
 
     public int getId() {
@@ -94,5 +100,21 @@ public class FidelityCard {
                 "\"cardHolderName\":\"" + cardHolderName + '\"' +
                 ", \"barcodeValue\":\"" + barCode + '\"' +
                 "}}";
+    }
+
+    public String getUserId() {
+        return userId;
+    }
+
+    public void setUserId(String userId) {
+        this.userId = userId;
+    }
+
+    public boolean isFav() {
+        return isFav;
+    }
+
+    public void setFav(boolean fav) {
+        isFav = fav;
     }
 }

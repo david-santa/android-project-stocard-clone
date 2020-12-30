@@ -1928,6 +1928,7 @@ id item_touch_helper_previous_elevation
 id iv1
 id iv2
 id ivBarcode
+id ivFav
 id jumpToEnd
 id jumpToStart
 id labeled

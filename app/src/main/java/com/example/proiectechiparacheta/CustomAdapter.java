@@ -56,6 +56,7 @@ public class CustomAdapter extends BaseAdapter {
         TextView tvBarCode = convertView.findViewById(R.id.barCode);
         ImageView iv1 = convertView.findViewById(R.id.iv1);
         ImageView iv2 = convertView.findViewById(R.id.iv2);
+        ImageView ivFav = convertView.findViewById(R.id.ivFav);
         ObjectAnimator animation = ObjectAnimator.ofFloat(iv1, "rotationY", 0.0f, 360f);
         animation.setDuration(10000);
         animation.setRepeatCount(ObjectAnimator.INFINITE);
@@ -71,6 +72,13 @@ public class CustomAdapter extends BaseAdapter {
         tvName.setText(arr.get(position).getName());
         tvHolder.setText(arr.get(position).getCardHolderName());
         tvBarCode.setText(arr.get(position).getBarCode());
+        if(arr.get(position).isFav){
+            ivFav.setImageResource(android.R.drawable.btn_star_big_on);
+        }
+        else{
+            ivFav.setImageResource(android.R.drawable.btn_star_big_off);
+        }
+
 
 
         return convertView;
