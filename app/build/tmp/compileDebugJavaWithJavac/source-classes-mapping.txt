@@ -1,5 +1,7 @@
 com/example/proiectechiparacheta/Async/AsyncTaskRunner.java
  com.example.proiectechiparacheta.Async.AsyncTaskRunner
+com/example/proiectechiparacheta/SharedPreferencesManager.java
+ com.example.proiectechiparacheta.SharedPreferencesManager
 com/example/proiectechiparacheta/CustomAdapter.java
  com.example.proiectechiparacheta.CustomAdapter
 com/example/proiectechiparacheta/AddByCamera.java
