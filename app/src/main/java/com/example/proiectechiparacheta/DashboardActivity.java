@@ -3,11 +3,14 @@ package com.example.proiectechiparacheta;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.Activity;
 import android.content.Context;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.database.Cursor;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
+import android.media.MediaDrm;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.ContextMenu;
@@ -27,6 +30,7 @@ import com.google.android.gms.common.api.CommonStatusCodes;
 import com.google.android.gms.vision.barcode.Barcode;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.database.core.view.Change;
 import com.google.firebase.firestore.FirebaseFirestore;
 
 import org.json.JSONException;
@@ -47,15 +51,16 @@ import java.util.List;
 import java.util.concurrent.Callable;
 import java.util.logging.Logger;
 
-public class DashboardActivity extends AppCompatActivity {
+public class DashboardActivity extends AppCompatActivity{
     //region DECLARATION ZONE
     public ArrayList<FidelityCard> arrayList = new ArrayList<FidelityCard>();
     public CustomAdapter adapter;
     private FirebaseAuth auth;
     private FirebaseAuth.AuthStateListener authListener;
     private static final String TAG = "";
-    private FirebaseFirestore db = FirebaseFirestore.getInstance();
+//    private FirebaseFirestore db = FirebaseFirestore.getInstance();
     CardService cardService;
+    private SharedPreferencesManager prefs;
     //endregion
     final FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
 
@@ -220,7 +225,15 @@ public class DashboardActivity extends AppCompatActivity {
         });
 
 
+//Preferences
+
+
+//END PREFERENCES
+
     }
+
+
+
 
     //endregion
 
