@@ -1,16 +1,28 @@
 package com.example.proiectechiparacheta;
+import androidx.room.ColumnInfo;
+import androidx.room.Entity;
+import androidx.room.Ignore;
+import androidx.room.PrimaryKey;
+
 import com.google.android.gms.vision.*;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 
+@Entity(tableName = "cards")
 public class FidelityCard {
-    int id;
-    String name;
-    String cardHolderName;
-    String barCode;
+    @ColumnInfo(name="id")
+            @PrimaryKey(autoGenerate = true)
+    public int id;
+    @ColumnInfo(name="name")
+    public String name;
+    @ColumnInfo(name="card_holder_name")
+    public String cardHolderName;
+    @ColumnInfo(name="barcode")
+    public String barCode;
 
+    @Ignore
     public FidelityCard(){
-        this.id = -1;
+        this.id = 2;
         this.name = "Default";
         this.cardHolderName = "Default";
         this.barCode = "Default";

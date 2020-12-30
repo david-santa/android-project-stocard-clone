@@ -22,6 +22,7 @@ import android.widget.Toast;
 import com.example.proiectechiparacheta.Async.AsyncTaskRunner;
 import com.example.proiectechiparacheta.Async.Callback;
 import com.example.proiectechiparacheta.Async.HttpManager;
+import com.example.proiectechiparacheta.service.CardService;
 import com.google.android.gms.common.api.CommonStatusCodes;
 import com.google.android.gms.vision.barcode.Barcode;
 import com.google.firebase.auth.FirebaseAuth;
@@ -54,38 +55,70 @@ public class DashboardActivity extends AppCompatActivity {
     private FirebaseAuth.AuthStateListener authListener;
     private static final String TAG = "";
     private FirebaseFirestore db = FirebaseFirestore.getInstance();
-    SQLiteHelper sqLiteHelper;
+    CardService cardService;
     //endregion
 
-    //region SQLite
-    public void addCard(String cardName, String cardholderName, String barcodeValue){
-        boolean insertData = sqLiteHelper.addCard(cardName,cardholderName,barcodeValue);
-        if(insertData){
-            Toast.makeText(this, "Data Inserted Successfully", Toast.LENGTH_SHORT).show();
-        }
-        else{
-            Toast.makeText(this, "Something went wrong", Toast.LENGTH_SHORT).show();
-        }
+
+    private Callback<List<FidelityCard>> getAllCardsFromDbCallback(){
+        return new Callback<List<FidelityCard>>() {
+            @Override
+            public void runResultOnUiThread(List<FidelityCard> result) {
+                if(result!=null){
+                    arrayList.clear();
+                    arrayList.addAll(result);
+                    adapter.notifyDataSetChanged();
+                }
+            }
+        };
     }
 
-    public void getCards(){
-        arrayList = new ArrayList<FidelityCard>();
-        Cursor data = sqLiteHelper.getCards();
-        while(data.moveToNext()) {
-            int id= Integer.parseInt(data.getString(0));
-            String cardName = data.getString(1);
-            String cardholderName = data.getString(2);
-            String barcodeValue = data.getString(3);
-            arrayList.add(new FidelityCard(id,cardName,cardholderName,barcodeValue));
-        }
+    private Callback<FidelityCard> insertIntoDbCallback(){
+        return new Callback<FidelityCard>() {
+            @Override
+            public void runResultOnUiThread(FidelityCard result) {
+                if(result!=null){
+                    arrayList.add(result);
+                    adapter.notifyDataSetChanged();
+                }
+            }
+        };
     }
-    //endregion
+
+    private Callback<FidelityCard> updateIntoDbCallback(){
+        return new Callback<FidelityCard>() {
+            @Override
+            public void runResultOnUiThread(FidelityCard result) {
+                for(FidelityCard card:arrayList){
+                    if(card.getId() == result.getId()){
+                        card.setBarCode(result.getBarCode());
+                        card.setCardHolderName(result.getCardHolderName());
+                        card.setName(result.getName());
+                        break;
+                    }
+                }
+                adapter.notifyDataSetChanged();
+            }
+        };
+    }
+
+    private Callback<FidelityCard> deleteFromDbCallback(int position){
+       return new Callback<FidelityCard>() {
+           @Override
+           public void runResultOnUiThread(FidelityCard result) {
+               if(result!=null){
+                   arrayList.remove(position);
+                   adapter.notifyDataSetChanged();
+               }
+           }
+       };
+    }
 
     //region ONCREATE
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        sqLiteHelper = new SQLiteHelper(this);
+        cardService = new CardService(getApplicationContext());
+        cardService.getAll(getAllCardsFromDbCallback());
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_dashboard);
 
@@ -303,23 +336,12 @@ public class DashboardActivity extends AppCompatActivity {
     }
 
     private void getImageForCard(FidelityCard card) throws IOException {
-        Cursor c = sqLiteHelper.getImage(card.id);
-        if(c.getCount()>0){
-            Log.d("ceva","ceva");
-            c.moveToFirst();
-            byte[] blob = c.getBlob(1);
-            Bitmap image = getImage(blob);
-            Popup_Barcode popup_barcode = new Popup_Barcode(image);
-            popup_barcode.show(getSupportFragmentManager(), "popupBarcode");
-        }
-        else {
             Log.d("ceva","altceva");
             //Daca exista imaginea in baza de date o vom lua de acolo. Daca nu exista, o vom lua din API si o vom adauga in baza de date
             String url = buildUrlFromBarcodeValue(card.getBarCode().toString());
                 Callable<Bitmap> asyncOperation = new HttpManager(url);
             Callback<Bitmap> mainThreadOperation = getMainThreadOperation(card.id);
             AsyncTaskRunner.executeAsync(asyncOperation, mainThreadOperation);
-        }
     }
 
     private String buildUrlFromBarcodeValue(String barcodeValue) {
@@ -335,7 +357,6 @@ public class DashboardActivity extends AppCompatActivity {
                 Popup_Barcode popup_barcode = new Popup_Barcode(result);
                 popup_barcode.show(getSupportFragmentManager(), "popupBarcode");
                 byte[] blob = getBytes(result);
-                sqLiteHelper.addImage(blob,id);
             }
         };
     }
@@ -356,10 +377,8 @@ public class DashboardActivity extends AppCompatActivity {
     }
 
     private void deleteCard(FidelityCard card) {
-        sqLiteHelper.deleteCard(card.getId());
         int index = getArraylistIndex(card.id);
-        arrayList.remove(index);
-        adapter.notifyDataSetChanged();
+        cardService.delete(deleteFromDbCallback(index),arrayList.get(index));
     }
 
     private void exportCard(FidelityCard card) {
@@ -393,9 +412,6 @@ public class DashboardActivity extends AppCompatActivity {
         String name = data.getStringExtra("name");
         String cardHolderName = data.getStringExtra("cardHolderName");
         String barcode = data.getStringExtra("barcode");
-        if (id != -1){
-            sqLiteHelper.updateCard(name,cardHolderName,barcode,id);
-        }
         int index = getArraylistIndex(id);
         if(index!=-1){
             arrayList.get(index).setName(name);
@@ -403,23 +419,18 @@ public class DashboardActivity extends AppCompatActivity {
             arrayList.get(index).setBarCode(barcode);
         }
         adapter.notifyDataSetChanged();
+        cardService.update(updateIntoDbCallback(),arrayList.get(index));
     }
 
+
     private void createCard(Intent data) {
-        int id=-1;
         String name = data.getStringExtra("name");
         String cardHolderName = data.getStringExtra("cardHolderName");
         String barcode = data.getStringExtra("barcode");
-        addCard(name,cardHolderName,barcode);
-        Cursor c = sqLiteHelper.getCards();
-        while(c.moveToNext()){
-            //Log.d("ceva",c.getString(1) + " , " + name);
-            if(c.getString(1).equals(name)){
-                id=c.getInt(0);
-            }
-        }
+        int id = 3;
         arrayList.add(new FidelityCard(id, name, cardHolderName, barcode));
         adapter.notifyDataSetChanged();
+        cardService.insert(insertIntoDbCallback(),new FidelityCard(id,name,cardHolderName,barcode));
     }
 
     public List<FidelityCard> getCardsFromJson(){

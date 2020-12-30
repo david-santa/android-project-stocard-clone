@@ -6,6 +6,10 @@ com/example/proiectechiparacheta/AddByCamera.java
  com.example.proiectechiparacheta.AddByCamera
  com.example.proiectechiparacheta.AddByCamera$1
  com.example.proiectechiparacheta.AddByCamera$1$1
+com/example/proiectechiparacheta/database/dao/FidelityCardDao.java
+ com.example.proiectechiparacheta.database.dao.FidelityCardDao
+com/example/proiectechiparacheta/ImageBarcode.java
+ com.example.proiectechiparacheta.ImageBarcode
 com/example/proiectechiparacheta/LoginActivity.java
  com.example.proiectechiparacheta.LoginActivity
  com.example.proiectechiparacheta.LoginActivity$1
@@ -15,6 +19,10 @@ com/example/proiectechiparacheta/DashboardActivity.java
  com.example.proiectechiparacheta.DashboardActivity
  com.example.proiectechiparacheta.DashboardActivity$1
  com.example.proiectechiparacheta.DashboardActivity$10
+ com.example.proiectechiparacheta.DashboardActivity$11
+ com.example.proiectechiparacheta.DashboardActivity$12
+ com.example.proiectechiparacheta.DashboardActivity$13
+ com.example.proiectechiparacheta.DashboardActivity$14
  com.example.proiectechiparacheta.DashboardActivity$2
  com.example.proiectechiparacheta.DashboardActivity$3
  com.example.proiectechiparacheta.DashboardActivity$4
@@ -28,12 +36,20 @@ com/example/proiectechiparacheta/RegisterActivity.java
  com.example.proiectechiparacheta.RegisterActivity$1
  com.example.proiectechiparacheta.RegisterActivity$2
  com.example.proiectechiparacheta.RegisterActivity$2$1
+com/example/proiectechiparacheta/database/dao/ImageBarcodeDao.java
+ com.example.proiectechiparacheta.database.dao.ImageBarcodeDao
 com/example/proiectechiparacheta/JSONParser.java
  com.example.proiectechiparacheta.JSONParser
 com/example/proiectechiparacheta/FidelityCard.java
  com.example.proiectechiparacheta.FidelityCard
-com/example/proiectechiparacheta/SQLiteHelper.java
- com.example.proiectechiparacheta.SQLiteHelper
+com/example/proiectechiparacheta/service/CardService.java
+ com.example.proiectechiparacheta.service.CardService
+ com.example.proiectechiparacheta.service.CardService$1
+ com.example.proiectechiparacheta.service.CardService$2
+ com.example.proiectechiparacheta.service.CardService$3
+ com.example.proiectechiparacheta.service.CardService$4
+com/example/proiectechiparacheta/database/DatabaseManager.java
+ com.example.proiectechiparacheta.database.DatabaseManager
 com/example/proiectechiparacheta/Async/HandlerMessage.java
  com.example.proiectechiparacheta.Async.HandlerMessage
 com/example/proiectechiparacheta/BuildConfig.java

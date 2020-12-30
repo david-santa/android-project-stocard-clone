@@ -217,13 +217,13 @@
 114-->[com.google.firebase:firebase-common:19.4.0] C:\Users\David\.gradle\caches\transforms-2\files-2.1\fd8b72c91ba24cce2c6f4e94eb66a716\jetified-firebase-common-19.4.0\AndroidManifest.xml:31:13-36
 115
 116        <activity
-116-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\David\.gradle\caches\transforms-2\files-2.1\79bfad54593477a052776c0ada50c2a4\jetified-play-services-base-17.1.0\AndroidManifest.xml:23:9-26:75
+116-->[com.google.android.gms:play-services-base:17.4.0] C:\Users\David\.gradle\caches\transforms-2\files-2.1\491eebd552f0c4831f85073891b86b1b\jetified-play-services-base-17.4.0\AndroidManifest.xml:23:9-26:75
 117            android:name="com.google.android.gms.common.api.GoogleApiActivity"
-117-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\David\.gradle\caches\transforms-2\files-2.1\79bfad54593477a052776c0ada50c2a4\jetified-play-services-base-17.1.0\AndroidManifest.xml:24:13-79
+117-->[com.google.android.gms:play-services-base:17.4.0] C:\Users\David\.gradle\caches\transforms-2\files-2.1\491eebd552f0c4831f85073891b86b1b\jetified-play-services-base-17.4.0\AndroidManifest.xml:24:13-79
 118            android:exported="false"
-118-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\David\.gradle\caches\transforms-2\files-2.1\79bfad54593477a052776c0ada50c2a4\jetified-play-services-base-17.1.0\AndroidManifest.xml:25:13-37
+118-->[com.google.android.gms:play-services-base:17.4.0] C:\Users\David\.gradle\caches\transforms-2\files-2.1\491eebd552f0c4831f85073891b86b1b\jetified-play-services-base-17.4.0\AndroidManifest.xml:25:13-37
 119            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-119-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\David\.gradle\caches\transforms-2\files-2.1\79bfad54593477a052776c0ada50c2a4\jetified-play-services-base-17.1.0\AndroidManifest.xml:26:13-72
+119-->[com.google.android.gms:play-services-base:17.4.0] C:\Users\David\.gradle\caches\transforms-2\files-2.1\491eebd552f0c4831f85073891b86b1b\jetified-play-services-base-17.4.0\AndroidManifest.xml:26:13-72
 120    </application>
 121
 122</manifest>
