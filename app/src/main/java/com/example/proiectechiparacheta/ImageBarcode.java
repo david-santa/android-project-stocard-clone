@@ -20,11 +20,12 @@ public class ImageBarcode {
     @ColumnInfo(name="cardId")
     public int cardId;
 
+    @Ignore
     public ImageBarcode() {
         image = null;
     }
 
-    public ImageBarcode(int id, byte[] image, int userId) {
+    public ImageBarcode(int id, byte[] image, int cardId) {
         this.id = id;
         this.image = image;
         this.cardId = cardId;
@@ -34,6 +35,9 @@ public class ImageBarcode {
     public ImageBarcode(byte[] image){
         this.image = image;
     }
+
+    @Ignore
+    public ImageBarcode(byte[] image, int cardId){ this.image = image; this.cardId = cardId; }
 
     public int getId() {
         return id;

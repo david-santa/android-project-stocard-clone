@@ -81,6 +81,15 @@ public class DashboardActivity extends AppCompatActivity {
         return i;
     }
 
+    private Callback<ImageBarcode> insertImageOnDbCallback(){
+        return new Callback<ImageBarcode>() {
+            @Override
+            public void runResultOnUiThread(ImageBarcode result) {
+                Log.d("DB","Image added on db");
+            }
+        };
+    }
+
 
     private Callback<List<FidelityCard>> getAllCardsFromDbCallback(){
         return new Callback<List<FidelityCard>>() {
@@ -210,6 +219,7 @@ public class DashboardActivity extends AppCompatActivity {
             @Override
             public void runResultOnUiThread(List<ImageBarcode> result) {
                 if(result.isEmpty()){
+                    Log.d("From internet","a");
                     try{
                         getImageForCard(card);
                     }
@@ -218,6 +228,7 @@ public class DashboardActivity extends AppCompatActivity {
                     }
                 }
                 else{
+                    Log.d("From database","b");
                     ImageBarcode image = result.get(0);
                     Popup_Barcode popup_barcode = new Popup_Barcode(getImage(image.getImage()));
                     popup_barcode.show(getSupportFragmentManager(), "popupBarcode");
@@ -516,6 +527,7 @@ public class DashboardActivity extends AppCompatActivity {
                 Popup_Barcode popup_barcode = new Popup_Barcode(result);
                 popup_barcode.show(getSupportFragmentManager(), "popupBarcode");
                 byte[] blob = getBytes(result);
+                imageService.insert(insertImageOnDbCallback(),new ImageBarcode(blob,id));
             }
         };
     }
