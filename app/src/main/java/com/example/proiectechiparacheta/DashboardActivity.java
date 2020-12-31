@@ -9,6 +9,7 @@ import android.content.SharedPreferences;
 import android.database.Cursor;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
@@ -240,7 +241,6 @@ public class DashboardActivity extends AppCompatActivity {
         Button btnSignOut = findViewById(R.id.btnSignOut);
         //get firebase auth instance
         auth = FirebaseAuth.getInstance();
-        //addCard("cardTest","test","testBarcode");
 
         //get current user
         final FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
@@ -269,16 +269,12 @@ public class DashboardActivity extends AppCompatActivity {
 //------------------------------------Sign out method-------------------------------------------//
 
 
-
-
-
-
         ImageButton btnAdd = findViewById(R.id.btnAdd);
         ListView listView = (ListView) findViewById(R.id.customListView);
         adapter = new CustomAdapter(this, arrayList);
         listView.setAdapter(adapter);
         registerForContextMenu(listView);
-        Button btnExport = findViewById(R.id.btnExport);
+        ImageButton btnExport = findViewById(R.id.btnExport);
         ImageButton btnCamera = findViewById(R.id.btnCamera);
         btnCamera.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -342,6 +338,10 @@ public class DashboardActivity extends AppCompatActivity {
         });
         tvNumber = findViewById(R.id.numOfCards);
         cardService.getNumber(getNumberOfCardsFromDbCallback(),user.getUid());
+
+
+
+
 
     }
 

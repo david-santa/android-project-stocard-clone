@@ -1067,6 +1067,7 @@ color foreground_material_light
 color highlighted_text_material_dark
 color highlighted_text_material_light
 color ic_launcher_background
+color light_orange
 color material_blue_grey_800
 color material_blue_grey_900
 color material_blue_grey_950
@@ -1659,11 +1660,14 @@ drawable googleg_standard_color_18
 drawable gradient_1
 drawable gradient_2
 drawable gradient_3
+drawable gradient_4
 drawable gradient_list
 drawable handholdingcard
+drawable holder
 drawable ic_arrow_down_24dp
 drawable ic_barcode
 drawable ic_credit_card
+drawable ic_json_file
 drawable ic_launcher_background
 drawable ic_launcher_foreground
 drawable ic_mtrl_checked_circle
@@ -1922,12 +1926,9 @@ id ignore
 id ignoreRequest
 id image
 id info
-id innerConstraint
 id invisible
 id italic
 id item_touch_helper_previous_elevation
-id iv1
-id iv2
 id ivBarcode
 id ivFav
 id jumpToEnd

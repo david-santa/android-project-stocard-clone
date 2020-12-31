@@ -29,23 +29,7 @@ public class JSONParser {
     }
 
     private static FidelityCard citesteCard(JSONObject object) throws JSONException {
-//        int idTest = object.getInt("id");
-//        int idCentru = Integer.parseInt(object.getJSONObject("centru").getString("idCentru"));
-//        int nrDoctori = Integer.parseInt(object.getJSONObject("centru").getString("numarDoctori"));
-//        float pretTest = (float)object.getJSONObject("centru").getLong("pretTest");
-//        String strada = object.getJSONObject("centru").getJSONObject("contactCentru").getString("strada");
-//        int numar = object.getJSONObject("centru").getJSONObject("contactCentru").getInt("numar");
-//        String email = object.getJSONObject("centru").getJSONObject("contactCentru").getString("email");
-//        String telefon = object.getJSONObject("centru").getJSONObject("contactCentru").getString("telefon");
-//        String numePacient = object.getJSONObject("pacient").getString("numePacient");
-//        String prenumePacient = object.getJSONObject("pacient").getString("prenumePacient");
-//        String dataTest = object.getJSONObject("pacient").getString("dataTest");
-//        String CNP = object.getJSONObject("pacient").getString("CNP");
-//        boolean rezultat1 = object.getJSONObject("rezultate").getBoolean("SARS-CoV-2");
-//        boolean rezultat2 = object.getJSONObject("rezultate").getBoolean("Gena RdRp");
-//        boolean rezultat3 = object.getJSONObject("rezultate").getBoolean("Gena E");
-//        boolean rezultat4 = object.getJSONObject("rezultate").getBoolean("Anticorpi");
-//        FidelityCard hatz = new FidelityCard(idTest,idCentru,nrDoctori,pretTest,strada,numar,email,telefon,numePacient,prenumePacient,dataTest,CNP,rezultat1,rezultat2,rezultat3,rezultat4);
+
         int id = object.getInt("id");
         String name = object.getString("name");
         JSONObject attributes = object.getJSONObject("attributes");
