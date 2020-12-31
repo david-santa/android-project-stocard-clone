@@ -38,6 +38,8 @@ public class ImageBarcode {
 
     @Ignore
     public ImageBarcode(byte[] image, int cardId){ this.image = image; this.cardId = cardId; }
+    @Ignore
+    public ImageBarcode(int cardId){ this.cardId = cardId; }
 
     public int getId() {
         return id;

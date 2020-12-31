@@ -3,6 +3,7 @@ package com.example.proiectechiparacheta;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
@@ -10,6 +11,7 @@ import android.database.Cursor;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.graphics.Color;
+import android.net.Uri;
 import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
@@ -49,6 +51,7 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
+import java.io.OutputStream;
 import java.io.OutputStreamWriter;
 import java.util.ArrayList;
 import java.util.List;
@@ -81,11 +84,29 @@ public class DashboardActivity extends AppCompatActivity {
         return i;
     }
 
+    private Callback<ImageBarcode> deleteImageFromDbCallback(){
+        return new Callback<ImageBarcode>() {
+            @Override
+            public void runResultOnUiThread(ImageBarcode result) {
+                Log.d("DB","Deleted image from db");
+            }
+        };
+    }
+
     private Callback<ImageBarcode> insertImageOnDbCallback(){
         return new Callback<ImageBarcode>() {
             @Override
             public void runResultOnUiThread(ImageBarcode result) {
                 Log.d("DB","Image added on db");
+            }
+        };
+    }
+
+    private Callback<ImageBarcode> updateImageOnDbCallback(){
+        return new Callback<ImageBarcode>() {
+            @Override
+            public void runResultOnUiThread(ImageBarcode result) {
+                Log.d("DB","Image updated on db");
             }
         };
     }
@@ -221,7 +242,7 @@ public class DashboardActivity extends AppCompatActivity {
                 if(result.isEmpty()){
                     Log.d("From internet","a");
                     try{
-                        getImageForCard(card);
+                        getImageForCard(card,1);
                     }
                     catch (IOException e){
                         Log.d("error",e.toString());
@@ -305,6 +326,7 @@ public class DashboardActivity extends AppCompatActivity {
                     toWrite+=",";
                 }
                 toWrite += "]";
+
                 writeStringAsFile(toWrite,"json.txt");
                 Log.d("amscris",toWrite);
             }
@@ -413,7 +435,7 @@ public class DashboardActivity extends AppCompatActivity {
                 @Override
                 public boolean onMenuItemClick(MenuItem item) {
                     try {
-                        getImageForCard(card);
+                        getImageForCard(card,1);
                     } catch (IOException e) {
                         e.printStackTrace();
                     }
@@ -456,7 +478,11 @@ public class DashboardActivity extends AppCompatActivity {
         }
         if (requestCode == 2) {
             //edit an existing FidelityCard
-            editCard(data);
+            try {
+                editCard(data);
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
         }
     }
 
@@ -467,7 +493,7 @@ public class DashboardActivity extends AppCompatActivity {
     public void writeStringAsFile(String fileContents, String fileName) {
         Context context = DashboardActivity.this;
         try {
-            FileWriter out = new FileWriter(new File("/data/data/com.example.proiectechiparacheta/files/json.txt"));
+            FileWriter out = new FileWriter(new File("/data/data/com.example.proiectechiparacheta/json.txt"));
             out.write(fileContents);
             out.close();
         } catch (IOException e) {
@@ -480,7 +506,7 @@ public class DashboardActivity extends AppCompatActivity {
         StringBuilder stringBuilder = new StringBuilder();
         String line;
 
-        try (BufferedReader in = new BufferedReader(new FileReader(new File("/data/data/com.example.proiectechiparacheta/files/json.txt")))){
+        try (BufferedReader in = new BufferedReader(new FileReader(new File("/data/data/com.example.proiectechiparacheta/json.txt")))){
             Log.d("ceva",context.getFilesDir().toString());
             while ((line = in.readLine()) != null) stringBuilder.append(line);
         } catch (FileNotFoundException e) {
@@ -504,13 +530,13 @@ public class DashboardActivity extends AppCompatActivity {
         return BitmapFactory.decodeByteArray(image, 0, image.length);
     }
 
-    private void getImageForCard(FidelityCard card) throws IOException {
+    private void getImageForCard(FidelityCard card, int mode) throws IOException {
             Log.d("ceva","altceva");
             //Daca exista imaginea in baza de date o vom lua de acolo. Daca nu exista, o vom lua din API si o vom adauga in baza de date
 
             String url = buildUrlFromBarcodeValue(card.getBarCode().toString());
                 Callable<Bitmap> asyncOperation = new HttpManager(url);
-            Callback<Bitmap> mainThreadOperation = getMainThreadOperation(card.id);
+            Callback<Bitmap> mainThreadOperation = getMainThreadOperation(card.id,mode);
             AsyncTaskRunner.executeAsync(asyncOperation, mainThreadOperation);
     }
 
@@ -519,7 +545,7 @@ public class DashboardActivity extends AppCompatActivity {
         return s;
     }
 
-    private Callback<Bitmap> getMainThreadOperation(int id) {
+    private Callback<Bitmap> getMainThreadOperation(int id,int mode) {
         return new Callback<Bitmap>() {
 
             @Override
@@ -527,7 +553,10 @@ public class DashboardActivity extends AppCompatActivity {
                 Popup_Barcode popup_barcode = new Popup_Barcode(result);
                 popup_barcode.show(getSupportFragmentManager(), "popupBarcode");
                 byte[] blob = getBytes(result);
+                if(mode==1)
                 imageService.insert(insertImageOnDbCallback(),new ImageBarcode(blob,id));
+                else
+                    imageService.update(updateImageOnDbCallback(),new ImageBarcode(blob,id));
             }
         };
     }
@@ -577,7 +606,7 @@ public class DashboardActivity extends AppCompatActivity {
         startActivityForResult(intent, 2);
     }
 
-    private void editCard(Intent data) {
+    private void editCard(Intent data) throws IOException {
         FidelityCard card = new FidelityCard();
         int id = data.getIntExtra("id", -1);
         String name = data.getStringExtra("name");
@@ -591,6 +620,7 @@ public class DashboardActivity extends AppCompatActivity {
         }
         adapter.notifyDataSetChanged();
         cardService.update(updateIntoDbCallback(),arrayList.get(index));
+        getImageForCard(arrayList.get(index),2);
     }
 
 
