@@ -2,6 +2,7 @@ com/example/proiectechiparacheta/Async/AsyncTaskRunner.java
  com.example.proiectechiparacheta.Async.AsyncTaskRunner
 com/example/proiectechiparacheta/CustomAdapter.java
  com.example.proiectechiparacheta.CustomAdapter
+ com.example.proiectechiparacheta.CustomAdapter$1
 com/example/proiectechiparacheta/AddByCamera.java
  com.example.proiectechiparacheta.AddByCamera
  com.example.proiectechiparacheta.AddByCamera$1

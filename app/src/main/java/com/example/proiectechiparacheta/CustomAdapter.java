@@ -1,8 +1,12 @@
 package com.example.proiectechiparacheta;
+import com.example.proiectechiparacheta.Async.AsyncTaskRunner;
+import com.example.proiectechiparacheta.Async.Callback;
+import com.example.proiectechiparacheta.Async.HttpManager;
 import com.example.proiectechiparacheta.R;
 
 import android.animation.ObjectAnimator;
 import android.content.Context;
+import android.graphics.Bitmap;
 import android.text.Layout;
 import android.view.LayoutInflater;
 import android.view.MenuItem;
@@ -20,6 +24,7 @@ import android.widget.Toast;
 import androidx.appcompat.widget.PopupMenu;
 
 import java.util.ArrayList;
+import java.util.concurrent.Callable;
 
 public class CustomAdapter extends BaseAdapter {
 
@@ -71,6 +76,13 @@ public class CustomAdapter extends BaseAdapter {
 //
 //        animation.start();
 //        animation2.start();
+        ImageView ivLogo;
+        String url = "https://logo.clearbit.com/";
+        url+=arr.get(position).getName();
+        ivLogo = convertView.findViewById(R.id.ivLogo);
+        Callable<Bitmap> asyncOperation = new HttpManager(url);
+        Callback<Bitmap> mainThreadOperation = backOnThread(ivLogo);
+        AsyncTaskRunner.executeAsync(asyncOperation, mainThreadOperation);
 
         tvId.setText(String.valueOf(arr.get(position).getId()));
         tvName.setText(arr.get(position).getName());
@@ -86,5 +98,14 @@ public class CustomAdapter extends BaseAdapter {
 
 
         return convertView;
+    }
+
+    Callback<Bitmap> backOnThread(ImageView ivLogo){
+        return new Callback<Bitmap>() {
+            @Override
+            public void runResultOnUiThread(Bitmap result) {
+                ivLogo.setImageBitmap(result);
+            }
+        };
     }
 }
