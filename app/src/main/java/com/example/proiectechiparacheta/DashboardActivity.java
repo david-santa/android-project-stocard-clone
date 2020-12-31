@@ -29,6 +29,7 @@ import com.example.proiectechiparacheta.Async.AsyncTaskRunner;
 import com.example.proiectechiparacheta.Async.Callback;
 import com.example.proiectechiparacheta.Async.HttpManager;
 import com.example.proiectechiparacheta.service.CardService;
+import com.example.proiectechiparacheta.service.ImageService;
 import com.google.android.gms.common.api.CommonStatusCodes;
 import com.google.android.gms.vision.barcode.Barcode;
 import com.google.firebase.auth.FirebaseAuth;
@@ -63,6 +64,7 @@ public class DashboardActivity extends AppCompatActivity {
     private static final String TAG = "";
     private FirebaseFirestore db = FirebaseFirestore.getInstance();
     CardService cardService;
+    ImageService imageService;
     //endregion
     final FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
     private int noOfFav;
@@ -202,12 +204,34 @@ public class DashboardActivity extends AppCompatActivity {
         };
     }
 
+    Callback<List<ImageBarcode>> getBarcodeImage(FidelityCard card){
+        return new Callback<List<ImageBarcode>>() {
+            @Override
+            public void runResultOnUiThread(List<ImageBarcode> result) {
+                if(result.isEmpty()){
+                    try{
+                        getImageForCard(card);
+                    }
+                    catch (IOException e){
+                        Log.d("error",e.toString());
+                    }
+                }
+                else{
+                    ImageBarcode image = result.get(0);
+                    Popup_Barcode popup_barcode = new Popup_Barcode(getImage(image.getImage()));
+                    popup_barcode.show(getSupportFragmentManager(), "popupBarcode");
+                }
+            }
+        };
+    }
+
     //region ONCREATE
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
         cardService = new CardService(getApplicationContext());
+        imageService = new ImageService(getApplicationContext());
         cardService.getAll(getAllCardsFromDbCallback());
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_dashboard);
@@ -293,11 +317,8 @@ public class DashboardActivity extends AppCompatActivity {
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                try {
-                    getImageForCard((FidelityCard) listView.getItemAtPosition(position));
-                } catch (IOException e) {
-                    e.printStackTrace();
-                }
+                FidelityCard card = (FidelityCard) listView.getItemAtPosition(position);
+                imageService.getForId(getBarcodeImage(card),card.getId());
             }
         });
 
@@ -475,6 +496,7 @@ public class DashboardActivity extends AppCompatActivity {
     private void getImageForCard(FidelityCard card) throws IOException {
             Log.d("ceva","altceva");
             //Daca exista imaginea in baza de date o vom lua de acolo. Daca nu exista, o vom lua din API si o vom adauga in baza de date
+
             String url = buildUrlFromBarcodeValue(card.getBarCode().toString());
                 Callable<Bitmap> asyncOperation = new HttpManager(url);
             Callback<Bitmap> mainThreadOperation = getMainThreadOperation(card.id);

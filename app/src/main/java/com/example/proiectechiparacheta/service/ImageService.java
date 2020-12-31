@@ -82,7 +82,7 @@ public class ImageService {
         taskRunner.executeAsync(callable,callback);
     }
 
-    public void getFiltered(Callback<List<ImageBarcode>> callback, int cId){
+    public void getForId(Callback<List<ImageBarcode>> callback, int cId){
         Callable<List<ImageBarcode>> callable = new Callable<List<ImageBarcode>>() {
             @Override
             public List<ImageBarcode> call() throws Exception {
