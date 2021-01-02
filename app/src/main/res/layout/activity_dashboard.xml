@@ -82,18 +82,19 @@
 
 />
 
-    <Button
-        android:id="@+id/btnSignOut"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        style="@style/btn"
+    <ImageButton
+        android:id="@+id/btnProfile"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
         android:layout_marginBottom="5dp"
-        android:text="@string/btnSignOut"
+        style="@style/btn"
+        android:background="@drawable/ic_baseline_person_24"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@android:drawable/ic_input_add" />
+        app:layout_constraintStart_toStartOf="parent" />
+
+
 
     <TextView
         android:id="@+id/numOfCards"

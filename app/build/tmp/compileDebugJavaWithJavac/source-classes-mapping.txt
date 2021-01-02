@@ -3,6 +3,12 @@ com/example/proiectechiparacheta/Async/AsyncTaskRunner.java
 com/example/proiectechiparacheta/CustomAdapter.java
  com.example.proiectechiparacheta.CustomAdapter
  com.example.proiectechiparacheta.CustomAdapter$1
+com/example/proiectechiparacheta/Profile.java
+ com.example.proiectechiparacheta.Profile
+ com.example.proiectechiparacheta.Profile$1
+ com.example.proiectechiparacheta.Profile$2
+ com.example.proiectechiparacheta.Profile$3
+ com.example.proiectechiparacheta.Profile$3$1
 com/example/proiectechiparacheta/AddByCamera.java
  com.example.proiectechiparacheta.AddByCamera
  com.example.proiectechiparacheta.AddByCamera$1
@@ -32,7 +38,6 @@ com/example/proiectechiparacheta/DashboardActivity.java
  com.example.proiectechiparacheta.DashboardActivity$2
  com.example.proiectechiparacheta.DashboardActivity$20
  com.example.proiectechiparacheta.DashboardActivity$21
- com.example.proiectechiparacheta.DashboardActivity$22
  com.example.proiectechiparacheta.DashboardActivity$3
  com.example.proiectechiparacheta.DashboardActivity$4
  com.example.proiectechiparacheta.DashboardActivity$5

@@ -25,6 +25,7 @@
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/Theme.ProiectEchipaRacheta" >
+        <activity android:name="com.example.proiectechiparacheta.Profile" />
         <activity android:name="com.example.proiectechiparacheta.test" />
         <activity android:name="com.example.proiectechiparacheta.RegisterActivity" />
         <activity android:name="com.example.proiectechiparacheta.AddByCamera" />
