@@ -22,6 +22,7 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.GridView;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.ListView;
@@ -303,7 +304,7 @@ public class DashboardActivity extends AppCompatActivity {
 
 
         ImageButton btnAdd = findViewById(R.id.btnAdd);
-        ListView listView = (ListView) findViewById(R.id.customListView);
+        GridView listView = (GridView) findViewById(R.id.customListView);
         adapter = new CustomAdapter(this, arrayList);
         listView.setAdapter(adapter);
         registerForContextMenu(listView);
@@ -387,7 +388,7 @@ public class DashboardActivity extends AppCompatActivity {
     public void onCreateContextMenu(ContextMenu menu, View v, ContextMenu.ContextMenuInfo menuInfo) {
         v.setLongClickable(true);
         if (v.getId() == R.id.customListView) {
-            ListView lv = (ListView) v;
+            GridView lv = (GridView) v;
             AdapterView.AdapterContextMenuInfo acmi = (AdapterView.AdapterContextMenuInfo) menuInfo;
             FidelityCard card = (FidelityCard) lv.getItemAtPosition(acmi.position);
 

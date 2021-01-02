@@ -7,10 +7,10 @@ com/example/proiectechiparacheta/AddByCamera.java
  com.example.proiectechiparacheta.AddByCamera
  com.example.proiectechiparacheta.AddByCamera$1
  com.example.proiectechiparacheta.AddByCamera$1$1
-com/example/proiectechiparacheta/database/dao/FidelityCardDao.java
- com.example.proiectechiparacheta.database.dao.FidelityCardDao
 com/example/proiectechiparacheta/ImageBarcode.java
  com.example.proiectechiparacheta.ImageBarcode
+com/example/proiectechiparacheta/database/dao/FidelityCardDao.java
+ com.example.proiectechiparacheta.database.dao.FidelityCardDao
 com/example/proiectechiparacheta/LoginActivity.java
  com.example.proiectechiparacheta.LoginActivity
  com.example.proiectechiparacheta.LoginActivity$1
