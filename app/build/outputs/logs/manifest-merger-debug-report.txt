@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\David\AndroidStudioProjects\ProiectEchipaRacheta\app\src\main\AndroidManifest.xml:2:1-38:12
-INJECTED from C:\Users\David\AndroidStudioProjects\ProiectEchipaRacheta\app\src\main\AndroidManifest.xml:2:1-38:12
-INJECTED from C:\Users\David\AndroidStudioProjects\ProiectEchipaRacheta\app\src\main\AndroidManifest.xml:2:1-38:12
-INJECTED from C:\Users\David\AndroidStudioProjects\ProiectEchipaRacheta\app\src\main\AndroidManifest.xml:2:1-38:12
+ADDED from C:\Users\David\AndroidStudioProjects\ProiectEchipaRacheta\app\src\main\AndroidManifest.xml:2:1-39:12
+INJECTED from C:\Users\David\AndroidStudioProjects\ProiectEchipaRacheta\app\src\main\AndroidManifest.xml:2:1-39:12
+INJECTED from C:\Users\David\AndroidStudioProjects\ProiectEchipaRacheta\app\src\main\AndroidManifest.xml:2:1-39:12
+INJECTED from C:\Users\David\AndroidStudioProjects\ProiectEchipaRacheta\app\src\main\AndroidManifest.xml:2:1-39:12
 MERGED from [com.google.firebase:firebase-auth:20.0.1] C:\Users\David\.gradle\caches\transforms-2\files-2.1\89d1365828fa736c6ca0ebfb33761576\jetified-firebase-auth-20.0.1\AndroidManifest.xml:17:1-83:12
 MERGED from [com.google.firebase:firebase-firestore:22.0.0] C:\Users\David\.gradle\caches\transforms-2\files-2.1\78b35f044a8063435346febc0daae5a8\jetified-firebase-firestore-22.0.0\AndroidManifest.xml:2:1-26:12
 MERGED from [com.google.android.material:material:1.2.1] C:\Users\David\.gradle\caches\transforms-2\files-2.1\1c961529b3ea5531dcb73d785089b74d\material-1.2.1\AndroidManifest.xml:17:1-24:12
@@ -60,20 +60,20 @@ MERGED from [androidx.arch.core:core-runtime:2.1.0] C:\Users\David\.gradle\cache
 MERGED from [androidx.annotation:annotation-experimental:1.0.0] C:\Users\David\.gradle\caches\transforms-2\files-2.1\8494da40e588b403567d35fcde644201\jetified-annotation-experimental-1.0.0\AndroidManifest.xml:17:1-24:12
 MERGED from [com.google.firebase:protolite-well-known-types:17.1.0] C:\Users\David\.gradle\caches\transforms-2\files-2.1\dfa504ff5b15e25f5ff3846e70cd9e2d\jetified-protolite-well-known-types-17.1.0\AndroidManifest.xml:2:1-11:12
 MERGED from [io.grpc:grpc-android:1.28.0] C:\Users\David\.gradle\caches\transforms-2\files-2.1\670bd10df567588160bf5f241d03518f\jetified-grpc-android-1.28.0\AndroidManifest.xml:2:1-13:12
-INJECTED from C:\Users\David\AndroidStudioProjects\ProiectEchipaRacheta\app\src\main\AndroidManifest.xml:2:1-38:12
-INJECTED from C:\Users\David\AndroidStudioProjects\ProiectEchipaRacheta\app\src\main\AndroidManifest.xml:2:1-38:12
-INJECTED from C:\Users\David\AndroidStudioProjects\ProiectEchipaRacheta\app\src\main\AndroidManifest.xml:2:1-38:12
+INJECTED from C:\Users\David\AndroidStudioProjects\ProiectEchipaRacheta\app\src\main\AndroidManifest.xml:2:1-39:12
+INJECTED from C:\Users\David\AndroidStudioProjects\ProiectEchipaRacheta\app\src\main\AndroidManifest.xml:2:1-39:12
+INJECTED from C:\Users\David\AndroidStudioProjects\ProiectEchipaRacheta\app\src\main\AndroidManifest.xml:2:1-39:12
 	package
 		ADDED from C:\Users\David\AndroidStudioProjects\ProiectEchipaRacheta\app\src\main\AndroidManifest.xml:3:5-47
 		INJECTED from C:\Users\David\AndroidStudioProjects\ProiectEchipaRacheta\app\src\main\AndroidManifest.xml
 		INJECTED from C:\Users\David\AndroidStudioProjects\ProiectEchipaRacheta\app\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from C:\Users\David\AndroidStudioProjects\ProiectEchipaRacheta\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\David\AndroidStudioProjects\ProiectEchipaRacheta\app\src\main\AndroidManifest.xml:2:1-38:12
+		ADDED from C:\Users\David\AndroidStudioProjects\ProiectEchipaRacheta\app\src\main\AndroidManifest.xml:2:1-39:12
 		INJECTED from C:\Users\David\AndroidStudioProjects\ProiectEchipaRacheta\app\src\main\AndroidManifest.xml
 	android:versionCode
 		INJECTED from C:\Users\David\AndroidStudioProjects\ProiectEchipaRacheta\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\David\AndroidStudioProjects\ProiectEchipaRacheta\app\src\main\AndroidManifest.xml:2:1-38:12
+		ADDED from C:\Users\David\AndroidStudioProjects\ProiectEchipaRacheta\app\src\main\AndroidManifest.xml:2:1-39:12
 		INJECTED from C:\Users\David\AndroidStudioProjects\ProiectEchipaRacheta\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from C:\Users\David\AndroidStudioProjects\ProiectEchipaRacheta\app\src\main\AndroidManifest.xml:2:11-69
@@ -90,7 +90,7 @@ ADDED from C:\Users\David\AndroidStudioProjects\ProiectEchipaRacheta\app\src\mai
 	android:name
 		ADDED from C:\Users\David\AndroidStudioProjects\ProiectEchipaRacheta\app\src\main\AndroidManifest.xml:7:22-77
 application
-ADDED from C:\Users\David\AndroidStudioProjects\ProiectEchipaRacheta\app\src\main\AndroidManifest.xml:9:5-36:19
+ADDED from C:\Users\David\AndroidStudioProjects\ProiectEchipaRacheta\app\src\main\AndroidManifest.xml:9:5-37:19
 MERGED from [com.google.firebase:firebase-auth:20.0.1] C:\Users\David\.gradle\caches\transforms-2\files-2.1\89d1365828fa736c6ca0ebfb33761576\jetified-firebase-auth-20.0.1\AndroidManifest.xml:26:5-81:19
 MERGED from [com.google.firebase:firebase-auth:20.0.1] C:\Users\David\.gradle\caches\transforms-2\files-2.1\89d1365828fa736c6ca0ebfb33761576\jetified-firebase-auth-20.0.1\AndroidManifest.xml:26:5-81:19
 MERGED from [com.google.firebase:firebase-firestore:22.0.0] C:\Users\David\.gradle\caches\transforms-2\files-2.1\78b35f044a8063435346febc0daae5a8\jetified-firebase-firestore-22.0.0\AndroidManifest.xml:16:5-24:19
@@ -139,54 +139,58 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\Da
 		ADDED from C:\Users\David\AndroidStudioProjects\ProiectEchipaRacheta\app\src\main\AndroidManifest.xml:10:9-35
 	android:theme
 		ADDED from C:\Users\David\AndroidStudioProjects\ProiectEchipaRacheta\app\src\main\AndroidManifest.xml:15:9-58
+activity#com.example.proiectechiparacheta.Profile
+ADDED from C:\Users\David\AndroidStudioProjects\ProiectEchipaRacheta\app\src\main\AndroidManifest.xml:16:9-54
+	android:name
+		ADDED from C:\Users\David\AndroidStudioProjects\ProiectEchipaRacheta\app\src\main\AndroidManifest.xml:16:19-42
 activity#com.example.proiectechiparacheta.test
-ADDED from C:\Users\David\AndroidStudioProjects\ProiectEchipaRacheta\app\src\main\AndroidManifest.xml:16:9-42
+ADDED from C:\Users\David\AndroidStudioProjects\ProiectEchipaRacheta\app\src\main\AndroidManifest.xml:17:9-42
 	android:name
-		ADDED from C:\Users\David\AndroidStudioProjects\ProiectEchipaRacheta\app\src\main\AndroidManifest.xml:16:19-39
+		ADDED from C:\Users\David\AndroidStudioProjects\ProiectEchipaRacheta\app\src\main\AndroidManifest.xml:17:19-39
 activity#com.example.proiectechiparacheta.RegisterActivity
-ADDED from C:\Users\David\AndroidStudioProjects\ProiectEchipaRacheta\app\src\main\AndroidManifest.xml:17:9-54
+ADDED from C:\Users\David\AndroidStudioProjects\ProiectEchipaRacheta\app\src\main\AndroidManifest.xml:18:9-54
 	android:name
-		ADDED from C:\Users\David\AndroidStudioProjects\ProiectEchipaRacheta\app\src\main\AndroidManifest.xml:17:19-51
+		ADDED from C:\Users\David\AndroidStudioProjects\ProiectEchipaRacheta\app\src\main\AndroidManifest.xml:18:19-51
 activity#com.example.proiectechiparacheta.AddByCamera
-ADDED from C:\Users\David\AndroidStudioProjects\ProiectEchipaRacheta\app\src\main\AndroidManifest.xml:18:9-49
+ADDED from C:\Users\David\AndroidStudioProjects\ProiectEchipaRacheta\app\src\main\AndroidManifest.xml:19:9-49
 	android:name
-		ADDED from C:\Users\David\AndroidStudioProjects\ProiectEchipaRacheta\app\src\main\AndroidManifest.xml:18:19-46
+		ADDED from C:\Users\David\AndroidStudioProjects\ProiectEchipaRacheta\app\src\main\AndroidManifest.xml:19:19-46
 meta-data#com.google.android.gms.version
-ADDED from C:\Users\David\AndroidStudioProjects\ProiectEchipaRacheta\app\src\main\AndroidManifest.xml:20:9-22:69
+ADDED from C:\Users\David\AndroidStudioProjects\ProiectEchipaRacheta\app\src\main\AndroidManifest.xml:21:9-23:69
 MERGED from [com.google.android.gms:play-services-basement:17.4.0] C:\Users\David\.gradle\caches\transforms-2\files-2.1\511b0c1b56cc060364689f0a29ae96d2\jetified-play-services-basement-17.4.0\AndroidManifest.xml:23:9-25:69
 MERGED from [com.google.android.gms:play-services-basement:17.4.0] C:\Users\David\.gradle\caches\transforms-2\files-2.1\511b0c1b56cc060364689f0a29ae96d2\jetified-play-services-basement-17.4.0\AndroidManifest.xml:23:9-25:69
 	android:value
-		ADDED from C:\Users\David\AndroidStudioProjects\ProiectEchipaRacheta\app\src\main\AndroidManifest.xml:22:13-66
+		ADDED from C:\Users\David\AndroidStudioProjects\ProiectEchipaRacheta\app\src\main\AndroidManifest.xml:23:13-66
 	android:name
-		ADDED from C:\Users\David\AndroidStudioProjects\ProiectEchipaRacheta\app\src\main\AndroidManifest.xml:21:13-58
+		ADDED from C:\Users\David\AndroidStudioProjects\ProiectEchipaRacheta\app\src\main\AndroidManifest.xml:22:13-58
 meta-data#com.google.android.gms.vision.DEPENDENCIES
-ADDED from C:\Users\David\AndroidStudioProjects\ProiectEchipaRacheta\app\src\main\AndroidManifest.xml:23:9-25:39
+ADDED from C:\Users\David\AndroidStudioProjects\ProiectEchipaRacheta\app\src\main\AndroidManifest.xml:24:9-26:39
 	android:value
-		ADDED from C:\Users\David\AndroidStudioProjects\ProiectEchipaRacheta\app\src\main\AndroidManifest.xml:25:13-36
+		ADDED from C:\Users\David\AndroidStudioProjects\ProiectEchipaRacheta\app\src\main\AndroidManifest.xml:26:13-36
 	android:name
-		ADDED from C:\Users\David\AndroidStudioProjects\ProiectEchipaRacheta\app\src\main\AndroidManifest.xml:24:13-70
+		ADDED from C:\Users\David\AndroidStudioProjects\ProiectEchipaRacheta\app\src\main\AndroidManifest.xml:25:13-70
 activity#com.example.proiectechiparacheta.AddByForm
-ADDED from C:\Users\David\AndroidStudioProjects\ProiectEchipaRacheta\app\src\main\AndroidManifest.xml:27:9-47
+ADDED from C:\Users\David\AndroidStudioProjects\ProiectEchipaRacheta\app\src\main\AndroidManifest.xml:28:9-47
 	android:name
-		ADDED from C:\Users\David\AndroidStudioProjects\ProiectEchipaRacheta\app\src\main\AndroidManifest.xml:27:19-44
+		ADDED from C:\Users\David\AndroidStudioProjects\ProiectEchipaRacheta\app\src\main\AndroidManifest.xml:28:19-44
 activity#com.example.proiectechiparacheta.DashboardActivity
-ADDED from C:\Users\David\AndroidStudioProjects\ProiectEchipaRacheta\app\src\main\AndroidManifest.xml:28:9-55
+ADDED from C:\Users\David\AndroidStudioProjects\ProiectEchipaRacheta\app\src\main\AndroidManifest.xml:29:9-55
 	android:name
-		ADDED from C:\Users\David\AndroidStudioProjects\ProiectEchipaRacheta\app\src\main\AndroidManifest.xml:28:19-52
+		ADDED from C:\Users\David\AndroidStudioProjects\ProiectEchipaRacheta\app\src\main\AndroidManifest.xml:29:19-52
 activity#com.example.proiectechiparacheta.LoginActivity
-ADDED from C:\Users\David\AndroidStudioProjects\ProiectEchipaRacheta\app\src\main\AndroidManifest.xml:29:9-35:20
+ADDED from C:\Users\David\AndroidStudioProjects\ProiectEchipaRacheta\app\src\main\AndroidManifest.xml:30:9-36:20
 	android:name
-		ADDED from C:\Users\David\AndroidStudioProjects\ProiectEchipaRacheta\app\src\main\AndroidManifest.xml:29:19-48
+		ADDED from C:\Users\David\AndroidStudioProjects\ProiectEchipaRacheta\app\src\main\AndroidManifest.xml:30:19-48
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from C:\Users\David\AndroidStudioProjects\ProiectEchipaRacheta\app\src\main\AndroidManifest.xml:30:13-34:29
+ADDED from C:\Users\David\AndroidStudioProjects\ProiectEchipaRacheta\app\src\main\AndroidManifest.xml:31:13-35:29
 action#android.intent.action.MAIN
-ADDED from C:\Users\David\AndroidStudioProjects\ProiectEchipaRacheta\app\src\main\AndroidManifest.xml:31:17-69
+ADDED from C:\Users\David\AndroidStudioProjects\ProiectEchipaRacheta\app\src\main\AndroidManifest.xml:32:17-69
 	android:name
-		ADDED from C:\Users\David\AndroidStudioProjects\ProiectEchipaRacheta\app\src\main\AndroidManifest.xml:31:25-66
+		ADDED from C:\Users\David\AndroidStudioProjects\ProiectEchipaRacheta\app\src\main\AndroidManifest.xml:32:25-66
 category#android.intent.category.LAUNCHER
-ADDED from C:\Users\David\AndroidStudioProjects\ProiectEchipaRacheta\app\src\main\AndroidManifest.xml:33:17-77
+ADDED from C:\Users\David\AndroidStudioProjects\ProiectEchipaRacheta\app\src\main\AndroidManifest.xml:34:17-77
 	android:name
-		ADDED from C:\Users\David\AndroidStudioProjects\ProiectEchipaRacheta\app\src\main\AndroidManifest.xml:33:27-74
+		ADDED from C:\Users\David\AndroidStudioProjects\ProiectEchipaRacheta\app\src\main\AndroidManifest.xml:34:27-74
 uses-sdk
 INJECTED from C:\Users\David\AndroidStudioProjects\ProiectEchipaRacheta\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\Users\David\AndroidStudioProjects\ProiectEchipaRacheta\app\src\main\AndroidManifest.xml
