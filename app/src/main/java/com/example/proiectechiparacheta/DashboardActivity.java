@@ -35,6 +35,7 @@ import com.example.proiectechiparacheta.service.CardService;
 import com.example.proiectechiparacheta.service.ImageService;
 import com.google.android.gms.common.api.CommonStatusCodes;
 import com.google.android.gms.vision.barcode.Barcode;
+import com.google.android.material.snackbar.Snackbar;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.firestore.FirebaseFirestore;
@@ -496,6 +497,8 @@ public class DashboardActivity extends AppCompatActivity {
             FileWriter out = new FileWriter(new File("/data/data/com.example.proiectechiparacheta/json.txt"));
             out.write(fileContents);
             out.close();
+            View view = findViewById(R.id.dashboardActivity);
+            Snackbar.make(view,"JSON Exported",Snackbar.LENGTH_LONG).show();
         } catch (IOException e) {
             Log.d("error",e.toString());
         }
