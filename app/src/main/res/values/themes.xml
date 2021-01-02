@@ -22,7 +22,7 @@
 
     <style name="btn">
         <item name="backgroundColor">@color/teal_200</item>
-        <item name="backgroundTint">@color/niceBlue</item>
+        <item name="backgroundTint">@color/white</item>
         <item name="android:textAllCaps">false</item>
         <item name="android:textSize">12dp</item>
     </style>

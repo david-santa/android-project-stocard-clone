@@ -2,6 +2,7 @@ package com.example.proiectechiparacheta;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.constraintlayout.widget.ConstraintLayout;
 
 import android.app.Activity;
 import android.content.Context;
@@ -11,6 +12,7 @@ import android.database.Cursor;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.graphics.Color;
+import android.graphics.drawable.AnimationDrawable;
 import android.net.Uri;
 import android.os.Bundle;
 import android.text.Editable;
@@ -270,6 +272,12 @@ public class DashboardActivity extends AppCompatActivity {
         cardService.getAll(getAllCardsFromDbCallback());
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_dashboard);
+
+        ConstraintLayout constraintLayout = findViewById(R.id.dashboardActivity);
+        AnimationDrawable animationDrawable = (AnimationDrawable) constraintLayout.getBackground();
+        animationDrawable.setEnterFadeDuration(2000);
+        animationDrawable.setExitFadeDuration(3000);
+        animationDrawable.start();
 
 
 
