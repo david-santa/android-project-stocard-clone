@@ -1,19 +1,14 @@
-package com.example.proiectechiparacheta;
+package com.example.proiectechiparacheta.Activities;
 
-import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.constraintlayout.widget.ConstraintLayout;
 
-import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
-import android.database.Cursor;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
-import android.graphics.Color;
 import android.graphics.drawable.AnimationDrawable;
-import android.net.Uri;
 import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
@@ -22,18 +17,20 @@ import android.view.ContextMenu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
-import android.widget.Button;
 import android.widget.EditText;
 import android.widget.GridView;
 import android.widget.ImageButton;
-import android.widget.ImageView;
-import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.proiectechiparacheta.Async.AsyncTaskRunner;
 import com.example.proiectechiparacheta.Async.Callback;
 import com.example.proiectechiparacheta.Async.HttpManager;
+import com.example.proiectechiparacheta.Utils.CustomAdapter;
+import com.example.proiectechiparacheta.models.FidelityCard;
+import com.example.proiectechiparacheta.models.ImageBarcode;
+import com.example.proiectechiparacheta.Utils.JSONParser;
+import com.example.proiectechiparacheta.R;
 import com.example.proiectechiparacheta.service.CardService;
 import com.example.proiectechiparacheta.service.ImageService;
 import com.google.android.gms.common.api.CommonStatusCodes;
@@ -53,15 +50,10 @@ import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
-import java.io.InputStream;
-import java.io.InputStreamReader;
-import java.io.OutputStream;
-import java.io.OutputStreamWriter;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 import java.util.concurrent.Callable;
-import java.util.logging.Logger;
 
 public class DashboardActivity extends AppCompatActivity {
     //region DECLARATION ZONE

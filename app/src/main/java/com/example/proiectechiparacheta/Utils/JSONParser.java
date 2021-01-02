@@ -1,4 +1,6 @@
-package com.example.proiectechiparacheta;
+package com.example.proiectechiparacheta.Utils;
+
+import com.example.proiectechiparacheta.models.FidelityCard;
 
 import org.json.JSONArray;
 import org.json.JSONException;

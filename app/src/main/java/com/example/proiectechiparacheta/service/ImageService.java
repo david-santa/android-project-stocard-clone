@@ -1,12 +1,10 @@
 package com.example.proiectechiparacheta.service;
 
 import android.content.Context;
-import android.media.Image;
 
 import com.example.proiectechiparacheta.Async.AsyncTaskRunner;
 import com.example.proiectechiparacheta.Async.Callback;
-import com.example.proiectechiparacheta.FidelityCard;
-import com.example.proiectechiparacheta.ImageBarcode;
+import com.example.proiectechiparacheta.models.ImageBarcode;
 import com.example.proiectechiparacheta.database.DatabaseManager;
 import com.example.proiectechiparacheta.database.dao.ImageBarcodeDao;
 

@@ -1,27 +1,19 @@
-package com.example.proiectechiparacheta;
+package com.example.proiectechiparacheta.Utils;
 import com.example.proiectechiparacheta.Async.AsyncTaskRunner;
 import com.example.proiectechiparacheta.Async.Callback;
 import com.example.proiectechiparacheta.Async.HttpManager;
+import com.example.proiectechiparacheta.models.FidelityCard;
 import com.example.proiectechiparacheta.R;
 
-import android.animation.ObjectAnimator;
 import android.content.Context;
 import android.graphics.Bitmap;
-import android.text.Layout;
 import android.view.LayoutInflater;
-import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
-import android.view.animation.AccelerateDecelerateInterpolator;
 import android.view.animation.Animation;
-import android.view.animation.AnimationUtils;
-import android.view.animation.LinearInterpolator;
 import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
-import android.widget.Toast;
-
-import androidx.appcompat.widget.PopupMenu;
 
 import java.util.ArrayList;
 import java.util.concurrent.Callable;
@@ -76,26 +68,31 @@ public class CustomAdapter extends BaseAdapter {
 //
 //        animation.start();
 //        animation2.start();
-        ImageView ivLogo;
-        String url = "https://logo.clearbit.com/";
-        url+=arr.get(position).getName();
-        ivLogo = convertView.findViewById(R.id.ivLogo);
-        Callable<Bitmap> asyncOperation = new HttpManager(url);
-        Callback<Bitmap> mainThreadOperation = backOnThread(ivLogo);
-        AsyncTaskRunner.executeAsync(asyncOperation, mainThreadOperation);
+        try{
+            ImageView ivLogo;
+            String url = "https://logo.clearbit.com/";
+            url+=arr.get(position).getName();
+            ivLogo = convertView.findViewById(R.id.ivLogo);
+            Callable<Bitmap> asyncOperation = new HttpManager(url);
+            Callback<Bitmap> mainThreadOperation = backOnThread(ivLogo);
+            AsyncTaskRunner.executeAsync(asyncOperation, mainThreadOperation);
 
-        tvId.setText(String.valueOf(arr.get(position).getId()));
-        tvName.setText(arr.get(position).getName());
-        tvHolder.setText(arr.get(position).getCardHolderName());
-        tvBarCode.setText(arr.get(position).getBarCode());
-        if(arr.get(position).isFav){
-            ivFav.setImageResource(android.R.drawable.btn_star_big_on);
+            tvId.setText(String.valueOf(arr.get(position).getId()));
+            tvName.setText(arr.get(position).getName());
+            tvHolder.setText(arr.get(position).getCardHolderName());
+            tvBarCode.setText(arr.get(position).getBarCode());
+            if(arr.get(position).isFav){
+                ivFav.setImageResource(android.R.drawable.btn_star_big_on);
+            }
+            else{
+                ivFav.setImageResource(android.R.drawable.btn_star_big_off);
+            }
+
+
         }
-        else{
-            ivFav.setImageResource(android.R.drawable.btn_star_big_off);
+        catch(Exception e){
+            System.out.println(e.toString());
         }
-
-
 
         return convertView;
     }

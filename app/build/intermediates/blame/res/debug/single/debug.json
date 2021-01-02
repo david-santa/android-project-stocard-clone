@@ -1,23 +1,7 @@
 [
     {
-        "merged": "C:\\Users\\David\\AndroidStudioProjects\\ProiectEchipaRacheta\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_add_by_camera.xml.flat",
-        "source": "C:\\Users\\David\\AndroidStudioProjects\\ProiectEchipaRacheta\\app\\src\\main\\res\\layout\\activity_add_by_camera.xml"
-    },
-    {
-        "merged": "C:\\Users\\David\\AndroidStudioProjects\\ProiectEchipaRacheta\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_dashboard.xml.flat",
-        "source": "C:\\Users\\David\\AndroidStudioProjects\\ProiectEchipaRacheta\\app\\src\\main\\res\\layout\\activity_dashboard.xml"
-    },
-    {
         "merged": "C:\\Users\\David\\AndroidStudioProjects\\ProiectEchipaRacheta\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_baseline_email_24.xml.flat",
         "source": "C:\\Users\\David\\AndroidStudioProjects\\ProiectEchipaRacheta\\app\\src\\main\\res\\drawable\\ic_baseline_email_24.xml"
-    },
-    {
-        "merged": "C:\\Users\\David\\AndroidStudioProjects\\ProiectEchipaRacheta\\app\\build\\intermediates\\res\\merged\\debug\\drawable_gradient_1.xml.flat",
-        "source": "C:\\Users\\David\\AndroidStudioProjects\\ProiectEchipaRacheta\\app\\src\\main\\res\\drawable\\gradient_1.xml"
-    },
-    {
-        "merged": "C:\\Users\\David\\AndroidStudioProjects\\ProiectEchipaRacheta\\app\\build\\intermediates\\res\\merged\\debug\\drawable_gradient_list.xml.flat",
-        "source": "C:\\Users\\David\\AndroidStudioProjects\\ProiectEchipaRacheta\\app\\src\\main\\res\\drawable\\gradient_list.xml"
     },
     {
         "merged": "C:\\Users\\David\\AndroidStudioProjects\\ProiectEchipaRacheta\\app\\build\\intermediates\\res\\merged\\debug\\drawable_gradient_3.xml.flat",
@@ -40,24 +24,12 @@
         "source": "C:\\Users\\David\\AndroidStudioProjects\\ProiectEchipaRacheta\\app\\src\\main\\res\\drawable-v24\\ic_launcher_foreground.xml"
     },
     {
-        "merged": "C:\\Users\\David\\AndroidStudioProjects\\ProiectEchipaRacheta\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_barcode.xml.flat",
-        "source": "C:\\Users\\David\\AndroidStudioProjects\\ProiectEchipaRacheta\\app\\src\\main\\res\\drawable\\ic_barcode.xml"
-    },
-    {
         "merged": "C:\\Users\\David\\AndroidStudioProjects\\ProiectEchipaRacheta\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_profile.xml.flat",
         "source": "C:\\Users\\David\\AndroidStudioProjects\\ProiectEchipaRacheta\\app\\src\\main\\res\\layout\\activity_profile.xml"
     },
     {
-        "merged": "C:\\Users\\David\\AndroidStudioProjects\\ProiectEchipaRacheta\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher.png.flat",
-        "source": "C:\\Users\\David\\AndroidStudioProjects\\ProiectEchipaRacheta\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher.png"
-    },
-    {
         "merged": "C:\\Users\\David\\AndroidStudioProjects\\ProiectEchipaRacheta\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher.png.flat",
         "source": "C:\\Users\\David\\AndroidStudioProjects\\ProiectEchipaRacheta\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher.png"
-    },
-    {
-        "merged": "C:\\Users\\David\\AndroidStudioProjects\\ProiectEchipaRacheta\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_baseline_person_24.xml.flat",
-        "source": "C:\\Users\\David\\AndroidStudioProjects\\ProiectEchipaRacheta\\app\\src\\main\\res\\drawable\\ic_baseline_person_24.xml"
     },
     {
         "merged": "C:\\Users\\David\\AndroidStudioProjects\\ProiectEchipaRacheta\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_json_file.xml.flat",
@@ -68,12 +40,12 @@
         "source": "C:\\Users\\David\\AndroidStudioProjects\\ProiectEchipaRacheta\\app\\src\\main\\res\\drawable\\customshape2.xml"
     },
     {
-        "merged": "C:\\Users\\David\\AndroidStudioProjects\\ProiectEchipaRacheta\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_add_by_form.xml.flat",
-        "source": "C:\\Users\\David\\AndroidStudioProjects\\ProiectEchipaRacheta\\app\\src\\main\\res\\layout\\activity_add_by_form.xml"
+        "merged": "C:\\Users\\David\\AndroidStudioProjects\\ProiectEchipaRacheta\\app\\build\\intermediates\\res\\merged\\debug\\drawable_round_outline.xml.flat",
+        "source": "C:\\Users\\David\\AndroidStudioProjects\\ProiectEchipaRacheta\\app\\src\\main\\res\\drawable\\round_outline.xml"
     },
     {
-        "merged": "C:\\Users\\David\\AndroidStudioProjects\\ProiectEchipaRacheta\\app\\build\\intermediates\\res\\merged\\debug\\font_mukta_vaani_light.ttf.flat",
-        "source": "C:\\Users\\David\\AndroidStudioProjects\\ProiectEchipaRacheta\\app\\src\\main\\res\\font\\mukta_vaani_light.ttf"
+        "merged": "C:\\Users\\David\\AndroidStudioProjects\\ProiectEchipaRacheta\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_add_by_form.xml.flat",
+        "source": "C:\\Users\\David\\AndroidStudioProjects\\ProiectEchipaRacheta\\app\\src\\main\\res\\layout\\activity_add_by_form.xml"
     },
     {
         "merged": "C:\\Users\\David\\AndroidStudioProjects\\ProiectEchipaRacheta\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher.png.flat",
@@ -84,24 +56,12 @@
         "source": "C:\\Users\\David\\AndroidStudioProjects\\ProiectEchipaRacheta\\app\\src\\main\\res\\drawable\\gradient_2.xml"
     },
     {
-        "merged": "C:\\Users\\David\\AndroidStudioProjects\\ProiectEchipaRacheta\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher.png.flat",
-        "source": "C:\\Users\\David\\AndroidStudioProjects\\ProiectEchipaRacheta\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher.png"
-    },
-    {
         "merged": "C:\\Users\\David\\AndroidStudioProjects\\ProiectEchipaRacheta\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher_round.png.flat",
         "source": "C:\\Users\\David\\AndroidStudioProjects\\ProiectEchipaRacheta\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher_round.png"
     },
     {
-        "merged": "C:\\Users\\David\\AndroidStudioProjects\\ProiectEchipaRacheta\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher_round.png.flat",
-        "source": "C:\\Users\\David\\AndroidStudioProjects\\ProiectEchipaRacheta\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher_round.png"
-    },
-    {
         "merged": "C:\\Users\\David\\AndroidStudioProjects\\ProiectEchipaRacheta\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_credit_card.xml.flat",
         "source": "C:\\Users\\David\\AndroidStudioProjects\\ProiectEchipaRacheta\\app\\src\\main\\res\\drawable\\ic_credit_card.xml"
-    },
-    {
-        "merged": "C:\\Users\\David\\AndroidStudioProjects\\ProiectEchipaRacheta\\app\\build\\intermediates\\res\\merged\\debug\\drawable_handholdingcard.jpg.flat",
-        "source": "C:\\Users\\David\\AndroidStudioProjects\\ProiectEchipaRacheta\\app\\src\\main\\res\\drawable\\handholdingcard.jpg"
     },
     {
         "merged": "C:\\Users\\David\\AndroidStudioProjects\\ProiectEchipaRacheta\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_register.xml.flat",
@@ -116,18 +76,6 @@
         "source": "C:\\Users\\David\\AndroidStudioProjects\\ProiectEchipaRacheta\\app\\src\\main\\res\\menu\\popup.xml"
     },
     {
-        "merged": "C:\\Users\\David\\AndroidStudioProjects\\ProiectEchipaRacheta\\app\\build\\intermediates\\res\\merged\\debug\\drawable_gradient_4.xml.flat",
-        "source": "C:\\Users\\David\\AndroidStudioProjects\\ProiectEchipaRacheta\\app\\src\\main\\res\\drawable\\gradient_4.xml"
-    },
-    {
-        "merged": "C:\\Users\\David\\AndroidStudioProjects\\ProiectEchipaRacheta\\app\\build\\intermediates\\res\\merged\\debug\\drawable_customshape.xml.flat",
-        "source": "C:\\Users\\David\\AndroidStudioProjects\\ProiectEchipaRacheta\\app\\src\\main\\res\\drawable\\customshape.xml"
-    },
-    {
-        "merged": "C:\\Users\\David\\AndroidStudioProjects\\ProiectEchipaRacheta\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_ic_launcher.xml.flat",
-        "source": "C:\\Users\\David\\AndroidStudioProjects\\ProiectEchipaRacheta\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher.xml"
-    },
-    {
         "merged": "C:\\Users\\David\\AndroidStudioProjects\\ProiectEchipaRacheta\\app\\build\\intermediates\\res\\merged\\debug\\drawable_tag.png.flat",
         "source": "C:\\Users\\David\\AndroidStudioProjects\\ProiectEchipaRacheta\\app\\src\\main\\res\\drawable\\tag.png"
     },
@@ -138,6 +86,90 @@
     {
         "merged": "C:\\Users\\David\\AndroidStudioProjects\\ProiectEchipaRacheta\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_main.xml.flat",
         "source": "C:\\Users\\David\\AndroidStudioProjects\\ProiectEchipaRacheta\\app\\src\\main\\res\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\David\\AndroidStudioProjects\\ProiectEchipaRacheta\\app\\build\\intermediates\\res\\merged\\debug\\drawable_gradient_6.xml.flat",
+        "source": "C:\\Users\\David\\AndroidStudioProjects\\ProiectEchipaRacheta\\app\\src\\main\\res\\drawable\\gradient_6.xml"
+    },
+    {
+        "merged": "C:\\Users\\David\\AndroidStudioProjects\\ProiectEchipaRacheta\\app\\build\\intermediates\\res\\merged\\debug\\drawable_background.png.flat",
+        "source": "C:\\Users\\David\\AndroidStudioProjects\\ProiectEchipaRacheta\\app\\src\\main\\res\\drawable\\background.png"
+    },
+    {
+        "merged": "C:\\Users\\David\\AndroidStudioProjects\\ProiectEchipaRacheta\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_baseline_phone_24.xml.flat",
+        "source": "C:\\Users\\David\\AndroidStudioProjects\\ProiectEchipaRacheta\\app\\src\\main\\res\\drawable\\ic_baseline_phone_24.xml"
+    },
+    {
+        "merged": "C:\\Users\\David\\AndroidStudioProjects\\ProiectEchipaRacheta\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\David\\AndroidStudioProjects\\ProiectEchipaRacheta\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "C:\\Users\\David\\AndroidStudioProjects\\ProiectEchipaRacheta\\app\\build\\intermediates\\res\\merged\\debug\\drawable_holder.xml.flat",
+        "source": "C:\\Users\\David\\AndroidStudioProjects\\ProiectEchipaRacheta\\app\\src\\main\\res\\drawable\\holder.xml"
+    },
+    {
+        "merged": "C:\\Users\\David\\AndroidStudioProjects\\ProiectEchipaRacheta\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_dashboard.xml.flat",
+        "source": "C:\\Users\\David\\AndroidStudioProjects\\ProiectEchipaRacheta\\app\\src\\main\\res\\layout\\activity_dashboard.xml"
+    },
+    {
+        "merged": "C:\\Users\\David\\AndroidStudioProjects\\ProiectEchipaRacheta\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_add_by_camera.xml.flat",
+        "source": "C:\\Users\\David\\AndroidStudioProjects\\ProiectEchipaRacheta\\app\\src\\main\\res\\layout\\activity_add_by_camera.xml"
+    },
+    {
+        "merged": "C:\\Users\\David\\AndroidStudioProjects\\ProiectEchipaRacheta\\app\\build\\intermediates\\res\\merged\\debug\\drawable_gradient_1.xml.flat",
+        "source": "C:\\Users\\David\\AndroidStudioProjects\\ProiectEchipaRacheta\\app\\src\\main\\res\\drawable\\gradient_1.xml"
+    },
+    {
+        "merged": "C:\\Users\\David\\AndroidStudioProjects\\ProiectEchipaRacheta\\app\\build\\intermediates\\res\\merged\\debug\\drawable_gradient_list.xml.flat",
+        "source": "C:\\Users\\David\\AndroidStudioProjects\\ProiectEchipaRacheta\\app\\src\\main\\res\\drawable\\gradient_list.xml"
+    },
+    {
+        "merged": "C:\\Users\\David\\AndroidStudioProjects\\ProiectEchipaRacheta\\app\\build\\intermediates\\res\\merged\\debug\\drawable_gradient_5.xml.flat",
+        "source": "C:\\Users\\David\\AndroidStudioProjects\\ProiectEchipaRacheta\\app\\src\\main\\res\\drawable\\gradient_5.xml"
+    },
+    {
+        "merged": "C:\\Users\\David\\AndroidStudioProjects\\ProiectEchipaRacheta\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_barcode.xml.flat",
+        "source": "C:\\Users\\David\\AndroidStudioProjects\\ProiectEchipaRacheta\\app\\src\\main\\res\\drawable\\ic_barcode.xml"
+    },
+    {
+        "merged": "C:\\Users\\David\\AndroidStudioProjects\\ProiectEchipaRacheta\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\David\\AndroidStudioProjects\\ProiectEchipaRacheta\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\David\\AndroidStudioProjects\\ProiectEchipaRacheta\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_baseline_person_24.xml.flat",
+        "source": "C:\\Users\\David\\AndroidStudioProjects\\ProiectEchipaRacheta\\app\\src\\main\\res\\drawable\\ic_baseline_person_24.xml"
+    },
+    {
+        "merged": "C:\\Users\\David\\AndroidStudioProjects\\ProiectEchipaRacheta\\app\\build\\intermediates\\res\\merged\\debug\\font_mukta_vaani_light.ttf.flat",
+        "source": "C:\\Users\\David\\AndroidStudioProjects\\ProiectEchipaRacheta\\app\\src\\main\\res\\font\\mukta_vaani_light.ttf"
+    },
+    {
+        "merged": "C:\\Users\\David\\AndroidStudioProjects\\ProiectEchipaRacheta\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\David\\AndroidStudioProjects\\ProiectEchipaRacheta\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\David\\AndroidStudioProjects\\ProiectEchipaRacheta\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\David\\AndroidStudioProjects\\ProiectEchipaRacheta\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "C:\\Users\\David\\AndroidStudioProjects\\ProiectEchipaRacheta\\app\\build\\intermediates\\res\\merged\\debug\\drawable_handholdingcard.jpg.flat",
+        "source": "C:\\Users\\David\\AndroidStudioProjects\\ProiectEchipaRacheta\\app\\src\\main\\res\\drawable\\handholdingcard.jpg"
+    },
+    {
+        "merged": "C:\\Users\\David\\AndroidStudioProjects\\ProiectEchipaRacheta\\app\\build\\intermediates\\res\\merged\\debug\\drawable_gradient_4.xml.flat",
+        "source": "C:\\Users\\David\\AndroidStudioProjects\\ProiectEchipaRacheta\\app\\src\\main\\res\\drawable\\gradient_4.xml"
+    },
+    {
+        "merged": "C:\\Users\\David\\AndroidStudioProjects\\ProiectEchipaRacheta\\app\\build\\intermediates\\res\\merged\\debug\\drawable_gradient_list_2.xml.flat",
+        "source": "C:\\Users\\David\\AndroidStudioProjects\\ProiectEchipaRacheta\\app\\src\\main\\res\\drawable\\gradient_list_2.xml"
+    },
+    {
+        "merged": "C:\\Users\\David\\AndroidStudioProjects\\ProiectEchipaRacheta\\app\\build\\intermediates\\res\\merged\\debug\\drawable_customshape.xml.flat",
+        "source": "C:\\Users\\David\\AndroidStudioProjects\\ProiectEchipaRacheta\\app\\src\\main\\res\\drawable\\customshape.xml"
+    },
+    {
+        "merged": "C:\\Users\\David\\AndroidStudioProjects\\ProiectEchipaRacheta\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "C:\\Users\\David\\AndroidStudioProjects\\ProiectEchipaRacheta\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher.xml"
     },
     {
         "merged": "C:\\Users\\David\\AndroidStudioProjects\\ProiectEchipaRacheta\\app\\build\\intermediates\\res\\merged\\debug\\layout_rowdesign.xml.flat",
@@ -156,27 +188,11 @@
         "source": "C:\\Users\\David\\AndroidStudioProjects\\ProiectEchipaRacheta\\app\\src\\main\\res\\anim\\rotatie.xml"
     },
     {
-        "merged": "C:\\Users\\David\\AndroidStudioProjects\\ProiectEchipaRacheta\\app\\build\\intermediates\\res\\merged\\debug\\drawable_background.png.flat",
-        "source": "C:\\Users\\David\\AndroidStudioProjects\\ProiectEchipaRacheta\\app\\src\\main\\res\\drawable\\background.png"
-    },
-    {
         "merged": "C:\\Users\\David\\AndroidStudioProjects\\ProiectEchipaRacheta\\app\\build\\intermediates\\res\\merged\\debug\\drawable_round_button.xml.flat",
         "source": "C:\\Users\\David\\AndroidStudioProjects\\ProiectEchipaRacheta\\app\\src\\main\\res\\drawable\\round_button.xml"
     },
     {
-        "merged": "C:\\Users\\David\\AndroidStudioProjects\\ProiectEchipaRacheta\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_baseline_phone_24.xml.flat",
-        "source": "C:\\Users\\David\\AndroidStudioProjects\\ProiectEchipaRacheta\\app\\src\\main\\res\\drawable\\ic_baseline_phone_24.xml"
-    },
-    {
         "merged": "C:\\Users\\David\\AndroidStudioProjects\\ProiectEchipaRacheta\\app\\build\\intermediates\\res\\merged\\debug\\drawable_layoutborder.xml.flat",
         "source": "C:\\Users\\David\\AndroidStudioProjects\\ProiectEchipaRacheta\\app\\src\\main\\res\\drawable\\layoutborder.xml"
-    },
-    {
-        "merged": "C:\\Users\\David\\AndroidStudioProjects\\ProiectEchipaRacheta\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher_round.png.flat",
-        "source": "C:\\Users\\David\\AndroidStudioProjects\\ProiectEchipaRacheta\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher_round.png"
-    },
-    {
-        "merged": "C:\\Users\\David\\AndroidStudioProjects\\ProiectEchipaRacheta\\app\\build\\intermediates\\res\\merged\\debug\\drawable_holder.xml.flat",
-        "source": "C:\\Users\\David\\AndroidStudioProjects\\ProiectEchipaRacheta\\app\\src\\main\\res\\drawable\\holder.xml"
     }
 ]

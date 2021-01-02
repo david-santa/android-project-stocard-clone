@@ -26,10 +26,10 @@
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/Theme.ProiectEchipaRacheta" >
-        <activity android:name="com.example.proiectechiparacheta.Profile" />
+        <activity android:name="com.example.proiectechiparacheta.Activities.Profile" />
         <activity android:name="com.example.proiectechiparacheta.test" />
-        <activity android:name="com.example.proiectechiparacheta.RegisterActivity" />
-        <activity android:name="com.example.proiectechiparacheta.AddByCamera" />
+        <activity android:name="com.example.proiectechiparacheta.Activities.RegisterActivity" />
+        <activity android:name="com.example.proiectechiparacheta.Activities.AddByCamera" />
 
         <meta-data
             android:name="com.google.android.gms.version"
@@ -38,9 +38,9 @@
             android:name="com.google.android.gms.vision.DEPENDENCIES"
             android:value="barcode" />
 
-        <activity android:name="com.example.proiectechiparacheta.AddByForm" />
-        <activity android:name="com.example.proiectechiparacheta.DashboardActivity" />
-        <activity android:name="com.example.proiectechiparacheta.LoginActivity" >
+        <activity android:name="com.example.proiectechiparacheta.Activities.AddByForm" />
+        <activity android:name="com.example.proiectechiparacheta.Activities.DashboardActivity" />
+        <activity android:name="com.example.proiectechiparacheta.Activities.LoginActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

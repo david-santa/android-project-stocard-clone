@@ -1,4 +1,4 @@
-package com.example.proiectechiparacheta;
+package com.example.proiectechiparacheta.Activities;
 
 import android.graphics.Bitmap;
 import android.os.Bundle;
@@ -10,6 +10,8 @@ import android.widget.ImageView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.DialogFragment;
+
+import com.example.proiectechiparacheta.R;
 
 public class Popup_Barcode extends DialogFragment {
     public Bitmap bitmap;

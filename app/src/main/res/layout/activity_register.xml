@@ -7,7 +7,7 @@
     android:fitsSystemWindows="true"
     android:background="@drawable/gradient_list"
     android:id="@+id/registerLayout"
-    tools:context=".RegisterActivity"
+    tools:context=".Activities.RegisterActivity"
 >
 
     <TextView
@@ -76,7 +76,7 @@
             app:layout_constraintStart_toStartOf="parent"
             android:contentDescription="@string/add"
             app:layout_constraintTop_toBottomOf="@+id/etPasswordReg"
-            style="@style/btn"
+            style="@style/btnBlue"
             android:layout_marginBottom="20dp"
             />
 
@@ -85,7 +85,7 @@
 
         <Button
             android:id="@+id/sign_in_button"
-            style="@style/btn"
+            style="@style/btnBlue"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/login_screen"

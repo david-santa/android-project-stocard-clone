@@ -1661,7 +1661,10 @@ drawable gradient_1
 drawable gradient_2
 drawable gradient_3
 drawable gradient_4
+drawable gradient_5
+drawable gradient_6
 drawable gradient_list
+drawable gradient_list_2
 drawable handholdingcard
 drawable holder
 drawable ic_arrow_down_24dp
@@ -1710,6 +1713,7 @@ drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
 drawable preference_list_divider_material
 drawable round_button
+drawable round_outline
 drawable tag
 drawable test_custom_background
 drawable tooltip_frame_dark
@@ -1893,8 +1897,10 @@ id etEmail
 id etEmailReg
 id etFilter
 id etName
+id etNameProfile
 id etPassword
 id etPasswordReg
+id etTelefon
 id exitUntilCollapsed
 id expand_activities_button
 id expanded_menu
@@ -1931,6 +1937,7 @@ id ignore
 id ignoreRequest
 id image
 id imgMail
+id imgNume
 id imgProfile
 id imgTel
 id info
@@ -2132,7 +2139,6 @@ id triangle
 id tvHello
 id tvMail
 id tvMailUser
-id tvTel
 id unchecked
 id uniform
 id unlabeled
@@ -3182,6 +3188,7 @@ style Widget_MaterialComponents_Toolbar_Surface
 style Widget_MaterialComponents_Tooltip
 style Widget_Support_CoordinatorLayout
 style btn
+style btnBlue
 style text
 styleable ActionBar background backgroundSplit backgroundStacked contentInsetEnd contentInsetEndWithActions contentInsetLeft contentInsetRight contentInsetStart contentInsetStartWithNavigation customNavigationLayout displayOptions divider elevation height hideOnContentScroll homeAsUpIndicator homeLayout icon indeterminateProgressStyle itemPadding logo navigationMode popupTheme progressBarPadding progressBarStyle subtitle subtitleTextStyle title titleTextStyle
 styleable ActionBarLayout android_layout_gravity

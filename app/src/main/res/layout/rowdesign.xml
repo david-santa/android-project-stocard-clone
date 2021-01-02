@@ -96,18 +96,6 @@
             app:layout_constraintTop_toBottomOf="@+id/cardName"
             />
 
-        <ImageView
-            android:id="@+id/ivFav"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="1.0"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            android:layout_marginEnd="10dp"
-            android:layout_marginVertical="10dp"
-
-            app:srcCompat="@android:drawable/btn_star_big_off" />
 
         <ImageView
             android:id="@+id/ivLogo"
@@ -119,6 +107,18 @@
             app:layout_constraintStart_toEndOf="@+id/cardHolderName"
             app:layout_constraintTop_toBottomOf="@+id/cardName"
             app:srcCompat="@android:drawable/ic_notification_clear_all" />
+    <ImageView
+        android:id="@+id/ivFav"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginEnd="10dp"
+        android:layout_marginVertical="10dp"
+
+        app:srcCompat="@android:drawable/btn_star_big_off" />
 
 
         <!--    </androidx.constraintlayout.widget.ConstraintLayout>-->

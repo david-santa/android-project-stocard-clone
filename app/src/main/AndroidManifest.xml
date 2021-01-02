@@ -13,10 +13,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.ProiectEchipaRacheta">
-        <activity android:name=".Profile"></activity>
+        <activity android:name=".Activities.Profile"></activity>
         <activity android:name=".test" />
-        <activity android:name=".RegisterActivity" />
-        <activity android:name=".AddByCamera" />
+        <activity android:name=".Activities.RegisterActivity" />
+        <activity android:name=".Activities.AddByCamera" />
 
         <meta-data
             android:name="com.google.android.gms.version"
@@ -25,9 +25,9 @@
             android:name="com.google.android.gms.vision.DEPENDENCIES"
             android:value="barcode" />
 
-        <activity android:name=".AddByForm" />
-        <activity android:name=".DashboardActivity" />
-        <activity android:name=".LoginActivity">
+        <activity android:name=".Activities.AddByForm" />
+        <activity android:name=".Activities.DashboardActivity" />
+        <activity android:name=".Activities.LoginActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

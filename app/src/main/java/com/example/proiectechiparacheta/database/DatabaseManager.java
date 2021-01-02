@@ -6,8 +6,8 @@ import androidx.room.Database;
 import androidx.room.Room;
 import androidx.room.RoomDatabase;
 
-import com.example.proiectechiparacheta.FidelityCard;
-import com.example.proiectechiparacheta.ImageBarcode;
+import com.example.proiectechiparacheta.models.FidelityCard;
+import com.example.proiectechiparacheta.models.ImageBarcode;
 import com.example.proiectechiparacheta.database.dao.FidelityCardDao;
 import com.example.proiectechiparacheta.database.dao.ImageBarcodeDao;
 

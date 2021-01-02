@@ -45,18 +45,18 @@
 26        android:testOnly="true"
 27        android:theme="@style/Theme.ProiectEchipaRacheta" >
 27-->C:\Users\David\AndroidStudioProjects\ProiectEchipaRacheta\app\src\main\AndroidManifest.xml:15:9-58
-28        <activity android:name="com.example.proiectechiparacheta.Profile" />
-28-->C:\Users\David\AndroidStudioProjects\ProiectEchipaRacheta\app\src\main\AndroidManifest.xml:16:9-54
-28-->C:\Users\David\AndroidStudioProjects\ProiectEchipaRacheta\app\src\main\AndroidManifest.xml:16:19-42
+28        <activity android:name="com.example.proiectechiparacheta.Activities.Profile" />
+28-->C:\Users\David\AndroidStudioProjects\ProiectEchipaRacheta\app\src\main\AndroidManifest.xml:16:9-65
+28-->C:\Users\David\AndroidStudioProjects\ProiectEchipaRacheta\app\src\main\AndroidManifest.xml:16:19-53
 29        <activity android:name="com.example.proiectechiparacheta.test" />
 29-->C:\Users\David\AndroidStudioProjects\ProiectEchipaRacheta\app\src\main\AndroidManifest.xml:17:9-42
 29-->C:\Users\David\AndroidStudioProjects\ProiectEchipaRacheta\app\src\main\AndroidManifest.xml:17:19-39
-30        <activity android:name="com.example.proiectechiparacheta.RegisterActivity" />
-30-->C:\Users\David\AndroidStudioProjects\ProiectEchipaRacheta\app\src\main\AndroidManifest.xml:18:9-54
-30-->C:\Users\David\AndroidStudioProjects\ProiectEchipaRacheta\app\src\main\AndroidManifest.xml:18:19-51
-31        <activity android:name="com.example.proiectechiparacheta.AddByCamera" />
-31-->C:\Users\David\AndroidStudioProjects\ProiectEchipaRacheta\app\src\main\AndroidManifest.xml:19:9-49
-31-->C:\Users\David\AndroidStudioProjects\ProiectEchipaRacheta\app\src\main\AndroidManifest.xml:19:19-46
+30        <activity android:name="com.example.proiectechiparacheta.Activities.RegisterActivity" />
+30-->C:\Users\David\AndroidStudioProjects\ProiectEchipaRacheta\app\src\main\AndroidManifest.xml:18:9-65
+30-->C:\Users\David\AndroidStudioProjects\ProiectEchipaRacheta\app\src\main\AndroidManifest.xml:18:19-62
+31        <activity android:name="com.example.proiectechiparacheta.Activities.AddByCamera" />
+31-->C:\Users\David\AndroidStudioProjects\ProiectEchipaRacheta\app\src\main\AndroidManifest.xml:19:9-60
+31-->C:\Users\David\AndroidStudioProjects\ProiectEchipaRacheta\app\src\main\AndroidManifest.xml:19:19-57
 32
 33        <meta-data
 33-->C:\Users\David\AndroidStudioProjects\ProiectEchipaRacheta\app\src\main\AndroidManifest.xml:21:9-23:69
@@ -71,15 +71,15 @@
 38            android:value="barcode" />
 38-->C:\Users\David\AndroidStudioProjects\ProiectEchipaRacheta\app\src\main\AndroidManifest.xml:26:13-36
 39
-40        <activity android:name="com.example.proiectechiparacheta.AddByForm" />
-40-->C:\Users\David\AndroidStudioProjects\ProiectEchipaRacheta\app\src\main\AndroidManifest.xml:28:9-47
-40-->C:\Users\David\AndroidStudioProjects\ProiectEchipaRacheta\app\src\main\AndroidManifest.xml:28:19-44
-41        <activity android:name="com.example.proiectechiparacheta.DashboardActivity" />
-41-->C:\Users\David\AndroidStudioProjects\ProiectEchipaRacheta\app\src\main\AndroidManifest.xml:29:9-55
-41-->C:\Users\David\AndroidStudioProjects\ProiectEchipaRacheta\app\src\main\AndroidManifest.xml:29:19-52
-42        <activity android:name="com.example.proiectechiparacheta.LoginActivity" >
+40        <activity android:name="com.example.proiectechiparacheta.Activities.AddByForm" />
+40-->C:\Users\David\AndroidStudioProjects\ProiectEchipaRacheta\app\src\main\AndroidManifest.xml:28:9-58
+40-->C:\Users\David\AndroidStudioProjects\ProiectEchipaRacheta\app\src\main\AndroidManifest.xml:28:19-55
+41        <activity android:name="com.example.proiectechiparacheta.Activities.DashboardActivity" />
+41-->C:\Users\David\AndroidStudioProjects\ProiectEchipaRacheta\app\src\main\AndroidManifest.xml:29:9-66
+41-->C:\Users\David\AndroidStudioProjects\ProiectEchipaRacheta\app\src\main\AndroidManifest.xml:29:19-63
+42        <activity android:name="com.example.proiectechiparacheta.Activities.LoginActivity" >
 42-->C:\Users\David\AndroidStudioProjects\ProiectEchipaRacheta\app\src\main\AndroidManifest.xml:30:9-36:20
-42-->C:\Users\David\AndroidStudioProjects\ProiectEchipaRacheta\app\src\main\AndroidManifest.xml:30:19-48
+42-->C:\Users\David\AndroidStudioProjects\ProiectEchipaRacheta\app\src\main\AndroidManifest.xml:30:19-59
 43            <intent-filter>
 43-->C:\Users\David\AndroidStudioProjects\ProiectEchipaRacheta\app\src\main\AndroidManifest.xml:31:13-35:29
 44                <action android:name="android.intent.action.MAIN" />

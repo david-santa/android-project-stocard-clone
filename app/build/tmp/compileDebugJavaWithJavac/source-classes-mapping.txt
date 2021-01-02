@@ -1,61 +1,61 @@
+com/example/proiectechiparacheta/Activities/DashboardActivity.java
+ com.example.proiectechiparacheta.Activities.DashboardActivity
+ com.example.proiectechiparacheta.Activities.DashboardActivity$1
+ com.example.proiectechiparacheta.Activities.DashboardActivity$10
+ com.example.proiectechiparacheta.Activities.DashboardActivity$11
+ com.example.proiectechiparacheta.Activities.DashboardActivity$12
+ com.example.proiectechiparacheta.Activities.DashboardActivity$13
+ com.example.proiectechiparacheta.Activities.DashboardActivity$14
+ com.example.proiectechiparacheta.Activities.DashboardActivity$15
+ com.example.proiectechiparacheta.Activities.DashboardActivity$16
+ com.example.proiectechiparacheta.Activities.DashboardActivity$17
+ com.example.proiectechiparacheta.Activities.DashboardActivity$18
+ com.example.proiectechiparacheta.Activities.DashboardActivity$19
+ com.example.proiectechiparacheta.Activities.DashboardActivity$2
+ com.example.proiectechiparacheta.Activities.DashboardActivity$20
+ com.example.proiectechiparacheta.Activities.DashboardActivity$21
+ com.example.proiectechiparacheta.Activities.DashboardActivity$3
+ com.example.proiectechiparacheta.Activities.DashboardActivity$4
+ com.example.proiectechiparacheta.Activities.DashboardActivity$5
+ com.example.proiectechiparacheta.Activities.DashboardActivity$6
+ com.example.proiectechiparacheta.Activities.DashboardActivity$7
+ com.example.proiectechiparacheta.Activities.DashboardActivity$8
+ com.example.proiectechiparacheta.Activities.DashboardActivity$9
 com/example/proiectechiparacheta/Async/AsyncTaskRunner.java
  com.example.proiectechiparacheta.Async.AsyncTaskRunner
-com/example/proiectechiparacheta/CustomAdapter.java
- com.example.proiectechiparacheta.CustomAdapter
- com.example.proiectechiparacheta.CustomAdapter$1
-com/example/proiectechiparacheta/Profile.java
- com.example.proiectechiparacheta.Profile
- com.example.proiectechiparacheta.Profile$1
- com.example.proiectechiparacheta.Profile$2
- com.example.proiectechiparacheta.Profile$3
- com.example.proiectechiparacheta.Profile$3$1
-com/example/proiectechiparacheta/AddByCamera.java
- com.example.proiectechiparacheta.AddByCamera
- com.example.proiectechiparacheta.AddByCamera$1
- com.example.proiectechiparacheta.AddByCamera$1$1
-com/example/proiectechiparacheta/ImageBarcode.java
- com.example.proiectechiparacheta.ImageBarcode
+com/example/proiectechiparacheta/Activities/RegisterActivity.java
+ com.example.proiectechiparacheta.Activities.RegisterActivity
+ com.example.proiectechiparacheta.Activities.RegisterActivity$1
+ com.example.proiectechiparacheta.Activities.RegisterActivity$2
+ com.example.proiectechiparacheta.Activities.RegisterActivity$2$1
+com/example/proiectechiparacheta/Activities/Profile.java
+ com.example.proiectechiparacheta.Activities.Profile
+ com.example.proiectechiparacheta.Activities.Profile$1
+ com.example.proiectechiparacheta.Activities.Profile$2
+ com.example.proiectechiparacheta.Activities.Profile$3
+ com.example.proiectechiparacheta.Activities.Profile$3$1
+com/example/proiectechiparacheta/Activities/LoginActivity.java
+ com.example.proiectechiparacheta.Activities.LoginActivity
+ com.example.proiectechiparacheta.Activities.LoginActivity$1
+ com.example.proiectechiparacheta.Activities.LoginActivity$1$1
+ com.example.proiectechiparacheta.Activities.LoginActivity$2
 com/example/proiectechiparacheta/database/dao/FidelityCardDao.java
  com.example.proiectechiparacheta.database.dao.FidelityCardDao
-com/example/proiectechiparacheta/LoginActivity.java
- com.example.proiectechiparacheta.LoginActivity
- com.example.proiectechiparacheta.LoginActivity$1
- com.example.proiectechiparacheta.LoginActivity$1$1
- com.example.proiectechiparacheta.LoginActivity$2
-com/example/proiectechiparacheta/DashboardActivity.java
- com.example.proiectechiparacheta.DashboardActivity
- com.example.proiectechiparacheta.DashboardActivity$1
- com.example.proiectechiparacheta.DashboardActivity$10
- com.example.proiectechiparacheta.DashboardActivity$11
- com.example.proiectechiparacheta.DashboardActivity$12
- com.example.proiectechiparacheta.DashboardActivity$13
- com.example.proiectechiparacheta.DashboardActivity$14
- com.example.proiectechiparacheta.DashboardActivity$15
- com.example.proiectechiparacheta.DashboardActivity$16
- com.example.proiectechiparacheta.DashboardActivity$17
- com.example.proiectechiparacheta.DashboardActivity$18
- com.example.proiectechiparacheta.DashboardActivity$19
- com.example.proiectechiparacheta.DashboardActivity$2
- com.example.proiectechiparacheta.DashboardActivity$20
- com.example.proiectechiparacheta.DashboardActivity$21
- com.example.proiectechiparacheta.DashboardActivity$3
- com.example.proiectechiparacheta.DashboardActivity$4
- com.example.proiectechiparacheta.DashboardActivity$5
- com.example.proiectechiparacheta.DashboardActivity$6
- com.example.proiectechiparacheta.DashboardActivity$7
- com.example.proiectechiparacheta.DashboardActivity$8
- com.example.proiectechiparacheta.DashboardActivity$9
-com/example/proiectechiparacheta/RegisterActivity.java
- com.example.proiectechiparacheta.RegisterActivity
- com.example.proiectechiparacheta.RegisterActivity$1
- com.example.proiectechiparacheta.RegisterActivity$2
- com.example.proiectechiparacheta.RegisterActivity$2$1
+com/example/proiectechiparacheta/Utils/JSONParser.java
+ com.example.proiectechiparacheta.Utils.JSONParser
 com/example/proiectechiparacheta/database/dao/ImageBarcodeDao.java
  com.example.proiectechiparacheta.database.dao.ImageBarcodeDao
-com/example/proiectechiparacheta/JSONParser.java
- com.example.proiectechiparacheta.JSONParser
-com/example/proiectechiparacheta/FidelityCard.java
- com.example.proiectechiparacheta.FidelityCard
+com/example/proiectechiparacheta/Activities/AddByCamera.java
+ com.example.proiectechiparacheta.Activities.AddByCamera
+ com.example.proiectechiparacheta.Activities.AddByCamera$1
+ com.example.proiectechiparacheta.Activities.AddByCamera$1$1
+com/example/proiectechiparacheta/Activities/AddByForm.java
+ com.example.proiectechiparacheta.Activities.AddByForm
+ com.example.proiectechiparacheta.Activities.AddByForm$1
+ com.example.proiectechiparacheta.Activities.AddByForm$2
+ com.example.proiectechiparacheta.Activities.AddByForm$3
+ com.example.proiectechiparacheta.Activities.AddByForm$4
+ com.example.proiectechiparacheta.Activities.AddByForm$5
 com/example/proiectechiparacheta/service/CardService.java
  com.example.proiectechiparacheta.service.CardService
  com.example.proiectechiparacheta.service.CardService$1
@@ -64,21 +64,23 @@ com/example/proiectechiparacheta/service/CardService.java
  com.example.proiectechiparacheta.service.CardService$4
  com.example.proiectechiparacheta.service.CardService$5
  com.example.proiectechiparacheta.service.CardService$6
+com/example/proiectechiparacheta/models/FidelityCard.java
+ com.example.proiectechiparacheta.models.FidelityCard
 com/example/proiectechiparacheta/database/DatabaseManager.java
  com.example.proiectechiparacheta.database.DatabaseManager
+com/example/proiectechiparacheta/Utils/CustomAdapter.java
+ com.example.proiectechiparacheta.Utils.CustomAdapter
+ com.example.proiectechiparacheta.Utils.CustomAdapter$1
 com/example/proiectechiparacheta/Async/HandlerMessage.java
  com.example.proiectechiparacheta.Async.HandlerMessage
 com/example/proiectechiparacheta/BuildConfig.java
  com.example.proiectechiparacheta.BuildConfig
 com/example/proiectechiparacheta/Async/Callback.java
  com.example.proiectechiparacheta.Async.Callback
-com/example/proiectechiparacheta/AddByForm.java
- com.example.proiectechiparacheta.AddByForm
- com.example.proiectechiparacheta.AddByForm$1
- com.example.proiectechiparacheta.AddByForm$2
- com.example.proiectechiparacheta.AddByForm$3
- com.example.proiectechiparacheta.AddByForm$4
- com.example.proiectechiparacheta.AddByForm$5
+com/example/proiectechiparacheta/models/ImageBarcode.java
+ com.example.proiectechiparacheta.models.ImageBarcode
+com/example/proiectechiparacheta/Activities/Popup_Barcode.java
+ com.example.proiectechiparacheta.Activities.Popup_Barcode
 com/example/proiectechiparacheta/Async/RunnableTask.java
  com.example.proiectechiparacheta.Async.RunnableTask
 com/example/proiectechiparacheta/service/ImageService.java
@@ -90,5 +92,3 @@ com/example/proiectechiparacheta/service/ImageService.java
  com.example.proiectechiparacheta.service.ImageService$5
 com/example/proiectechiparacheta/Async/HttpManager.java
  com.example.proiectechiparacheta.Async.HttpManager
-com/example/proiectechiparacheta/Popup_Barcode.java
- com.example.proiectechiparacheta.Popup_Barcode

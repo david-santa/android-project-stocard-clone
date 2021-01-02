@@ -6,8 +6,7 @@ import androidx.room.Insert;
 import androidx.room.Query;
 import androidx.room.Update;
 
-import com.example.proiectechiparacheta.FidelityCard;
-import com.example.proiectechiparacheta.ImageBarcode;
+import com.example.proiectechiparacheta.models.ImageBarcode;
 
 import java.util.List;
 

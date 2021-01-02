@@ -139,22 +139,22 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\Da
 		ADDED from C:\Users\David\AndroidStudioProjects\ProiectEchipaRacheta\app\src\main\AndroidManifest.xml:10:9-35
 	android:theme
 		ADDED from C:\Users\David\AndroidStudioProjects\ProiectEchipaRacheta\app\src\main\AndroidManifest.xml:15:9-58
-activity#com.example.proiectechiparacheta.Profile
-ADDED from C:\Users\David\AndroidStudioProjects\ProiectEchipaRacheta\app\src\main\AndroidManifest.xml:16:9-54
+activity#com.example.proiectechiparacheta.Activities.Profile
+ADDED from C:\Users\David\AndroidStudioProjects\ProiectEchipaRacheta\app\src\main\AndroidManifest.xml:16:9-65
 	android:name
-		ADDED from C:\Users\David\AndroidStudioProjects\ProiectEchipaRacheta\app\src\main\AndroidManifest.xml:16:19-42
+		ADDED from C:\Users\David\AndroidStudioProjects\ProiectEchipaRacheta\app\src\main\AndroidManifest.xml:16:19-53
 activity#com.example.proiectechiparacheta.test
 ADDED from C:\Users\David\AndroidStudioProjects\ProiectEchipaRacheta\app\src\main\AndroidManifest.xml:17:9-42
 	android:name
 		ADDED from C:\Users\David\AndroidStudioProjects\ProiectEchipaRacheta\app\src\main\AndroidManifest.xml:17:19-39
-activity#com.example.proiectechiparacheta.RegisterActivity
-ADDED from C:\Users\David\AndroidStudioProjects\ProiectEchipaRacheta\app\src\main\AndroidManifest.xml:18:9-54
+activity#com.example.proiectechiparacheta.Activities.RegisterActivity
+ADDED from C:\Users\David\AndroidStudioProjects\ProiectEchipaRacheta\app\src\main\AndroidManifest.xml:18:9-65
 	android:name
-		ADDED from C:\Users\David\AndroidStudioProjects\ProiectEchipaRacheta\app\src\main\AndroidManifest.xml:18:19-51
-activity#com.example.proiectechiparacheta.AddByCamera
-ADDED from C:\Users\David\AndroidStudioProjects\ProiectEchipaRacheta\app\src\main\AndroidManifest.xml:19:9-49
+		ADDED from C:\Users\David\AndroidStudioProjects\ProiectEchipaRacheta\app\src\main\AndroidManifest.xml:18:19-62
+activity#com.example.proiectechiparacheta.Activities.AddByCamera
+ADDED from C:\Users\David\AndroidStudioProjects\ProiectEchipaRacheta\app\src\main\AndroidManifest.xml:19:9-60
 	android:name
-		ADDED from C:\Users\David\AndroidStudioProjects\ProiectEchipaRacheta\app\src\main\AndroidManifest.xml:19:19-46
+		ADDED from C:\Users\David\AndroidStudioProjects\ProiectEchipaRacheta\app\src\main\AndroidManifest.xml:19:19-57
 meta-data#com.google.android.gms.version
 ADDED from C:\Users\David\AndroidStudioProjects\ProiectEchipaRacheta\app\src\main\AndroidManifest.xml:21:9-23:69
 MERGED from [com.google.android.gms:play-services-basement:17.4.0] C:\Users\David\.gradle\caches\transforms-2\files-2.1\511b0c1b56cc060364689f0a29ae96d2\jetified-play-services-basement-17.4.0\AndroidManifest.xml:23:9-25:69
@@ -169,18 +169,18 @@ ADDED from C:\Users\David\AndroidStudioProjects\ProiectEchipaRacheta\app\src\mai
 		ADDED from C:\Users\David\AndroidStudioProjects\ProiectEchipaRacheta\app\src\main\AndroidManifest.xml:26:13-36
 	android:name
 		ADDED from C:\Users\David\AndroidStudioProjects\ProiectEchipaRacheta\app\src\main\AndroidManifest.xml:25:13-70
-activity#com.example.proiectechiparacheta.AddByForm
-ADDED from C:\Users\David\AndroidStudioProjects\ProiectEchipaRacheta\app\src\main\AndroidManifest.xml:28:9-47
+activity#com.example.proiectechiparacheta.Activities.AddByForm
+ADDED from C:\Users\David\AndroidStudioProjects\ProiectEchipaRacheta\app\src\main\AndroidManifest.xml:28:9-58
 	android:name
-		ADDED from C:\Users\David\AndroidStudioProjects\ProiectEchipaRacheta\app\src\main\AndroidManifest.xml:28:19-44
-activity#com.example.proiectechiparacheta.DashboardActivity
-ADDED from C:\Users\David\AndroidStudioProjects\ProiectEchipaRacheta\app\src\main\AndroidManifest.xml:29:9-55
+		ADDED from C:\Users\David\AndroidStudioProjects\ProiectEchipaRacheta\app\src\main\AndroidManifest.xml:28:19-55
+activity#com.example.proiectechiparacheta.Activities.DashboardActivity
+ADDED from C:\Users\David\AndroidStudioProjects\ProiectEchipaRacheta\app\src\main\AndroidManifest.xml:29:9-66
 	android:name
-		ADDED from C:\Users\David\AndroidStudioProjects\ProiectEchipaRacheta\app\src\main\AndroidManifest.xml:29:19-52
-activity#com.example.proiectechiparacheta.LoginActivity
+		ADDED from C:\Users\David\AndroidStudioProjects\ProiectEchipaRacheta\app\src\main\AndroidManifest.xml:29:19-63
+activity#com.example.proiectechiparacheta.Activities.LoginActivity
 ADDED from C:\Users\David\AndroidStudioProjects\ProiectEchipaRacheta\app\src\main\AndroidManifest.xml:30:9-36:20
 	android:name
-		ADDED from C:\Users\David\AndroidStudioProjects\ProiectEchipaRacheta\app\src\main\AndroidManifest.xml:30:19-48
+		ADDED from C:\Users\David\AndroidStudioProjects\ProiectEchipaRacheta\app\src\main\AndroidManifest.xml:30:19-59
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
 ADDED from C:\Users\David\AndroidStudioProjects\ProiectEchipaRacheta\app\src\main\AndroidManifest.xml:31:13-35:29
 action#android.intent.action.MAIN
