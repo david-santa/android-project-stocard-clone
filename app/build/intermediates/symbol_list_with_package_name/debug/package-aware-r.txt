@@ -1666,6 +1666,9 @@ drawable handholdingcard
 drawable holder
 drawable ic_arrow_down_24dp
 drawable ic_barcode
+drawable ic_baseline_email_24
+drawable ic_baseline_person_24
+drawable ic_baseline_phone_24
 drawable ic_credit_card
 drawable ic_json_file
 drawable ic_launcher_background
@@ -1806,8 +1809,10 @@ id bounce
 id btnAdd
 id btnCamera
 id btnCancel
+id btnDelete
 id btnExport
 id btnLogin
+id btnProfile
 id btnRegister
 id btnSave
 id btnSignOut
@@ -1925,6 +1930,9 @@ id ifRoom
 id ignore
 id ignoreRequest
 id image
+id imgMail
+id imgProfile
+id imgTel
 id info
 id invisible
 id italic
@@ -2004,6 +2012,7 @@ id percent
 id pin
 id position
 id postLayout
+id profileLayout
 id progressBar
 id progress_circular
 id progress_horizontal
@@ -2121,6 +2130,9 @@ id transition_scene_layoutid_cache
 id transition_transform
 id triangle
 id tvHello
+id tvMail
+id tvMailUser
+id tvTel
 id unchecked
 id uniform
 id unlabeled
@@ -2200,6 +2212,7 @@ layout activity_add_by_camera
 layout activity_add_by_form
 layout activity_dashboard
 layout activity_main
+layout activity_profile
 layout activity_register
 layout custom_dialog
 layout design_bottom_navigation_item
@@ -2356,6 +2369,7 @@ string common_signin_button_text_long
 string copy
 string createuserwithEmail
 string default_web_client_id
+string delete_account
 string denumire_card
 string detinator_card
 string email
@@ -2375,6 +2389,7 @@ string google_app_id
 string google_crash_reporting_api_key
 string google_storage_bucket
 string hello
+string hellomail
 string hide_bottom_view_on_scroll_behavior
 string hint_password
 string icon_content_description
