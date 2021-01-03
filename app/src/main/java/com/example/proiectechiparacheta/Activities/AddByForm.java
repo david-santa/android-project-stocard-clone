@@ -113,8 +113,21 @@ public class AddByForm extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = getIntent();
+                boolean validated = true;
+                if(etName.getText().toString().length()==0){
+                    etName.setError("Field empty");
+                    validated = false;
+                }
+                if(etBarcodeValue.getText().toString().length()==0){
+                    etBarcodeValue.setError("Field empty");
+                    validated = false;
+                }
+                if(etCardHolderName.getText().toString().length()==0){
+                    etCardHolderName.setError("Field empty");
+                    validated = false;
+                }
                 if(intent.getIntExtra("requestCode",-1)==-1) finish();
-                if(intent.getIntExtra("requestCode",-1)==1){
+                if(intent.getIntExtra("requestCode",-1)==1 && validated){
                     String name = etName.getText().toString();
                     String cardHolderName = etCardHolderName.getText().toString();
                     String barcode = etBarcodeValue.getText().toString();
@@ -125,7 +138,7 @@ public class AddByForm extends AppCompatActivity {
                     setResult(1,intent2);
                     finish();
                 }
-                if(intent.getIntExtra("requestCode",-1)==2){
+                if(intent.getIntExtra("requestCode",-1)==2 && validated){
                     String name = etName.getText().toString();
                     String cardHolderName = etCardHolderName.getText().toString();
                     String barcode = etBarcodeValue.getText().toString();
