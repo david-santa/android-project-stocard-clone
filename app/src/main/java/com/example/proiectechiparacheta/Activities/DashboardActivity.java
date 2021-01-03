@@ -65,6 +65,7 @@ public class DashboardActivity extends AppCompatActivity {
     private FirebaseFirestore db = FirebaseFirestore.getInstance();
     CardService cardService;
     ImageService imageService;
+    Bitmap img;
     //endregion
     final FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
     private int noOfFav;
@@ -374,6 +375,19 @@ public class DashboardActivity extends AppCompatActivity {
 
             //  ============== EDIT  ==============
 
+            menu.add("View Details").setOnMenuItemClickListener(new MenuItem.OnMenuItemClickListener() {
+                @Override
+                public boolean onMenuItemClick(MenuItem item) {
+                    try {
+                        getImageForCard(card,3);
+
+                    } catch (IOException e) {
+                        e.printStackTrace();
+                    }
+                    return false;
+                }
+            });
+
             menu.add("Edit").setOnMenuItemClickListener(new MenuItem.OnMenuItemClickListener() {
                 @Override
                 public boolean onMenuItemClick(MenuItem item) {
@@ -520,7 +534,7 @@ public class DashboardActivity extends AppCompatActivity {
 
             String url = buildUrlFromBarcodeValue(card.getBarCode().toString());
                 Callable<Bitmap> asyncOperation = new HttpManager(url);
-            Callback<Bitmap> mainThreadOperation = getMainThreadOperation(card.id,mode);
+            Callback<Bitmap> mainThreadOperation = getMainThreadOperation(card.id,mode,card);
             AsyncTaskRunner.executeAsync(asyncOperation, mainThreadOperation);
     }
 
@@ -529,18 +543,25 @@ public class DashboardActivity extends AppCompatActivity {
         return s;
     }
 
-    private Callback<Bitmap> getMainThreadOperation(int id,int mode) {
+    private Callback<Bitmap> getMainThreadOperation(int id,int mode,FidelityCard card) {
         return new Callback<Bitmap>() {
 
             @Override
             public void runResultOnUiThread(Bitmap result) {
-                Popup_Barcode popup_barcode = new Popup_Barcode(result);
-                popup_barcode.show(getSupportFragmentManager(), "popupBarcode");
-                byte[] blob = getBytes(result);
-                if(mode==1)
-                imageService.insert(insertImageOnDbCallback(),new ImageBarcode(blob,id));
-                else
-                    imageService.update(updateImageOnDbCallback(),new ImageBarcode(blob,id));
+                if (mode == 1 || mode == 2) {
+                    Popup_Barcode popup_barcode = new Popup_Barcode(result);
+                    popup_barcode.show(getSupportFragmentManager(), "popupBarcode");
+                    byte[] blob = getBytes(result);
+                    img = result;
+                    if (mode == 1)
+                        imageService.insert(insertImageOnDbCallback(), new ImageBarcode(blob, id));
+                    else
+                        imageService.update(updateImageOnDbCallback(), new ImageBarcode(blob, id));
+                }
+                else{
+                    CardDetails cardDetails = new CardDetails(result,card);
+                    cardDetails.show(getSupportFragmentManager(),"details");
+                }
             }
         };
     }

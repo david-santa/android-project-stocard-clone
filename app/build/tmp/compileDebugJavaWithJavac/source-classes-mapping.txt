@@ -14,6 +14,7 @@ com/example/proiectechiparacheta/Activities/DashboardActivity.java
  com.example.proiectechiparacheta.Activities.DashboardActivity$2
  com.example.proiectechiparacheta.Activities.DashboardActivity$20
  com.example.proiectechiparacheta.Activities.DashboardActivity$21
+ com.example.proiectechiparacheta.Activities.DashboardActivity$22
  com.example.proiectechiparacheta.Activities.DashboardActivity$3
  com.example.proiectechiparacheta.Activities.DashboardActivity$4
  com.example.proiectechiparacheta.Activities.DashboardActivity$5
@@ -83,6 +84,8 @@ com/example/proiectechiparacheta/Activities/Popup_Barcode.java
  com.example.proiectechiparacheta.Activities.Popup_Barcode
 com/example/proiectechiparacheta/Async/RunnableTask.java
  com.example.proiectechiparacheta.Async.RunnableTask
+com/example/proiectechiparacheta/Activities/CardDetails.java
+ com.example.proiectechiparacheta.Activities.CardDetails
 com/example/proiectechiparacheta/service/ImageService.java
  com.example.proiectechiparacheta.service.ImageService
  com.example.proiectechiparacheta.service.ImageService$1

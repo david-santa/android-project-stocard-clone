@@ -1941,10 +1941,12 @@ id imgNume
 id imgProfile
 id imgTel
 id info
+id innerConstr
 id invisible
 id italic
 id item_touch_helper_previous_elevation
 id ivBarcode
+id ivBarcodeDetails
 id ivFav
 id ivLogo
 id jumpToEnd
@@ -2136,6 +2138,9 @@ id transition_position
 id transition_scene_layoutid_cache
 id transition_transform
 id triangle
+id tvBarcodeValue
+id tvCardHolderName
+id tvCardName
 id tvHello
 id tvMail
 id tvMailUser
@@ -2273,6 +2278,7 @@ layout notification_template_icon_group
 layout notification_template_part_chronometer
 layout notification_template_part_time
 layout popup_barcode
+layout popup_details
 layout preference
 layout preference_category
 layout preference_category_material
@@ -2347,6 +2353,7 @@ string bottom_sheet_behavior
 string btnSignOut
 string camera
 string cancel
+string card_holder
 string card_holder_name
 string character_counter_content_description
 string character_counter_overflowed_content_description
