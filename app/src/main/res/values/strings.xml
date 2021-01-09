@@ -1,7 +1,36 @@
 <resources>
-    <string name="app_name">Proiect Echipa Racheta</string>
+    <string name="app_name">Card Keeper</string>
     <string name="hello">HELLO</string>
     <string name="username">username</string>
     <string name="password">password</string>
     <string name="add">ADD</string>
+    <string name="register_now">Register now</string>
+    <string name="barcode_value">Barcode Value</string>
+    <string name="card_holder_name">Card Holder Name</string>
+    <string name="name">Name</string>
+    <string name="cancel">Cancel</string>
+    <string name="save">Save</string>
+    <string name="sign_up">Sign up</string>
+    <string name="email">email</string>
+    <string name="hint_password">hint_password</string>
+    <string name="login_screen">Login</string>
+    <string name="text_email">Please add an email address!</string>
+    <string name="text_parola">Please add a password!</string>
+    <string name="text_check_parola">Password should have at least 6 characters.</string>
+    <string name="createuserwithEmail">Registration succeeded!</string>
+    <string name="failed_register">Registration failed!</string>
+    <string name="email_login">Add your email address!</string>
+    <string name="pass_login">Add your password!</string>
+    <string name="btnSignOut">Sign Out</string>
+    <string name="export">Export</string>
+    <string name="camera">Camera</string>
+    <string name="welcome">Welcome</string>
+    <string name="denumire_card">Card Name</string>
+    <string name="detinator_card">Card Holder Name</string>
+    <string name="cod_de_bare">Barcode</string>
+    <string name="number_of_cards">Number of cards:</string>
+    <string name="filter_by_name">Filter by Name</string>
+    <string name="hellomail">\Hello, %1$s!\</string>
+    <string name="delete_account">Delete Account</string>
+    <string name="card_holder">Card Holder: </string>
 </resources>

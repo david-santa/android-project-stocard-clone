@@ -1,8 +1,8 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
-    <style name="Theme.ProiectEchipaRacheta" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+    <style name="Theme.ProiectEchipaRacheta" parent="Theme.MaterialComponents.DayNight.NoActionBar">
         <!-- Primary brand color. -->
-        <item name="colorPrimary">@color/purple_500</item>
+        <item name="colorPrimary">@color/niceBlue</item>
         <item name="colorPrimaryVariant">@color/purple_700</item>
         <item name="colorOnPrimary">@color/white</item>
         <!-- Secondary brand color. -->
@@ -12,5 +12,30 @@
         <!-- Status bar color. -->
         <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
+        <item name="android:fontFamily">@font/mukta_vaani_light</item>
+        <item name="android:textColor">@color/black</item>
+
+
+    </style>
+
+
+
+    <style name="btn">
+        <item name="backgroundColor">@color/teal_200</item>
+        <item name="backgroundTint">@color/white</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textSize">12dp</item>
+    </style>
+
+    <style name="btnBlue">
+        <item name="backgroundColor">@color/teal_200</item>
+        <item name="backgroundTint">@color/niceBlue</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textSize">12dp</item>
+    </style>
+
+    <style name="text">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:fontFamily">@font/mukta_vaani_light</item>
     </style>
 </resources>

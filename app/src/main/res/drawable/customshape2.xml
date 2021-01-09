@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/gradient_1"></item>
+    <item>
+        <bitmap android:src="@drawable/tag" android:gravity="center" android:alpha="0.1"/>
+
+    </item>
+
+    <item android:top="290dp"
+        android:bottom="-300dp"
+        android:left="0dp"
+        android:right="-300dp">
+        <rotate
+            android:fromDegrees="-10"
+            android:pivotX="0%"
+            android:pivotY="100%"
+            >
+            <shape
+                android:shape="rectangle">
+                <gradient
+                    android:angle="135"
+                    android:endColor="#43b4ef"
+                    android:startColor="#FE993A" />
+                <!--                <solid-->
+<!--                    android:color="@color/teal_700"/>-->
+
+
+            </shape>
+        </rotate>
+
+    </item>
+
+
+</layer-list>
